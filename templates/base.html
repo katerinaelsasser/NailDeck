@@ -29,8 +29,12 @@
     {% endif %}    
 
     <!---Content--->
+    <div class="row">
+        <div class="col-sm-12 col-md-8">
         {% block content %} {% endblock %}
-    
+        </div>
+        {% include 'components/sidebar.html' %}
+    </div>
     <!---Footer--->
     {% include 'components/footer.html' %}
         
