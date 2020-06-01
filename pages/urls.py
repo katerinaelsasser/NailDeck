@@ -1,9 +1,9 @@
-from django.urls import path
-from .views import about_view, terms_view, payments_view
+from django.conf.urls import url, include
+from .views import about_view, terms_view, pay_view
 
 urlpatterns = [
-    path('about/', about_view, name="about"),
-    path('terms-conditions/', terms_view, name="terms"),
-    path('payments/', payments_view, name="payments")
+    url('about/', about_view, name="about"),
+    url('terms-conditions/', terms_view, name="terms"),
+    url('payments/', pay_view, name="payments")
 
 ]

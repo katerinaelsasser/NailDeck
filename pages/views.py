@@ -3,12 +3,12 @@ from django.shortcuts import render
 # Create your views here.
 
 #about page
-def about(request):
+def about_view(request):
     return render(request, "about.html")
 #payments page
-def payments(request):
+def pay_view(request):
     return render(request, "payments.html")
 
 #terms and conditions page
-def terms(request):
+def terms_view(request):
     return render(request, "terms.html")
