@@ -9,21 +9,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{% url 'home' %}">Home</a>
             </li>
-        {% if user.is_authenticated %}
-            <li>
-                <a class="nav-link" href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a>
-            </li>
-            <li>
-                <a class="nav-link" href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a>
-            </li>
-        {%  else %}
-            <li>
-                <a class="nav-link" href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a>
-            </li>
-            <li>
-                <a  class="nav-link" href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a>
-            </li>
-        {% endif %}
+        
             <li>
                 <a class="nav-link" href="{% url 'view_cart' %}">
                     <i class="fa fa-shipping-cart"></i>Cart
