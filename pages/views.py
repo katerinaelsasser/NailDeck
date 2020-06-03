@@ -1,14 +1,17 @@
 from django.shortcuts import render
 
-# Create your views here.
+# Home Page 
+def home(request):
+    return render(request, "index.html")
 
-#about page
+#About page
 def about_view(request):
     return render(request, "about.html")
-#payments page
+
+#Payments page
 def pay_view(request):
     return render(request, "payments.html")
 
-#terms and conditions page
+#Terms and conditions page
 def terms_view(request):
     return render(request, "terms.html")

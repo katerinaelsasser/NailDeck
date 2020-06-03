@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'checkout',
     'storages',
     'pages',
-    'home',
 ]
 
 MIDDLEWARE = [
