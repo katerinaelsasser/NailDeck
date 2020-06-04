@@ -6,10 +6,9 @@ from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 
 def logout(request):
-    """A view that logs the user out and redirects back to the index page"""
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
-    return render(request, "logout.html"))
+    return render(request, "logout.html")
 
 
 def login(request):
