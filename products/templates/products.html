@@ -1,29 +1,43 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="row mb-2">
-{% for product in products %}
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">{{ product.name }}</h3>
-          <p class="mb-auto">{{ product.description }}</p>
-          <p>{{ product.price }}</p>
-          <form method="post" action="{% url 'add_to_cart' product.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
-                        </span>
-                </div>
-            </form>
+<!----Header Display---->
+
+<!-----Filter------>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Blue')">Blue</button>
+  <button class="btn" onclick="filterSelection('Mixed')"> Mixed</button>
+  <button class="btn" onclick="filterSelection('Pink')">Pink</button>
+  <button class="btn" onclick="filterSelection('Red')">Red</button>
+</div>
+
+<!-----Product Display------>
+<div class="container">
+    <div class="row mb-2">
+    {% for product in products %}
+        <div class="col-md-4">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">{{ product.name }}</h3>
+            <p class="mb-auto filterDiv {{ product.description }}">Colour: {{ product.description }}</p>
+            <p>{{ product.price }}</p>
+            <form method="post" action="{% url 'add_to_cart' product.id %}">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success" type="submit">Add</button>
+                            </span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+            <img class="product bd-placeholder-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+            </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-        <img class="product bd-placeholder-img" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
         </div>
-      </div>
+    {% endfor %}
     </div>
-{% endfor %}
-  </div>
+</div>
 {% endblock %}
