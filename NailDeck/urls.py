@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'', include('pages.urls')),
     url(r'products/', include('products.urls')),
     url(r'cart/', include('cart.urls')),
+    url(r'cart/', include('checkout.urls')),
     url(r'search/', include('search.urls')),
     url(r'^media/(?P<url>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
