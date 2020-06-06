@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Home Page 
-def home(request):
+def homepage(request):
     return render(request, "index.html")
 
 #About page
