@@ -2,49 +2,49 @@
     <div class="row">
         <div class="col-sm-12 col-md-3">
             <h4 class="my-3">About</h4>
-            <h6 class="my-3"><a href="{% url 'about' %}">About</a></h6>
-            <h6 class="my-3"><a href="{% url 'payments' %}">Payments</a></h6>
-            <h6 class="my-3"><a href="{% url 'terms' %}">Terms & Conditions</a></h6>
+            <h5 class="my-3"><a href="{% url 'about' %}">About</a></h5>
+            <h5 class="my-3"><a href="{% url 'payments' %}">Payments</a></h5>
+            <h5 class="my-3"><a href="{% url 'terms' %}">Terms & Conditions</a></h5>
         </div>
         <div class="col-sm-12 col-md-3">
             <h4 class="my-3">We accept</h4>
-            <h6><i class="fa fa-cc-paypal"></i></h6>
-            <h6><i class="fa fa-cc-visa"></i></h6>
-            <h6><i class="fa fa-cc-mastercard"></i></h6>
+            <h5><i class="fa fa-cc-paypal"></i></h5>
+            <h5><i class="fa fa-cc-visa"></i></h5>
+            <h5><i class="fa fa-cc-mastercard"></i></h5>
         </div>
         <div class="col-sm-12 col-md-3">
             <h4 class="my-3">Contact Us</h4>
-            <h6><i class="fa fa-facebook-official my-3"></i></h6>
-            <h6><i class="fa fa-instagram my-3"></i></h6>
+            <h5><i class="fa fa-facebook-official"></i></h5>
+            <h5><i class="fa fa-instagram"></i></h5>
         </div>
         <div class="col-sm-12 col-md-3">
             <h4 class="my-3">Admin</h4>
         {% if user.is_authenticated %}
-            <h6 class="my-3">
+            <h5 class="my-3">
                 <a class="nav-link" href="{% url 'profile' %}">
                 <i class="fa fa-user"></i>Profile
                 </a>
-            </h6>
-            <h6 class="my-3">
+            </h5>
+            <h5 class="my-3">
                 <a class="nav-link" href="{% url 'logout' %}">
                 <i class="fa fa-sign-out"></i> Log Out
                 </a>
-            </h6>
+            </h5>
         {%  else %}
-            <h6 class="my-3">
+            <h5 class="my-3">
                 <a class="nav-link" href="{% url 'register' %}">
                 <i class="fa fa-user-plus"></i> Register
                 </a>
-            </h6>
-            <h6 class="my-3">
+            </h5>
+            <h5 class="my-3">
                 <a  class="nav-link" href="{% url 'login' %}">
                 <i class="fa fa-sign-in"></i> Log In
                 </a>
-            </h6>
+            </h5>
         {% endif %}
         </div>
     </div>
     <div class="container-fluid">
-        <h6>© 2018-2020 Nail Decks</h6>
+        <h5>© 2018-2020 Nail Decks</h5>
     </div>
 </footer>
