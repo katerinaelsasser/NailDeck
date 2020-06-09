@@ -70,3 +70,14 @@ caption p {
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
 }
+
+/*------your images------*/
+.insta-accounts {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}

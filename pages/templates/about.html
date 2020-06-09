@@ -15,9 +15,47 @@
     <div class="container text-center">
         <p>Created in 2018, Nail Deck provides top quality, vegan nail varnishes. Each varnish is created by hand by our team based in England.</p>
     </div>
-    <div class="container-fluid">
-        <img src="static/css/images/product.header.jpg"/>
-    </div>
 </div>
 
+<!---Your Images--->
+<div class="container">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Your Images</h1>
+      <h4 class="lead">We love your images of our varnishes. Tag #NAILDECK or @NailDeck and you may even be features on our website.</h4>
+    </div>
+    <div class="row">
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-5.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <a target="_blank" href="https://www.instagram.com/">@BethH</a>
+        </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-6.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <a target="_blank" href="https://www.instagram.com/">@Lucy_Smith</a>
+            </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-7.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <a target="_blank" href="https://www.instagram.com/">@LouiseXOX</a>
+            </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-8.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <a target="_blank" href="https://www.instagram.com/">@CBennet</a>
+        </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
