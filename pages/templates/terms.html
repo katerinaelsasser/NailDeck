@@ -2,26 +2,58 @@
 {% load static from staticfiles %}
 {% block content %}
 
-<!----Header Display---->
+<!----Content---->
 <div class="container">
     <img class="img-fluid" src="{% static 'images/display-6.jpg' %}">
-    <div class="container-fluid text-center">
-      <h1>About Us</h1>
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Terms & Conditions</h1>
+        <h4 class="lead">Any issues with our website or any of our nail poolshes, please contact us via our social media. Please contact us via <strong><a href="https://en-gb.facebook.com/">Facebook</a></strong> or <strong><a href="https://www.instagram.com/?hl=en">Instagram</a></strong>.</h4>
+        <h4 class="lead">Please note that nail polishes will vary from the images.</h4>
+        <h4 class="lead">Please note that some shades may vary from the image. The pictures see are for display purposes only.</h4>
+        <h4 class="lead">We are not responsible for delays on delivery.</h4>
+        <h4 class="lead">We are not responsible for delays when orders are dispatched.</h4>    
     </div>
 </div>
 
-<!-----content----->
-<div class="col-sm-12 col-md-8">
-    <div class="container text-center">
-        <h1>Terms & Conditions</h1>
-        <p>Any issues with our website or any of our nail poolshes, please contact us via our social media. Please contact us via <a href="https://en-gb.facebook.com/">Facebook</a> or <a href="https://www.instagram.com/?hl=en">Instagram</a>.</p>
-        <p>Please note that nail polishes will vary from the images.</p>
-        <p>We are not responsible for delays on delivery.</p>
-        <p>When order is processed, an email will be sent to you about confirmation. If email not come through, please check junk folder before contacting our team.</p>
+<!---Your Images--->
+<div class="container">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Your Images</h1>
+      <h4 class="lead">We love your images of our varnishes. Tag #NAILDECK or @NailDeck and you may even be features on our website.</h4>
     </div>
-    <div class="container-fluid">
-        <img src="static/css/images/product.header.jpg"/>
+    <div class="row">
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-13.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <a target="_blank" href="https://www.instagram.com/">@</a>
+        </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-14.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <a target="_blank" href="https://www.instagram.com/">@</a>
+            </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-15.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <a target="_blank" href="https://www.instagram.com/">@</a>
+            </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a target="_blank" href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-16.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <a target="_blank" href="https://www.instagram.com/">@</a>
+        </div>
+        </div>
     </div>
 </div>
-
 {% endblock %}
