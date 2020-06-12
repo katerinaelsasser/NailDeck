@@ -70,6 +70,12 @@ caption p {
   height: auto;
 }
 
+/*------navbar------*/
+
+.topnav-right {
+  float: right;
+}
+
 /*------footer-----*/
 footer {
     margin-top: 40px;
