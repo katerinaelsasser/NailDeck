@@ -4,7 +4,6 @@ from accounts import urls as urls_accounts
 from products import urls as urls_products
 from pages import urls as urls_pages
 from cart import urls as urls_cart
-from search import urls as urls_search
 from checkout import urls as urls_checkout
 from pages.views import homepage
 from django.views import static
@@ -19,6 +18,5 @@ urlpatterns = [
     url(r'products/', include('products.urls')),
     url(r'cart/', include('cart.urls')),
     url(r'cart/', include('checkout.urls')),
-    url(r'search/', include('search.urls')),
     url(r'^media/(?P<url>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
