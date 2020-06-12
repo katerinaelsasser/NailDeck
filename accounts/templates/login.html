@@ -2,36 +2,24 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="col-md-6 img-fluid">
-        <img src="{% static 'images/display-7.jpg' %}">
+<div class="row">
+    <div class="col-6">
+         <img class="col-12" src="{% static 'images/display-7.jpg' %}">
     </div>
-    <div class="col-md-6 ">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Sign In</h3>
-              <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
-               <fieldset class="form-group">
-            <legend>Login</legend>
-            {% csrf_token %}
-            {{ user_form | as_bootstrap }}
-            
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p> 
-                <p><a href="{% url 'register' %}">Create an account today</a></p> 
-                </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="col-6">
+        <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform col-6">
+            <fieldset class="form-group">
+                {% csrf_token %}
+                {{ user_form | as_bootstrap }}
+                
+                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                    <div class="text-center">
+                    <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p> 
+                    <p><a href="{% url 'register' %}">Create an account today</a></p> 
+                    </div>
+            </fieldset>
+        </form>
     </div>
-  </div>
 </div>
 
 {% endblock %}
