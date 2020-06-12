@@ -4,10 +4,10 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+    <div class="col-md-6 img-fluid">
         <img src="{% static 'images/display-7.jpg' %}">
     </div>
-    <div class="col-md-8 col-lg-6">
+    <div class="col-md-6 ">
       <div class="login d-flex align-items-center py-5">
         <div class="container">
           <div class="row">
@@ -32,32 +32,6 @@
       </div>
     </div>
   </div>
-</div>
-<!----Header Display---->
-<div class="container row">
-    <div class="col-6">
-    </div>
-    <div class="col-6">
-        <div class="mx-auto">
-        <div class="card card-signin flex-row my-5">
-          <div class="card-img-left d-none d-md-flex">
-             <!-- Background image for card set in CSS! -->
-          </div>
-          <div class="card-body">
-            <!-----form----->
-    <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
-        <fieldset class="form-group">
-            <legend>Login</legend>
-            
-             
-             
-            <button type="submit" class="btn btn-primary">Login</button>
-        </fieldset>
-    </form>            
-          </div>
-        </div>
-      </div>
-    </div>
 </div>
 
 {% endblock %}
