@@ -2,19 +2,39 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-
-<!----Header Display---->
-<div class="container">
-    <img class="img-fluid" src="{% static 'images/display-7.jpg' %}">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Log In</h1>
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+        <img src="{% static 'images/display-7.jpg' %}">
     </div>
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">Welcome back!</h3>
+              <form>
+               {% csrf_token %}
+            {{ user_form | as_bootstrap }}
+            
+                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
+                <div class="text-center">
+                <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p>  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<!-----content----->
-<div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-xl-9 mx-auto">
+<!----Header Display---->
+<div class="container row">
+    <div class="col-6">
+    </div>
+    <div class="col-6">
+        <div class="mx-auto">
         <div class="card card-signin flex-row my-5">
           <div class="card-img-left d-none d-md-flex">
              <!-- Background image for card set in CSS! -->
@@ -24,10 +44,8 @@
     <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
         <fieldset class="form-group">
             <legend>Login</legend>
-            {% csrf_token %}
-            {{ user_form | as_bootstrap }}
             
-             <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+             
              
             <button type="submit" class="btn btn-primary">Login</button>
         </fieldset>
@@ -36,8 +54,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-
+</div>
 
 {% endblock %}
