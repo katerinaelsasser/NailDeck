@@ -15,7 +15,6 @@
                             <h1 class="login-heading">Log In</h1>
                             <form method="post" action="{% url 'register' %}" class="accountform">
                                 <fieldset class="form-group">
-                                    <p>Already have an account? <a href="{% url 'login' %}">Login In</a></p>
                                     {% csrf_token %}
                                     {{ user_form | as_bootstrap }}
                                     <button type="submit" class="btn btn-dark btn-lg btn-block">Log In</button>
