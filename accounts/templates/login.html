@@ -2,24 +2,33 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-<div class="row">
-    <div class="col-6">
-         <img class="col-12" src="{% static 'images/display-7.jpg' %}">
-    </div>
-    <div class="col-6">
-        <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform col-6">
-            <fieldset class="form-group">
-                {% csrf_token %}
-                {{ user_form | as_bootstrap }}
-                
-                    <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                    <div class="text-center">
+
+<!----Log In Form-->
+<div class="container">
+    <img class="img-fluid" src="{% static 'images/display-7.jpg' %}">
+</div>
+<div class="col-md-12">
+<div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h1 class="login-heading">Log In</h1>
+                            <form method="post" action="{% url 'register' %}" class="accountform">
+                                <fieldset class="form-group">
+                                    <p>Already have an account? <a href="{% url 'login' %}">Login In</a></p>
+                                    {% csrf_token %}
+                                    {{ user_form | as_bootstrap }}
+                                    <button type="submit" class="btn btn-dark btn-lg btn-block">Log In</button>
+                                </fieldset>
+                            </form>
+                            <div class="text-center">
                     <p><a href="{% url 'password_reset' %}">Forgot your password?</a></p> 
                     <p><a href="{% url 'register' %}">Create an account today</a></p> 
                     </div>
-            </fieldset>
-        </form>
-    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
-
 {% endblock %}
