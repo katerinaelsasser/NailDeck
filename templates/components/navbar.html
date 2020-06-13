@@ -11,10 +11,14 @@
             <a class="nav-link" href="{% url 'products' %}">Products</a>
         </li>
         {% if user.is_authenticated %}
-        <li>
-            <a class="nav-link" href="{% url 'profile' %}">
-                <i class="fa fa-user"></i>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="profileDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user"></i>
             </a>
+            <div class="dropdown-menu" aria-labelledby="profileDropdownMenuLink">
+            <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+            <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
+            </div>
         </li>
         <li class="nav-item justify-content-end">
             <a class="nav-link" href="{% url 'view_cart' %}">
@@ -25,10 +29,14 @@
             </a>
         </li>
         {%  else %}
-        <li class="nav-item justify-content-end">
-            <a class="nav-link" href="{% url 'login' %}">
-                <i class="fa fa-user"></i>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-o"></i>
             </a>
+            <div class="dropdown-menu" aria-labelledby="loginMenuLink">
+            <a class="dropdown-item" href="{% url 'login' %}">Login</a>
+            <a class="dropdown-item" href="{% url 'register' %}">Register</a>
+            </div>
         </li>
         <li class="nav-item justify-content-end d-flex">
             <a class="nav-link" href="{% url 'login' %}">
