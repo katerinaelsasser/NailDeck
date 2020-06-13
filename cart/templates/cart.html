@@ -19,7 +19,7 @@
         {% for item in cart_items %}
         <div class="col-sm-12 col-md-3 mb-4">
                 <div class="card border-0 shadow">
-                    <img src="url('{{ MEDIA_URL }}{{ item.product.image }}')" class="card-img-top" alt="...">
+                    <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                     <div class="card-body text-center">
                     <h3 class="card-title mb-0">{{ item.product.name }}</h3>
                     <div class="card-text text-black-50">{{ item.product.description }}</div>
