@@ -3,29 +3,22 @@
 {% load bootstrap_tags %}
 {% block content %}
 
-<!----Header Display---->
+<!----Register Form-->
 <div class="container">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Register To Shop</h1>
-    </div>
+    <img class="img-fluid" src="{% static 'images/display-8.jpg' %}">
 </div>
-<!-----content----->
-<div class="container-fluid row">
-        <div class="d-none d-md-flex col-sm-12 col-md-6">
-            <img class="register-img" src="{% static 'images/display-12.jpg' %}">
-        </div>
-        <div class="col-sm-12 col-md-6">
+<div class="col-md-12">
             <div class="login d-flex align-items-center py-5">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
-                            <h1 class="login-heading">Register</h1>
+                            <h1 class="login-heading">Register To Shop</h1>
                             <form method="post" action="{% url 'register' %}" class="accountform">
                                 <fieldset class="form-group">
                                     <p>Already have an account? <a href="{% url 'login' %}">Login In</a></p>
                                     {% csrf_token %}
                                     {{  user_form | as_bootstrap }}
-                                    <button type="submit" class="btn btn-primary">Create account</button>
+                                    <button type="submit" class="btn btn-dark btn-lg btn-block">Create account</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -35,9 +28,7 @@
         </div>
 </div>
 
-<div class="container">
-    <img class="img-fluid" src="{% static 'images/display-8.jpg' %}">
-</div>
+
 
     
 {% endblock %}
