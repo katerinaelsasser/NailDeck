@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 def logout(request):
     auth.logout(request)
     messages.success(request, 'You have successfully logged out')
-    return render(request, "logout.html")
+    return redirect(reverse('homepage'))
 
 
 def login(request):
