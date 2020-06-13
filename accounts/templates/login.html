@@ -11,7 +11,7 @@
     <div class="login d-flex align-items-center py-5">
         <div class="col-md-9 col-lg-8 mx-auto">
             <h1 class="login-heading text-center">Log In</h1>
-            <form method="post" action="{% url 'register' %}" class="accountform">
+            <form method="post" action="{% url 'login' %}" class="accountform">
                 <fieldset class="form-group">
                     {% csrf_token %}
                     {{ user_form | as_bootstrap }}
