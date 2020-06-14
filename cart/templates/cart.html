@@ -23,7 +23,7 @@
                     <div class="card-body text-center">
                     <h3 class="card-title mb-0">{{ item.product.name }}</h3>
                     <div class="card-text text-black-50">{{ item.product.description }}</div>
-                    <h3 class="card-text mb-0">{{ item.product.price }}</h3>
+                    <h3 class="card-text mb-0">£{{ item.product.price }}</h3>
                         <div class="btn-group">
                             <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
                         {% csrf_token %}
