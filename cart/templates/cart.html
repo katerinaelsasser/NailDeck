@@ -4,7 +4,7 @@
 {% block content %}
 
 <!----Header Display---->
-<div class="container">
+<div class="container-fluid">
     <img class="img-fluid" src="{% static 'images/display-3.jpg' %}">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">Purchase Your Items</h1>
@@ -33,7 +33,7 @@
                                 <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+                        <a type="submit" class="btn-dark"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</a>
                     </form>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
         </li>
       </ul>
       <div class="text-center">   
-              <a href="{% url 'checkout' %}" class="btn btn-primary btn-lg btn-block" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+              <a href="{% url 'checkout' %}" class="btn-dark btn-lg btn-block" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
         </div>
     </div>
 </div>
