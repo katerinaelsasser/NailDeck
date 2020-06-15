@@ -3,8 +3,11 @@
 Nail Deck is an online website for selling hand made nail polishes to customers. Their polishes are inspired by pirates which includes the names of the products.
 
 Content
-* [UX]()
-    * [Aim]()
+* [UX](https://github.com/katerinaelsasser/NailDeck#ux)
+    * [Aim](https://github.com/katerinaelsasser/NailDeck#aim)
+        * [Target Audience]()
+        * [Visitor Goals]()
+        * [Online Shop Goals]()
     * [Research]()
     * [User Stories]()
     * [Design Choices]()
@@ -24,15 +27,27 @@ Content
 
 
 # UX
-
-
-Project Goals
-Target Audience Goals
-Site Owner Goals
-User Stories
-User Requirements and Expectations
-
 ## Aim
+The aim of this is create a website that the business can sell their nail products through. This must be easy to use and easy to navigate through on both the vistor and the business side. The visitor must be able to purchase products easily and the business must be able to upload new products on to the website.
+### Target Audience
+The target audience for the brand Nail Deck are:
+* Anyone who love nail polishes.
+* Anyone who love pirates.
+* Anyone who love hand made products.
+
+### Visitor Goals
+* Browse through a list of nail products.
+* Find a nail polish they would like to purchase.
+* Able to navigate through the website easily.
+
+### Online Shop Goals
+* A clear website that anyone can use it easily.
+* 
+
+
+
+
+
 General goal
 * Easy to use
 * Clear
