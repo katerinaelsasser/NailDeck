@@ -31,6 +31,8 @@ Site Owner
 * Able to put new products on to the website
 * 
 
+Flow Chart
+
 Wireframes
 
 Product Layout
@@ -41,7 +43,6 @@ Login Layout
 * Mobile Version
 * Laptop Version
 
-
-What has been used
-
-HTML, CSS, JavaScript, Python+Django, Stripe payments, Relational database (recommending MySQL or Postgres)
+Register Layout
+* Mobile Version
+* Laptop Version
