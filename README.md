@@ -39,6 +39,14 @@ Product Layout
 * Mobile Version
 * Laptop Version
 
+Cart Layout
+* Mobile Version
+* Laptop Version
+
+Checkout Layout
+* Mobile Version
+* Laptop Version
+
 Login Layout
 * Mobile Version
 * Laptop Version
