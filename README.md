@@ -2,7 +2,36 @@
 
 Nail Deck is an online website for selling hand made nail polishes to customers. Their polishes are inspired by pirates which includes the names of the products.
 
+Content
+* [UX]()
+    * [Aim]()
+    * [Research]()
+    * [User Stories]()
+    * [Design Choices]()
+    * [Wireframes/Flow Chart]()
+* [Features]()
+    * [Existing Features]()
+    * [Future Features]()
+* [Information Architecture]()
+    * [Database choice]()
+    * [Data Models]()
+* [Technologies Used]()
+* [Testing]()
+* [Deployment]()
+    * [Running Locally]()
+    * [Deploying To Heroku]()
+* [Credits]()
+
+
 # UX
+
+
+Project Goals
+Target Audience Goals
+Site Owner Goals
+User Stories
+User Requirements and Expectations
+
 ## Aim
 General goal
 * Easy to use
@@ -24,16 +53,20 @@ Site user
 * able to reset password
 * Have a profile
 
-
-
 Site Owner 
 * Sell products to customers
 * Able to put new products on to the website
-* 
 
-Flow Chart
+## Design Choices 
+Fonts
+Icons
+Colours
+Styling
+Images
+Backgrounds
+Planning✏️
 
-Wireframes
+## Wireframes/Flow Chart
 
 Product Layout
 * Mobile Version
@@ -54,3 +87,4 @@ Login Layout
 Register Layout
 * Mobile Version
 * Laptop Version
+
