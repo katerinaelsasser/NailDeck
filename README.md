@@ -5,9 +5,9 @@ Nail Deck is an online website for selling hand made nail polishes to customers.
 Content
 * [UX](https://github.com/katerinaelsasser/NailDeck#ux)
     * [Aim](https://github.com/katerinaelsasser/NailDeck#aim)
-        * [Target Audience]()
-        * [Visitor Goals]()
-        * [Online Shop Goals]()
+        * [Target Audience](https://github.com/katerinaelsasser/NailDeck#target-audience)
+        * [Visitor Goals](https://github.com/katerinaelsasser/NailDeck#visitor-goals)
+        * [Online Shop Goals](https://github.com/katerinaelsasser/NailDeck#online-shop-goals)
     * [Research]()
     * [User Stories]()
     * [Design Choices]()
@@ -49,8 +49,7 @@ The target audience for the brand Nail Deck are:
 
 
 ## Research
-* Looked at other websites that are very similar including Barry M, Boots, Asos, Next, Etsy.
-* Looked at what they all had in commom (login, request for login when purchasing items, cart, checkout, view all products.)
+Before creating the website, I looked at other companies that sell the same products. Including Barry M, Boots, ASOS, Next and Etsy. I looked at what they featured on the website and I looked at what they all had in common as well as what worked well. The research I do on this, will effect what I feature on the website pages.
 
 ## User stories 
 
