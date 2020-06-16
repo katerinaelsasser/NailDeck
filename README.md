@@ -8,8 +8,8 @@ Content
         * [Target Audience](https://github.com/katerinaelsasser/NailDeck#target-audience)
         * [Visitor Goals](https://github.com/katerinaelsasser/NailDeck#visitor-goals)
         * [Online Shop Goals](https://github.com/katerinaelsasser/NailDeck#online-shop-goals)
-    * [Research]()
-    * [User Stories]()
+    * [Research](https://github.com/katerinaelsasser/NailDeck#research)
+    * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
     * [Design Choices]()
     * [Wireframes/Flow Chart]()
 * [Features]()
@@ -43,7 +43,7 @@ The target audience for the brand Nail Deck are:
 ### Online Shop Goals
 * A clear and easy to use website that anyone can use it.
 * Linking elements should link to the correct locations.
-* The website should work on all size devices (sm, md, lg).
+* The website should work on all size devices (sm, md, lg). This includes the navigation and the features,
 * There must be a clear navigation linking all pages together.
 * Admin must be able to access both the main website and the admin page.
 
@@ -52,14 +52,19 @@ The target audience for the brand Nail Deck are:
 Before creating the website, I looked at other companies that sell the same products. Including Barry M, Boots, ASOS, Next and Etsy. I looked at what they featured on the website and I looked at what they all had in common as well as what worked well. The research I do on this, will effect what I feature on the website pages.
 
 ## User stories 
-
-Site user
-* Able to view all products
-* Able to purchase the products
-* Create a login
-* Able to log in 
-* able to reset password
-* Have a profile
+### Site user
+As a visitor on the Nail Deck website, I want/expect:
+* To view all products that is available to purchase.
+* To be able to put products I want to buy in a cart.
+* To be able to check out producst I want to buy.
+* To be able put in address/payment details with ease.
+* To create a login easily.
+* To be able to log in successfuly. 
+* To reset password if I forget it.
+* To have a profile for my account.
+* The website must be clear to use.
+* The infomation of the company on the website that I can view.
+* To find infomation of how to contact the business if needed.
 
 Site Owner 
 * Sell products to customers
