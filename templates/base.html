@@ -19,7 +19,7 @@
 <body>
 
     <!-- nav bar -->
-   {% include 'components/navbar.html' %}
+   {% include 'layout/navbar.html' %}
 
     {% if messages %}
         <div class="alert alert-success">
@@ -36,7 +36,7 @@
     {% block content %} {% endblock %}
 
     <!---Footer--->
-    {% include 'components/footer.html' %}
+    {% include 'layout/footer.html' %}
         
     <!---Script--->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
