@@ -14,25 +14,34 @@
 </div>
 
 <div class="row text-center py-5">
-<!---products link--->
-      <div class="col-lg-4">
-        <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
-        <p>Description about products.</p>
-        <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
-      </div>
-<!---login link--->
-      <div class="col-lg-4">
-        <h2><a href="{% url 'login' %}">Welcome Back Aboard</a></h2>
-        <p>Description about login.</p>
-        <a class="btn btn-dark" href="{% url 'login' %}" role="button">Log In »</a>
-      </div>
-<!---register link--->
-      <div class="col-lg-4">
-        <h2><a href="{% url 'register' %}">Become A Pirate</a></h2>
-        <p>Description about register.</p>
-        <a class="btn btn-dark" href="{% url 'register' %}" role="button">Create an account »</a>
-      </div>
+{% if user.is_authenticated %}
+        <!---products link--->
+        <div class="col-lg-4">
+            <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
+            <p>Description about products.</p>
+            <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
+        </div>
+    <!---login link--->
+        <div class="col-lg-4">
+            <h2><a href="{% url 'login' %}">Welcome Back Aboard</a></h2>
+            <p>Description about login.</p>
+            <a class="btn btn-dark" href="{% url 'login' %}" role="button">Log In »</a>
+        </div>
+    <!---register link--->
+        <div class="col-lg-4">
+            <h2><a href="{% url 'register' %}">Become A Pirate</a></h2>
+            <p>Description about register.</p>
+            <a class="btn btn-dark" href="{% url 'register' %}" role="button">Create an account »</a>
+        </div>
+{%  else %}
+<div class="container-fluid">
+            <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
+            <p>Description about products.</p>
+            <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
     </div>
+{% endif %}
+
+</div>
 
 <div class="container-fluid">
     <img class="img-fluid" src="{% static 'images/display-10.jpg' %}">
