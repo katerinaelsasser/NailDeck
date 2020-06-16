@@ -66,9 +66,12 @@ As a visitor on the Nail Deck website, I want/expect:
 * The infomation of the company on the website that I can view.
 * To find infomation of how to contact the business if needed.
 
-Site Owner 
-* Sell products to customers
-* Able to put new products on to the website
+### Site Owner 
+As the owner of the website, I want/expect:
+* To sell products to customers on the website.
+* To be able to put new products on with ease.
+* Information of the business displayed so vistors can view it.
+* Contact details must be displayed so the vistors can find it if needed.
 
 ## Design Choices 
 Fonts
