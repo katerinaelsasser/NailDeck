@@ -11,6 +11,7 @@ Content
     * [Research](https://github.com/katerinaelsasser/NailDeck#research)
     * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
     * [Design Choices]()
+        * [Overall]()
     * [Wireframes/Flow Chart]()
 * [Features]()
     * [Existing Features]()
@@ -74,13 +75,20 @@ As the owner of the website, I want/expect:
 * Contact details must be displayed so the vistors can find it if needed.
 
 ## Design Choices 
-Fonts
-Icons
-Colours
-Styling
-Images
-Backgrounds
-Planning✏️
+### Overall
+The overall design layout of the website has to have a simple layout with elements of pirates and have a stylyish presentation for the beauty cosemetic presentation. 
+
+### Fonts
+The font I have decided to use two fonts for the website. One is for the title and the headers. The other is for the main text.
+* Font 1 - Helsing
+* Font 2 -  Geographica Hand
+### Icons
+### Colours
+### Styling
+### Images
+### Backgrounds
+
+## Planning
 
 ## Wireframes/Flow Chart
 
