@@ -6,9 +6,12 @@ body,
     margin: 0;
 }
 
-h1,
-h2 {
+h1 {
     font-family: 'Meddon', cursive;
+}
+
+h2 {
+    font-family: 'Tangerine', cursive;
 }
 
 .icon-bar {
