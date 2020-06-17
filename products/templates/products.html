@@ -7,8 +7,8 @@
 <div class="container-fluid">
     <img class="img-fluid" src="{% static 'images/display-2.jpg' %}">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Explore Our Treasures</h1>
-      <h4 class="lead">Check our treasure, full of items every pirate hunts for.</h4>
+      <h1>Explore Our Treasures</h1>
+      <h2>Check our treasure, full of items every pirate hunts for.</h2>
     </div>
 </div>
 
@@ -20,7 +20,7 @@
             <div class="card border-0 shadow">
                 <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body text-center">
-                <h3 class="card-title mb-0">{{ product.name }}</h3>
+                <h1 class="card-title mb-0">{{ product.name }}</h1>
                 <div class="card-text text-black-50">{{ product.description }}</div>
                 <h3 class="card-text mb-0">£{{ product.price }}</h3>
                     <div class="btn-group">
