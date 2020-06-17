@@ -6,8 +6,9 @@ body,
     margin: 0;
 }
 
-h1 {
-    font-family: Maddon;
+h1,
+h2 {
+    font-family: 'Meddon', cursive;
 }
 
 .icon-bar {
