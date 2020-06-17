@@ -80,8 +80,8 @@ The overall design layout of the website has to have a simple layout with elemen
 
 ### Fonts
 The font I have decided to use two fonts for the website. One is for the title and the headers. The other is for the main text.
-* Font 1 - Meddon
-* Font 2 - Tangerine
+* Font 1 (Meddon) - This is style is handwritting which looked very old fashioned. I chose this for h1 tags for the title of the website and also the titles of the products 
+* Font 2 (Tangerine) - This font is also a handwritting style. I wanted to use this for titles for pages and any sub titles for products.
 ### Icons
 ### Colours
 ### Styling
