@@ -1,18 +1,42 @@
 <footer class="border-top">
-    <div class="row">
-      <div class="col-sm-12 col-md-4 footer-item">
-        <h1>Nail Deck</h1>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="{% url 'about' %}">About</a></li>
-          <li><a class="text-muted" href="{% url 'terms' %}">Terms & Conditions</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-12 col-md-4 footer-item">
-        <h5>Contact</h5>
-        <p class="text-muted">
-        <i class="fa fa-facebook"></i> 
-        <i class="fa fa-instagram"></i>
-        </p>
-      </div>
+    <div class="row footer-item">
+        <div class="col-md-6 mt-md-0 mt-3">
+            <h1>Nail Deck</h1>
+        </div>
+        <!----Pages---->
+        <div class="col-md-3 mb-md-0 mb-3">
+            <h2><strong>Pages</strong></h2>
+            <ul class="list-unstyled">
+                <li>
+                    <h3>
+                        <a class="text-muted" href="{% url 'about' %}">About</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a class="text-muted" href="{% url 'contact' %}">Contact Us</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a class="text-muted" href="{% url 'faq' %}">FAQs</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a class="text-muted" href="{% url 'terms' %}">Terms & Conditions</a>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+        <!----Admin---->
+        <div class="col-md-3 mb-md-0 mb-3">
+            <h2><strong>Admin</strong></h2>
+            <h3><a class="text-muted" href="{% url 'admin' %}">Sign Back In</a></h3>
+        </div>
     </div>
+    <!---GitHub---->
+    <div class="text-center py-3">© 2018-2020 Katerina Elsasser:
+    <a href="https://github.com/katerinaelsasser/NailDeck"> GitHub</a>
+  </div>
   </footer>

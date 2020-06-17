@@ -15,7 +15,7 @@ def terms_view(request):
 #FAQ page
 def faq_view(request):
     return render(request, "faq.html")
-    
+
 #Contact page
 def contact_view(request):
     return render(request, "contact.html")
