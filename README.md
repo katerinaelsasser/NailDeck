@@ -80,8 +80,8 @@ The overall design layout of the website has to have a simple layout with elemen
 
 ### Fonts
 The font I have decided to use two fonts for the website. One is for the title and the headers. The other is for the main text.
-* Font 1 - Helsing
-* Font 2 -  Geographica Hand
+* Font 1 - Meddon
+* Font 2 - Tangerine
 ### Icons
 ### Colours
 ### Styling
