@@ -5,19 +5,17 @@
 
 <!----Log In Form-->
 <div class="container-fluid">
-    <img class="img-fluid" src="{% static 'images/display-7.jpg' %}">
-</div>
-<div class="col-12">
-    <div class="login d-flex align-items-center py-5">
-        <div class="col-md-9 col-lg-8 mx-auto">
-            <h1 class="login-heading text-center">Log In</h1>
-            <form method="post" action="{% url 'login' %}" class="accountform">
-                <fieldset class="form-group">
-                    {% csrf_token %}
-                    {{ user_form | as_bootstrap }}
-                    <button type="submit" class="btn btn-dark btn-lg btn-block">Log In</button>
-                </fieldset>
-            </form>
+    <div class="px-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1>Log In</h1>
+    <div class="container">
+        <form method="post" action="{% url 'login' %}" class="accountform">
+            <fieldset class="form-group">
+                {% csrf_token %}
+                {{ user_form | as_bootstrap }}
+                <button type="submit" class="btn btn-dark btn-lg btn-block">Log In</button>
+            </fieldset>
+        </form>
+    </div>
             <div class="text-center">
                 <p>
                     <a href="{% url 'password_reset' %}">Forgot your password?</a>
@@ -26,7 +24,7 @@
                     <a href="{% url 'register' %}">Create an account today</a>
                 </p> 
             </div>
-        </div>
     </div>
+    <img class="img-fluid" src="{% static 'images/display-7.jpg' %}">
 </div>
 {% endblock %}
