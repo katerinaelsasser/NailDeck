@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block content %}
+
+<!----Header Display---->
+<div class="container-fluid">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Welcome, {{ user.email }} </h1>
+        <h4 class="lead">Add, delete and adjust products.</h4>
+    </div>
+    <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
+</div>
+
+<!---Products---->
+<div class="container-fluid">
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">Products</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for product in products %}
+    <tr>
+      <td>{{ product.name }}</td>
+      <td>£{{ product.price }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+     
+
+{% endblock %}

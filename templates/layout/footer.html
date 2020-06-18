@@ -18,9 +18,14 @@
         <!----Admin---->
         <div class="col-md-3 mb-md-0 mb-3">
             <h2><strong>Admin</strong></h2>
-            <a class="text-muted" href="#">Sign Back In</a>
+            {% if user.is_authenticated %}
+            <a class="dropdown-item" href="{% url 'admin_profile' %}">Profile</a>
+            <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
+            {%  else %}
+            <a class="text-muted" href="{% url 'login' %}">Sign In</a>
+            {% endif %}
+            </div>
         </div>
-    </div>
     <!---GitHub---->
     <div class="text-center py-3">© 2018-2020 Katerina Elsasser:
     <a href="https://github.com/katerinaelsasser/NailDeck"> GitHub</a>
