@@ -4,42 +4,43 @@
 
 <!----Header Display---->
 <div class="container-fluid">
+<div class="px-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1>Welcome Aboard Nail Deck</h1>
+      <h2>Nail Deck is inspired by the famous pirates of the sea and bring the buried treasure to your home.</h2>
+    </div>
     <img class="img-fluid" src="{% static 'images/display-1.jpg' %}">
-    <div class="px-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Welcome Aboard Nail Deck</h1>
-      <h4 class="lead">Nail Deck is inspired by the famous pirates of the sea and bring the buried treasure to your home.</h4>
-    </div>
-    <div class="container-fluid row py-3">
-    </div>
 </div>
 
 <div class="row text-center py-5">
 {% if user.is_authenticated %}
-<div class="container-fluid">
-            <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
-            <p>Description about products.</p>
-            <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
+    <div class="container-fluid">
+        <h1><a href="{% url 'products' %}"><i class="fa fa-gem"></i></a></h1>
+        <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
+        <p>We have travelled far and wide to get the treasures from around the world and have put them all in one place.</p>
+        <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
     </div>
 {%  else %}
         <!---products link--->
-        <div class="col-lg-4">
-            <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
-            <p>Description about products.</p>
-            <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
-        </div>
+    <div class="col-lg-4">
+        <h1><a href="{% url 'products' %}"><i class="fa fa-gem"></i></a></h1>
+        <h2><a href="{% url 'products' %}">View Our Treatures</a></h2>
+        <p>We have travelled far and wide to get the treasures from around the world and have put them all in one place.</p>
+        <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
+    </div>
     <!---login link--->
-        <div class="col-lg-4">
-            <h2><a href="{% url 'login' %}">Welcome Back Aboard</a></h2>
-            <p>Description about login.</p>
-            <a class="btn btn-dark" href="{% url 'login' %}" role="button">Log In »</a>
-        </div>
+    <div class="col-lg-4">
+        <h1><a href="{% url 'login' %}"><i class="fa fa-skull-crossbones"></i></a></h1>
+        <h2><a href="{% url 'login' %}">Welcome Back Aboard</a></h2>
+        <p>Have an account with us? Then come back aboard the Nail Deck group and start shopping today.</p>
+        <a class="btn btn-dark" href="{% url 'login' %}" role="button">Log In »</a>
+    </div>
     <!---register link--->
-        <div class="col-lg-4">
-            <h2><a href="{% url 'register' %}">Become A Pirate</a></h2>
-            <p>Description about register.</p>
-            <a class="btn btn-dark" href="{% url 'register' %}" role="button">Create an account »</a>
-        </div>
-
+    <div class="col-lg-4">
+        <h1><a href="{% url 'login' %}"><i class="fa fa-dharmachakra"></i></a></h1>
+        <h2><a href="{% url 'register' %}">Become A Pirate</a></h2>
+        <p>Don't have an account? Become a pirate today to shop our range.</p>
+        <a class="btn btn-dark" href="{% url 'register' %}" role="button">Create an account »</a>
+    </div>
 {% endif %}
 </div>
 
