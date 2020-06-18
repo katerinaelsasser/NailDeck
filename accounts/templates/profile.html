@@ -13,4 +13,27 @@
     </div>
 </div>
 
+<!---Order History---->
+<div class="container-fluid">
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Products</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for order_histroy in order_histroy %}
+    <tr>
+      <th>{{order_histroy.date}}</th>
+      <td>{{order_histroy.product}}</td>
+      <td>{{order_histroy.total}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+
 {% endblock %}

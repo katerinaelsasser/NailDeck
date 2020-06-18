@@ -39,9 +39,8 @@ def login(request):
 
 @login_required
 def profile(request):
-    """A view that displays the profile page of a logged in user"""
-    return render(request, 'profile.html')
-
+    order_histroy = Order.objects.all()
+    return render(request, 'profile.html', {"order_histroy": order_histroy})
 
 def register(request):
     """A view that manages the registration form"""
