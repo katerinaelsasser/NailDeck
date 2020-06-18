@@ -10,8 +10,9 @@ Content
         * [Online Shop Goals](https://github.com/katerinaelsasser/NailDeck#online-shop-goals)
     * [Research](https://github.com/katerinaelsasser/NailDeck#research)
     * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
-    * [Design Choices]()
-        * [Overall]()
+    * [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices)
+        * [Overall](https://github.com/katerinaelsasser/NailDeck#overall)
+        * [Fonts](https://github.com/katerinaelsasser/NailDeck#fonts)
     * [Wireframes/Flow Chart]()
 * [Features]()
     * [Existing Features]()
@@ -76,12 +77,13 @@ As the owner of the website, I want/expect:
 
 ## Design Choices 
 ### Overall
-The overall design layout of the website has to have a simple layout with elements of pirates and have a stylyish presentation for the beauty cosemetic presentation. 
+The overall design layout of the website has to have a simple layout with elements of pirates to show that these products have been inspired by them and have a stylish presentation for the beauty cosemetic presentation. With a lot of websites looking modern, I will need to feature things that have elements of the pirates style with modern features to them.
 
 ### Fonts
-The font I have decided to use two fonts for the website. One is for the title and the headers. The other is for the main text.
-* Font 1 (Meddon) - This is style is handwritting which looked very old fashioned. I chose this for h1 tags for the title of the website and also the titles of the products 
-* Font 2 (Tangerine) - This font is also a handwritting style. I wanted to use this for titles for pages and any sub titles for products.
+The font I have decided to use three font styles. Two are for the headers and the third is for text such as paragraphs. The two I chose for as headers are handwritting styles and they would bring the element of the pirate theme to the text. 
+* Font 1 (Meddon) - This font is chose for h1 tags for the title of the website and also the titles of the products. 
+* Font 2 (Tangerine) - This font is use for titles that are h2 and any sub titles.
+* Font 3 (Forum) - This font is for any paragraphs and anything that I don't want the user or site owner to miss read.
 ### Icons
 ### Colours
 ### Styling
