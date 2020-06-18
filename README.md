@@ -83,10 +83,9 @@ As the owner of the website, I want/expect:
 The overall design layout of the website has to have a simple layout with elements of pirates to show that these products have been inspired by them and have a stylish presentation for the beauty cosemetic presentation. With a lot of websites looking modern, I will need to feature things that have elements of the pirates style with modern features to them.
 
 ### Fonts
-The font I have decided to use three font styles. Two are for the headers and the third is for text such as paragraphs. The two I chose for as headers are handwritting styles and they would bring the element of the pirate theme to the text. 
+The font I have decided to use two font styles. These fonts are for the headers, with these they would bring the element of the pirate theme to the text as they are handwriting and it would give the effect of a treasure map. 
 * Font 1 (Meddon) - This font is chose for h1 tags for the title of the website and also the titles of the products. 
 * Font 2 (Tangerine) - This font is use for titles that are h2 and any sub titles.
-* Font 3 (Forum) - This font is for any paragraphs and anything that I don't want the user or site owner to miss read.
 ### Icons
 I wanted to style the website with icons. The icons I wanted to feature must include some pirate themed icons, such as skull and cross bones.
 * The for the log in icon on the navbar has two icons. One for then the user is not logged in (which is the skull) and the other for when they are logged in (which is the skull and cross bones).
