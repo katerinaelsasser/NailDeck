@@ -13,6 +13,9 @@ Content
     * [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices)
         * [Overall](https://github.com/katerinaelsasser/NailDeck#overall)
         * [Fonts](https://github.com/katerinaelsasser/NailDeck#fonts)
+        * [Icons](https://github.com/katerinaelsasser/NailDeck#icons)
+        * [Colours](https://github.com/katerinaelsasser/NailDeck#colours)
+        * [Images](https://github.com/katerinaelsasser/NailDeck#images)
     * [Wireframes/Flow Chart]()
 * [Features]()
     * [Existing Features]()
@@ -85,10 +88,18 @@ The font I have decided to use three font styles. Two are for the headers and th
 * Font 2 (Tangerine) - This font is use for titles that are h2 and any sub titles.
 * Font 3 (Forum) - This font is for any paragraphs and anything that I don't want the user or site owner to miss read.
 ### Icons
+I wanted to style the website with icons. The icons I wanted to feature must include some pirate themed icons, such as skull and cross bones.
+* The for the log in icon on the navbar has two icons. One for then the user is not logged in (which is the skull) and the other for when they are logged in (which is the skull and cross bones).
 ### Colours
-### Styling
+
+* White - #FFFFFF
+* Orange - #FF7D45
+* Red - #C63232
+* Purple - #772953
+* Black - #000000
+
 ### Images
-### Backgrounds
+The images that have been displayed on the website are from [Unsplash](https://unsplash.com/) & [Pixabay](https://pixabay.com/). These are royalty free image website. The images that I have used are images of hands with nail varnish on the nails. I have tried to find images of people who are located at beaches or somewhere tropical in the image. These images would be help create the visual of the pirate theme while advertising the products.
 
 ## Planning
 
