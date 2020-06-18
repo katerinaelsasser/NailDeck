@@ -5,30 +5,30 @@
 
 <!----Header Display---->
 <div class="container-fluid">
-    <img class="img-fluid" src="{% static 'images/display-2.jpg' %}">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1>Explore Our Treasures</h1>
-      <h2>Check our treasure, full of items every pirate hunts for.</h2>
+        <h1>Explore Our Treasures</h1>
+        <h2>Check our treasure, full of items every pirate hunts for.</h2>
     </div>
+    <img class="img-fluid" src="{% static 'images/display-2.jpg' %}">
 </div>
 
 <!-----Product Display------>
 <div class="container-fluid">
-    <div class="row mb-2">
+    <div class="row mb-2 px-3 py-5">
     {% for product in products %}
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-0 shadow">
                 <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body text-center">
-                <h1 class="card-title mb-0">{{ product.name }}</h1>
-                <div class="card-text text-black-50">{{ product.description }}</div>
-                <h3 class="card-text mb-0">£{{ product.price }}</h3>
+                    <h1 class="card-title">{{ product.name }}</h1>
+                    <h2 class="card-text">Colour: {{ product.description }}</h2>
+                    <h1 class="card-text">£{{ product.price }}</h1>
                     <div class="btn-group">
                         <form method="post" action="{% url 'add_to_cart' product.id %}">
                             {% csrf_token %}
                             <div class="input-group">
                                 <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Qty" required>
-                                <span class="input-group-btn">
+                                <span class="input-group-btn px-3">
                                     <button class="btn btn-success" type="submit">Add</button>
                                 </span>
                             </div>
