@@ -69,6 +69,11 @@ caption p {
     min-height: 40px;
 }
 
+/*---------headers-----------*/
+.header-title {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
 
 /*------your images------*/
 .insta-accounts {
