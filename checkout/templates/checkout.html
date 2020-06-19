@@ -20,31 +20,31 @@
       <h1 class="display-4">Purchase Your Items</h1>
     </div>
 </div>
+<div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+    <!----Payment form----->
+    <div class="container text-center">
+        <h2>Total: £{{ total }}</h2>
+    </div>
 
-<!----Payment form----->
-<div class="row">
-    <p>Total</p>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+    <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+        <div id="credit-card-errors" style="display: none;">
+            <div id="alert-message block-message error" id="stripe-error-message"></div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+            <legend>Delivery Details</legend>
+                {{ order_form | as_bootstrap }}
+            </div>
+            <div class="form-group col-md-6">
+                <legend>Payment Details</legend>
+
+                {{ payment_form | as_bootstrap }}
+            </div>
+        </div>
+        {% csrf_token %}
+        <div class="form-group text-center">
+            <input class="btn-dark btn-lg btn-block" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+        </div>
+    </form>
 </div>
-
-<form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <legend>Payment Details</legend>
-
-    <div id="credit-card-errors" style="display: none;">
-        <div id="alert-message block-message error" id="stripe-error-message"></div>
-    </div>
-
-    <div class="form-group col-md-6">
-        {{ order_form | as_bootstrap }}
-    </div>
-
-    <div class="form-group col-md-6">
-        {{ payment_form | as_bootstrap }}
-    </div>
-
-    {% csrf_token %}
-    <div class="form-group col-md-12">
-        <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
-    </div>
-</form>
 {% endblock %}
