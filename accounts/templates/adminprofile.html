@@ -55,14 +55,12 @@
         </tr>
     </thead>
     <tbody>
-        {% for order in orders %}
         <tr>
-        <td>{{ order.date }}</td>
-        <td>{{ order.name }}</td>
-        <td>£{{ order.quantity }}</td>
-        <td>£{{ order.total }}</td>
+        <td>Order Date</td>
+        <td>Order Name</td>
+        <td>Order QTY</td>
+        <td>£Total</td>
         </tr>
-        {% endfor %}
     </tbody>
     </table>
     </div>

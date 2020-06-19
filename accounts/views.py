@@ -4,6 +4,7 @@ from django.core.urlresolvers import reverse
 from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
+from products.models import Product
 
 def logout(request):
     auth.logout(request)
@@ -69,4 +70,5 @@ def register(request):
 # Admin
 @login_required
 def admin_profile(request):
-    return render(request, 'adminprofile.html')
+    products = Product.objects.all()
+    return render(request, 'adminprofile.html', {"products": products})
