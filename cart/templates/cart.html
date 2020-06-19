@@ -11,7 +11,11 @@
     <img class="img-fluid" src="{% static 'images/display-3.jpg' %}">
 </div>
 {% if nothing_in_cart %}
-{% endfor %}
+<h1>Shopping cart is empty</h1>
+{% else %}
+<h1></h1>
+{% endif %}
+
 <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
 <!---Basket--->
 <div class="row">
@@ -69,5 +73,5 @@
         </div>
     </div>
 </div>
-
+</div>
 {% endblock %}

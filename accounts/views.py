@@ -65,6 +65,8 @@ def register(request):
     args = {'user_form': user_form}
     return render(request, 'register.html', args)
 
+
+# Admin
 @login_required
 def admin_profile(request):
     return render(request, 'adminprofile.html')
