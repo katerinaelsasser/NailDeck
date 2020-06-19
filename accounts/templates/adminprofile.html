@@ -12,52 +12,55 @@
     <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
 </div>
 
-<!---Products---->
-<div class="container-fluid">
-<h1>Products</h1>
-<table class="table container">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Description</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for product in products %}
-    <tr>
-      <td>{{ product.name }}</td>
-      <td>£{{ product.description }}</td>
-      <td>£{{ product.price }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<!---Admin Display---->
+<div class="row">
+    <!---Products---->
+    <div class="container col-sm-12 col-md-6">
+    <h1 class="header-title text-center">Products</h1>
+    <table class="table container">
+    <thead>
+        <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price</th>
+        <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in products %}
+        <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.description }}</td>
+        <td>£{{ product.price }}</td>
+        <td>Delete</td> 
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    </div>
+    <!---Order---->
+    <div class="container col-sm-12 col-md-6">
+    <h1 class="header-title text-center">Orders</h1>
+    <table class="table container">
+    <thead>
+        <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %}
+        <tr>
+        <td>{{ order.date }}</td>
+        <td>{{ order.name }}</td>
+        <td>£{{ order.quantity }}</td>
+        <td>£{{ order.total }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    </div>
 </div>
-
-<!---Order---->
-<div class="container-fluid">
-<h1>Orders</h1>
-<table class="table container">
-  <thead>
-    <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Name</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Total</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for order in orders %}
-    <tr>
-      <td>{{ order.date }}</td>
-      <td>{{ order.name }}</td>
-      <td>£{{ order.quantity }}</td>
-      <td>£{{ order.total }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-</div>
-
 {% endblock %}
