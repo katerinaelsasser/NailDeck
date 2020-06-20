@@ -36,7 +36,11 @@
         <td>{{ product.name }}</td>
         <td>{{ product.description }}</td>
         <td>£{{ product.price }}</td>
-        <td>Delete</td> 
+        <td>
+            <a href="{% url 'delete_product' product.id %}">
+                <button type="submit">Delete</button>
+            </a>
+        </td> 
         </tr>
         {% endfor %}
     </tbody>
