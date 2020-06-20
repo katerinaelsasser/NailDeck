@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<div class="container-fluid">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1>Your Images</h1>
+      <p class="py-3">We love your images of our varnishes. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
+    </div>
+    <div class="row">
+        <div class="insta-accounts col-sm-12 col-md-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-1.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <h2><a href="https://www.instagram.com/">@JessicaFair</a></h2>
+        </div>
+        </div>
+        <div class="insta-accounts col-sm-12 col-md-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-2.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <h2><a href="https://www.instagram.com/">@Sammy_Doe</a></h2>
+            </div>
+        </div>
+        <div class="insta-accounts col-sm-12 col-md-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-3.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <h2><a href="https://www.instagram.com/">@Kit.E</a></h2>
+            </div>
+        </div>
+        <div class="insta-accounts col-sm-12 col-md-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-4.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <h2><a href="https://www.instagram.com/">@M.Bay</a></h2>
+        </div>
+        </div>
+    </div>
+</div>
