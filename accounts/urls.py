@@ -1,7 +1,6 @@
 from django.conf.urls import url, include
 from . import urls_reset
 from .views import register, profile, logout, login, admin_profile
-
 urlpatterns = [
     url(r'^register/$', register, name='register'),
     url(r'^profile/$', profile, name='profile'),

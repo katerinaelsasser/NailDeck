@@ -73,8 +73,3 @@ def register(request):
 def admin_profile(request):
     products = Product.objects.all()
     return render(request, 'adminprofile.html', {"products": products})
-
-def delete_product(request, pk):
-    if request.method == "POST":
-    product.delete()
-    return redirect(request, 'adminprofile.html', {"products": products})
