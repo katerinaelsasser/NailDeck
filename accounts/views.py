@@ -5,6 +5,7 @@ from .forms import UserLoginForm, UserRegistrationForm
 from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 from products.models import Product
+from checkout.models import Order, OrderLineItem
 
 def logout(request):
     auth.logout(request)
