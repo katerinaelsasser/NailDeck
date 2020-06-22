@@ -1,8 +1,18 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static from staticfiles %}
 {% block content %}
 <div class="col-sm-12">
+            
+        </div>
+
+        <!----Content---->
+<div class="container-fluid">
+    <div class="header-title text-center">
+      <h1 class="display-4">Contact Us</h1>
+      <h2>Have a question? Fill in the form below and send it in to our team who will be able to answer any questions you have.</h2>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <form method="POST" class="form" action="{% url 'contact' %}">
-                {% csrf_token %}
+            {% csrf_token %}
                 <div class="form__group">
                     <label class="form__group__label" for="name">Name<span class="form__required">*</span></label>
                     {{contact_form.name}}
@@ -15,7 +25,52 @@
                     <label class="form__group__label" for="message">Message<span class="form__required">*</span></label>
                     {{contact_form.message}}
                 </div>
-                <button class="form__submit btn btn--primary" type="submit">Send Message</button>
+                <button class="btn btn-dark" type="submit">Send Message</button>
             </form>
         </div>
+    </div>
+    <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
+</div>
+
+<!---Your Images--->
+<div class="container-fluid">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1>Your Images</h1>
+      <p class="py-3">We love your images of our varnishes. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
+    </div>
+    <div class="row">
+        <div class="insta-accounts col-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-5.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <h2><a href="https://www.instagram.com/">@BethH</a></h2>
+        </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-6.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <h2><a href="https://www.instagram.com/">@Lucy_Smith</a></h2>
+            </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-7.jpg' %}">
+            </a>
+            <div class="insta-accounts">
+                <h2><a href="https://www.instagram.com/">@LouiseXOX</a></h2>
+            </div>
+        </div>
+        <div class="insta-accounts col-3">
+            <a href="{% url 'products' %}">
+                <img class="img-fluid" src="{% static 'images/instagram-8.jpg' %}">
+            </a>
+        <div class="insta-accounts">
+            <h2><a href="https://www.instagram.com/">@CBennet</a></h2>
+        </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

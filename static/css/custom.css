@@ -11,7 +11,7 @@ h2 {
     font-size: 6rem;
 }
 
-/*---------------*/
+/*------whole website---------*/
 body,
 .container-fluid,
 .row {
@@ -21,10 +21,6 @@ body,
 
 .icon-bar {
     background-color: #fff;
-}
-
-.accountform {
-    padding-top: 20px;
 }
 
 .badge {
@@ -75,7 +71,7 @@ caption p {
 
 /*---------headers-----------*/
 .header-title {
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -108,7 +104,7 @@ footer {
     margin-top: 50px;
 }
 
-/*--------login-------*/
+/*--------account pages-------*/
 :root {
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
@@ -212,7 +208,9 @@ footer {
   }
 }
 
-/*-----register-----*/
+.accountform {
+    padding-top: 20px;
+}
 
 .register-img {
     height: 20%;
