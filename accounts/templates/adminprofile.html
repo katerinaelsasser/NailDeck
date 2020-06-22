@@ -34,8 +34,7 @@
         {% for product in products %}
         <tr>
         <td>{{ product.name }}</td>
-        <td>{{ product.colour }}</td>
-        <td>{{ product.size }}</td>
+        <td>{{ product.description }}</td>
         <td>£{{ product.price }}</td>
         <td>
                 <button type="submit">Delete</button>
@@ -53,17 +52,15 @@
         <tr>
         <th scope="col">Date</th>
         <th scope="col">Name</th>
-        <th scope="col">Quantity</th>
         <th scope="col">Total</th>
         </tr>
     </thead>
     <tbody>
-    {% for all_order in all_orders %}
+    {% for order in orders %}
         <tr>
-        <td>Date </td>
-        <td>Name</td>
-        <td>{{ all_order.order_items }}</td>
-        <td>£{{ all_order.order_total }}</td>
+        <td>{{ order.date}}</td>
+        <td>{{ order.full_name }}</td>
+        <td>£{{ order.total }}</td>
         </tr>
         {% endfor %}
     </tbody>

@@ -71,5 +71,8 @@ def register(request):
 # Admin
 @login_required
 def admin_profile(request):
+#display products
     products = Product.objects.all()
-    return render(request, 'adminprofile.html', {"products": products})
+#display orders
+    orders = Order.objects.all()
+    return render(request, 'adminprofile.html', {"products": products, 'orders': orders})
