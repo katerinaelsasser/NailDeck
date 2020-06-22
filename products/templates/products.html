@@ -21,7 +21,8 @@
                 <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body text-center">
                     <h1 class="card-title">{{ product.name }}</h1>
-                    <h2 class="card-text">Colour: {{ product.description }}</h2>
+                    <h2 class="card-text">Colour: {{ product.colour }}</h2>
+                    <h2 class="card-text">Size: {{ product.size }}</h2>
                     <h1 class="card-text">£{{ product.price }}</h1>
                     <div class="btn-group">
                         <form method="post" action="{% url 'add_to_cart' product.id %}">
