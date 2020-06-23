@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'checkout',
     'storages',
     'pages',
-    'sweetify'
+    'sweetify',
 ]
 
 MIDDLEWARE = [
@@ -168,12 +168,5 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-#SWEETIFY
+#Sweetify
 SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
-
-sweetify.DEFAULT_OPTS = {
-    'showConfirmButton': False,
-    'timer': 2500,
-    'allowOutsideClick': True,
-    'confirmButtonText': 'OK',
-}
