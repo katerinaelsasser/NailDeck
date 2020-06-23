@@ -16,7 +16,7 @@ Content
         * [Icons](https://github.com/katerinaelsasser/NailDeck#icons)
         * [Colours](https://github.com/katerinaelsasser/NailDeck#colours)
         * [Images](https://github.com/katerinaelsasser/NailDeck#images)
-    * [Wireframes/Flow Chart]()
+    * [Wireframes]()
 * [Features]()
     * [Existing Features]()
     * [Future Features]()
@@ -100,27 +100,32 @@ I wanted to style the website with icons. The icons I wanted to feature must inc
 ### Images
 The images that have been displayed on the website are from [Unsplash](https://unsplash.com/) & [Pixabay](https://pixabay.com/). These are royalty free image website. The images that I have used are images of hands with nail varnish on the nails. I have tried to find images of people who are located at beaches or somewhere tropical in the image. These images would be help create the visual of the pirate theme while advertising the products.
 
-## Planning
-
-## Wireframes/Flow Chart
+## Wireframes
 
 Product Layout
-* Mobile Version
-* Laptop Version
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/products-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/products-laptop.jpg)
 
 Cart Layout
-* Mobile Version
-* Laptop Version
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/cart-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/cart-laptop.jpg)
 
 Checkout Layout
-* Mobile Version
-* Laptop Version
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/checkout-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/checkout-laptop.jpg)
 
 Login Layout
-* Mobile Version
-* Laptop Version
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/login-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/login-laptop.jpg)
 
 Register Layout
-* Mobile Version
-* Laptop Version
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/register-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/register-laptop.jpg)
 
+User Profile Layout
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/user-profile-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/user-profile-laptop.jpg)
+
+Admin Profile Layout
+* [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-mobile.jpg)
+* [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-laptop.jpg)
