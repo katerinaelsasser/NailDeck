@@ -11,6 +11,13 @@ h2 {
     font-size: 6rem;
 }
 
+.navbar-brand {
+    font-family: 'Meddon', cursive;
+}
+
+.nav-link {
+    font-family: 'Tangerine', cursive;
+}
 /*------whole website---------*/
 body,
 .container-fluid,
