@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, reverse
-import sweetify
 
 # Create your views here.
 def view_cart(request):
@@ -14,10 +13,8 @@ def add_to_cart(request, id):
     cart = request.session.get('cart', {})
     if id in cart:
         cart[id] = int(cart[id]) + quantity     
-        sweetify.success(request, 'Added!', text='ARRRRRRR! The Treasure is added to your basket!', persistent='Hell yeah')
     else:
         cart[id] = cart.get(id, quantity) 
-        sweetify.success(request, 'Added!', text='ARRRRRRR! The Treasure is added to your basket!', persistent='Hell yeah')
 
 
     request.session['cart'] = cart
