@@ -129,3 +129,14 @@ The images that have been displayed on the website are from [Unsplash](https://u
 ### Admin Profile Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-laptop.jpg)
+
+## Features
+
+## Technologies Used
+## Planning + Testing:
+## Bugs
+## Deployment
+## Deploying to Heroku
+## Locally run this project
+## Credits
+## Disclaimer
