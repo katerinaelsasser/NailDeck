@@ -102,30 +102,30 @@ The images that have been displayed on the website are from [Unsplash](https://u
 
 ## Wireframes
 
-Product Layout
+### Product Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/products-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/products-laptop.jpg)
 
-Cart Layout
+### Cart Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/cart-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/cart-laptop.jpg)
 
-Checkout Layout
+### Checkout Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/checkout-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/checkout-laptop.jpg)
 
-Login Layout
+### Login Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/login-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/login-laptop.jpg)
 
-Register Layout
+### Register Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/register-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/register-laptop.jpg)
 
-User Profile Layout
+### User Profile Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/user-profile-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/user-profile-laptop.jpg)
 
-Admin Profile Layout
+### Admin Profile Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-mobile.jpg)
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-laptop.jpg)
