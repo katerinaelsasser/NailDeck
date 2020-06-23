@@ -10,8 +10,11 @@
     </div>
     <img class="img-fluid" src="{% static 'images/display-3.jpg' %}">
 </div>
-{% if cart == 0 %}
-<h1>Shopping cart is empty</h1>
+{% if total == 0 %}
+<div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+    <h1 class="text-center"><i class="fa fa-shopping-cart"></i></h1>
+    <h1 class="text-center">Shopping cart is empty</h1>
+</div>
 {% else %}
     <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!---Basket--->
