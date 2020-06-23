@@ -16,6 +16,8 @@ def add_to_cart(request, id):
     else:
         cart[id] = cart.get(id, quantity) 
 
+    sweetify.success(request, 'Added To Basket', text='ARRRRRRR, Your treasure has been added to your basket.', persistent='Hell yeah')
+
     request.session['cart'] = cart
     return redirect(reverse('products'))
 

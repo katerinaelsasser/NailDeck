@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import dj_database_url
-
 if os.path.exists('env.py'):
     import env
 
@@ -45,6 +44,7 @@ INSTALLED_APPS = [
     'checkout',
     'storages',
     'pages',
+    'sweetify'
 ]
 
 MIDDLEWARE = [
@@ -167,3 +167,13 @@ STRIPE_SECRET = os.getenv('STRIPE_SECRET')
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+#SWEETIFY
+SWEETIFY_SWEETALERT_LIBRARY = 'sweetalert2'
+
+sweetify.DEFAULT_OPTS = {
+    'showConfirmButton': False,
+    'timer': 2500,
+    'allowOutsideClick': True,
+    'confirmButtonText': 'OK',
+}
