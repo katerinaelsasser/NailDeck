@@ -41,7 +41,6 @@ def login(request):
 
 @login_required
 def profile(request):
-    order_histroy = Order.objects.all()
     orders = Order.objects.filter(user=request.user)
 
     all_orders = []
@@ -90,4 +89,4 @@ def admin_profile(request):
 #display orders
      
 
-    return render(request, 'adminprofile.html', {"products": products, 'orders': orders})
+    return render(request, 'adminprofile.html', {"products": products})

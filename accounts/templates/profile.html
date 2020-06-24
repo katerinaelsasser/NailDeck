@@ -31,10 +31,11 @@
   <tbody>
   {% if all_orders %}
     <tr>
-    {% for order in all_orders %}
-      <th>{{order.date}}</th>
-      <td>{{ order_item.product.name }}</td>
-      <td>{{ order_item.product.price }}</td>
+    {% for all_order in all_orders %}
+      <th>{{all_order.date}}</th>
+      <td>{{ all_order_item.product.name }}</td>
+      
+      <td>{{all_order.total}}</td>
     </tr>
     {% endfor %}
   </tbody>
