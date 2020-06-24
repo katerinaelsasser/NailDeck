@@ -70,7 +70,7 @@ def register(request):
             if user:
                 auth.login(request, user)
                 messages.success(request, "You have successfully registered")
-                return redirect(reverse('index'))
+                return redirect(reverse('homepage'))
 
             else:
                 messages.error(request, "unable to log you in at this time!")
