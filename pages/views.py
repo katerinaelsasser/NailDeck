@@ -27,7 +27,7 @@ def contact_view(request):
                       'k.elsasser@aol.co.uk'], fail_silently=False)
             messages.success(
                 request, "Your message has been sent, we will be in touch soon.")
-            return redirect('contact')
+            return redirect('homepage')
     else:
         contact_form = ContactForm()
     return render(request, "contact.html", {'contact_form': contact_form})
