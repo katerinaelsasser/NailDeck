@@ -9,7 +9,6 @@ from products.models import Product
 import stripe
 
 
-
 # Create your views here.
 
 stripe.api_key = settings.STRIPE_SECRET
@@ -22,8 +21,8 @@ def checkout(request):
         
         if order_form.is_valid() and payment_form.is_valid():
             order = order_form.save(commit=False)
-            order.user = request.user
             order.date = timezone.now()
+            order.user = request.user
             order.save()
             
             cart = request.session.get('cart', {})
