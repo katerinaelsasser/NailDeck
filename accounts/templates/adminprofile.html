@@ -10,7 +10,7 @@
     </div>
     <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
      <div class="header-title text-center">
-        <h1 class="container">Welcome Captian {{ user.email }} </h1>
+        <h1 class="container">Welcome Captian {{ user.username }} </h1>
     </div>
     <h4 class="text-center">Welcome to the admin page, Add, delete and adjust products as well as view orders that have been placed.</h4>
 
@@ -52,7 +52,7 @@
         <tr>
         <th scope="col">Date</th>
         <th scope="col">Name</th>
-        <th scope="col">Total</th>
+        <th scope="col">Country</th>
         </tr>
     </thead>
     <tbody>
@@ -60,7 +60,7 @@
         <tr>
         <td>{{ order.date}}</td>
         <td>{{ order.full_name }}</td>
-        <td>£{{ order.total }}</td>
+        <td>{{ order.country }}</td>
         </tr>
         {% endfor %}
     </tbody>

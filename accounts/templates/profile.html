@@ -6,7 +6,7 @@
 <!----Header Display---->
 <div class="container-fluid">
     <div class="header-title text-center">
-        <h1>Welcome Back Aboard, {{ user.user }} </h1>
+        <h1>Welcome Back Aboard, {{ user.username }} </h1>
         <h2>Welcome to the Nail Deck crew!</h2>
     </div>
     <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
@@ -32,7 +32,7 @@
   {% if all_orders %}
     {% for all_order in all_orders %}
     <tr>
-        <th>{{all_order.date}}</th>
+        <th>{{all_order.quantity}}</th>
         <td>{{ all_order_item.product.name }}</td>
         
         <td>{{all_order.total}}</td>
