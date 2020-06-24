@@ -41,9 +41,8 @@
     {% else %}
          <tr>
         <th>No Orders</th>
-        <td> -}</td>
-        
-        <td>Add Products</td>
+        <td>-</td>
+        <td><a class="btn btn-dark" href="{% url 'products' %}" role="button">Order Today</a></td>
         </tr>
     {% endif %}
   </tbody>
