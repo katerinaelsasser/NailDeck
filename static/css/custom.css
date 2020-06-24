@@ -1,14 +1,12 @@
 /*-------Google Fonts--------*/
 h1 {
     font-family: 'Meddon', cursive;
-    font-size: 6rem;
 }
 
 h2 {
     font-family: 'Tangerine', cursive;
     margin: 0;
     padding: 0;
-    font-size: 6rem;
 }
 
 .navbar-brand {
