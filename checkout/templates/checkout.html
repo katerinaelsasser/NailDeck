@@ -14,31 +14,31 @@
 
 {% block content %}
 <!----Header Display---->
-<div class="container">
-    <img class="img-fluid" src="{% static 'images/display-3.jpg' %}">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Purchase Your Items</h1>
+<div class="container-fluid">
+    <div class="header-title text-center">
+        <h1>Purchase Your Treasures</h1>
     </div>
+    <img class="img-fluid" src="{% static 'images/display-3.jpg' %}">
 </div>
+
 <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!----Payment form----->
-    <div class="container text-center">
-        <h2>Total: £{{ total }}</h2>
-    </div>
-
     <form role="form" method="POST" id="payment-form" action="{% url 'checkout' %}">
         <div id="credit-card-errors" style="display: none;">
             <div id="alert-message block-message error" id="stripe-error-message"></div>
         </div>
         <div class="row">
             <div class="form-group col-md-6">
-            <legend>Delivery Details</legend>
+            <h2 class="form-titles">Delivery Details</h2>
                 {{ order_form | as_bootstrap }}
             </div>
             <div class="form-group col-md-6">
-                <legend>Payment Details</legend>
+                <h2 class="form-titles">Payment Details</h2>
 
                 {{ payment_form | as_bootstrap }}
+            <div class="container text-center py-3">
+                <h1>Total: £{{ total }}</h1>
+            </div>
             </div>
         </div>
         {% csrf_token %}
