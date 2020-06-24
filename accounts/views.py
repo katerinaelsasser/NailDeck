@@ -42,7 +42,21 @@ def login(request):
 @login_required
 def profile(request):
     order_histroy = Order.objects.all()
-    return render(request, 'profile.html', {"order_histroy": order_histroy})
+    orders = Order.objects.filter(user=request.user)
+
+    all_orders = []
+
+    for order in orders:
+        order_fetch = OrderItem.objects.filter(order=order)
+        order_items = []
+        order_total = 0
+        for order_item in order_fetch:
+            order_items.append(order_item)
+            order_total += int(order_item.product.price * order_item.quantity)
+        all_orders.append({'order': order, 'order_items': order_items, "total": order_total})
+    
+    print(all_orders)
+    return render(request, 'profile.html', {"all_orders": all_orders})
 
 def register(request):
     """A view that manages the registration form"""
@@ -74,5 +88,6 @@ def admin_profile(request):
 #display products
     products = Product.objects.all()
 #display orders
-    orders = Order.objects.all()
+     
+
     return render(request, 'adminprofile.html', {"products": products, 'orders': orders})

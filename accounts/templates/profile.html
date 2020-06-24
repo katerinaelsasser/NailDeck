@@ -5,16 +5,21 @@
 
 <!----Header Display---->
 <div class="container-fluid">
-    <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Welcome Back Aboard, {{ user.email }} </h1>
-        <h4 class="lead">Start searching for your treasure today.</h4>
-
+    <div class="header-title text-center">
+        <h1>Welcome Back Aboard, {{ user.email }} </h1>
+        <h2>Welcome to the Nail Deck crew!</h2>
     </div>
+    <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
 </div>
-
+<!-------Start Shopping-------->
+<div class="container-fluid text-center py-3">
+        <h1><i class="fa fa-dharmachakra"></i></h1>
+        <h1 class="py-3">Start searching for your treasure today!</h1>
+        <a class="btn btn-dark" href="{% url 'products' %}" role="button">Start Shopping</a>
+    </div>
 <!---Order History---->
-<div class="container-fluid">
+<div class="container-fluid text-center py-3">
+<h1 class="py-3">View Your Orders</h1>
 <table class="table container">
   <thead>
     <tr>
@@ -24,16 +29,16 @@
     </tr>
   </thead>
   <tbody>
-  {% for order_histroy in order_histroy %}
+  {% if all_orders %}
     <tr>
-      <th>{{order_histroy.date}}</th>
-      <td>{{order_histroy.product}}</td>
-      <td>{{order_histroy.total}}</td>
+    {% for order in all_orders %}
+      <th>{{order.date}}</th>
+      <td>{{ order_item.product.name }}</td>
+      <td>{{ order_item.product.price }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 </div>
-
 
 {% endblock %}
