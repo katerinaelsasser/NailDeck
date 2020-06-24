@@ -30,14 +30,22 @@
   </thead>
   <tbody>
   {% if all_orders %}
-    <tr>
     {% for all_order in all_orders %}
-      <th>{{all_order.date}}</th>
-      <td>{{ all_order_item.product.name }}</td>
-      
-      <td>{{all_order.total}}</td>
-    </tr>
-    {% endfor %}
+    <tr>
+        <th>{{all_order.date}}</th>
+        <td>{{ all_order_item.product.name }}</td>
+        
+        <td>{{all_order.total}}</td>
+        </tr>
+        {% endfor %}
+    {% else %}
+         <tr>
+        <th>No Orders</th>
+        <td> -}</td>
+        
+        <td>Add Products</td>
+        </tr>
+    {% endif %}
   </tbody>
 </table>
 </div>
