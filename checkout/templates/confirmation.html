@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block content %}
+
+<!----Header Display---->
+<div class="container-fluid">
+    <div class="header-text text-center">
+        <h1>Thank you for the order, {{ user.username }} </h1>
+    </div>
+    <img class="img-fluid header-img" src="{% static 'images/display-9.jpg' %}">
+</div>
+
+{% endblock %}
