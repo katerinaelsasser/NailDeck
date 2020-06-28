@@ -45,22 +45,24 @@ def checkout(request):
                     card = payment_form.cleaned_data['stripe_id'],
                 )
             except stripe.error.CardError:
-                messages.error(request, "Your card was declined!")
+                messages.error(request, "Card declined")
                 
             if customer.paid:
+                messages.error(request, "You have successfully paid")
                 request.session['cart'] = {}
                 return redirect(reverse('confirmation'))
             else:
-                messages.error(request, "Unable to process your payment")
+                messages.error(request, "Unable to take payment")
         else:
             print(payment_form.errors)
-            messages.error(request, "We were unable to take payment with those card details")
+            messages.error(request, "We were unable to take a payment with this card!")
     else:
+        payment_form = MakePaymentForm()
         order_form = OrderForm()
-        payment_form = PaymentForm()
         
     return render(request, "checkout.html", {'order_form': order_form, 'payment_form': payment_form, 'publishable': settings.STRIPE_PUBLISHABLE})
 
+@login_required()
 #Confirmation page
 def confirmation(request):
-    return render(request, "confirmation.html")
+    return render(request, "confirmation.html")            
