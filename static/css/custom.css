@@ -38,7 +38,7 @@ body,
 
 .label-warning[href],
 .badge-warning[href] {
-    background-color: #c67605;
+    background-color: #e95420;
 }
 
 .product {
@@ -76,8 +76,15 @@ caption p {
 
 /*---------headers-----------*/
 .header-title {
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 50px;
+    position: absolute;
+}
+
+.header-text {
+    position: relative;
+    transform: translate(50%, 50%);
+    background-color: #fff;
 }
 
 /*------your images------*/
