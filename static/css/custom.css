@@ -78,13 +78,19 @@ caption p {
 .header-title {
     padding-top: 150px;
     padding-bottom: 50px;
-    position: absolute;
+}
+
+.header-img {
+    position: relative;
 }
 
 .header-text {
-    position: relative;
-    transform: translate(50%, 50%);
     background-color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 0.9375rem;
+    font-size: 3rem;
+    border-radius: 5px;
 }
 
 /*------your images------*/

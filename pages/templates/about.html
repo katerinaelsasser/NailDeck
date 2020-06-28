@@ -2,12 +2,15 @@
 {% load static from staticfiles %}
 {% block content %}
 
+<!----Header---->
+<div class="container-fluid">
+    <div class="text-center header-text">
+      <h1>About Nail Deck</h1>
+    </div>
+    <img class="img-fluid header-img" src="{% static 'images/display-4.jpg' %}">
+</div>
 <!----Content---->
 <div class="container-fluid">
-    <div class="header-title text-center">
-      <h1 class="display-4">About Nail Deck</h1>
-    </div>
-    <img class="img-fluid" src="{% static 'images/display-4.jpg' %}">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4">About Us</h1>
       <h4 class="lead">Inspired by the famous pirates of the sea, we bring the buried treasure to your home. With a variety of colours, it is perfect for any captain. Created in 2018, Nail Deck provides top quality, vegan nail varnishes. Each varnish is created by hand by our team based in England.</h4>
@@ -18,7 +21,6 @@
     </div>
     <img class="img-fluid" src="{% static 'images/display-9.jpg' %}">
 </div>
-
 <!---Your Images--->
 <div class="container-fluid">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
