@@ -31,3 +31,7 @@ def contact_view(request):
     else:
         contact_form = ContactForm()
     return render(request, "contact.html", {'contact_form': contact_form})
+
+# Your Images Page
+def social_view(request):
+    return render(request, "yourimages.html")
