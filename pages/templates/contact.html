@@ -7,17 +7,9 @@
 
 <!----Header Content---->
 <div class="container-fluid header-title">
-{% block title %}Send an email{% endblock %}
 
-    <div class="row">
-        <div class="span6">
-            <h1>Send an email</h1>
-            <form action="." method="post">
-                {% csrf_token %}
-                {{ form }}
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
+    <div class="container">
+        
     </div>
 
     <img class="img-fluid header-img" src="{% static 'images/display-9.jpg' %}">
@@ -26,11 +18,4 @@
 <!---Social Images--->
 {% include 'components/socialcontact.html' %}
 
-{% block extrajs %}
-<script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript">
-$(function() {
-    $('#id_name').focus()
-});
-</script>
 {% endblock %}

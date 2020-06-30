@@ -9,9 +9,3 @@ class Contact(models.Model):
 
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'message', 'date_created')
-
-class ContactForm(forms.ModelForm):
-
-    class Meta:
-        model = Contact
-        exclude = ('date_created', )
