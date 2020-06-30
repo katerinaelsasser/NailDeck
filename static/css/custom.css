@@ -98,8 +98,8 @@ footer {
 
 /*---------headers-----------*/
 .header-title {
-    padding-top: 9.375rem;
-    padding-bottom: 3.125rem;
+    position: relative;
+    width: 100%;
 }
 
 .header-img {

@@ -1,7 +1,17 @@
+{% load staticfiles %}
 <div class="container-fluid">
+    <div class="container-fluid">
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1>Your Images</h1>
-      <p class="py-3">We love your images of our varnishes. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
+        <h1>Your Images</h1>
+        <p class="py-3">We love your images of our varnishes. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 py-3">
+            <a class="btn btn-dark" href="{% url 'social' %}" role="button">View more »</a>
+            </div>
+            <div class="col-sm-12 col-md-6 py-3">
+            <a class="btn btn-dark" href="{% url 'products' %}" role="button">View treasure »</a>
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="insta-accounts col-sm-3">
