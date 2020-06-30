@@ -1,11 +1,23 @@
-from django import forms, http
-from django.conf import settings
-from django.contrib.sites.shortcuts import get_current_site
-from django.core.mail import send_mail
-from django.template import loader
-from django.utils.translation import gettext_lazy as _
+from django import forms
+from .models import Contact
+from .forms import ContactForm
 
-class ContactForm(forms.Form):
-    name = forms.CharField(max_length=100)
-    email = forms.EmailField()
-    message = forms.CharField(widget=forms.Textarea)
+class ContactFormView(FormView):
+
+    form_class = ContactForm
+    template_name = "email_form.html"
+    success_url = '/email-sent/'
+
+    def form_valid(self, form):
+        message = "{name} / {email} said: ".format(
+            name=form.cleaned_data.get('name'),
+            email=form.cleaned_data.get('email'))
+        message += "\n\n{0}".format(form.cleaned_data.get('message'))
+        send_mail(
+            subject=form.cleaned_data.get('subject').strip(),
+            message=message,
+            from_email='contact-form@myapp.com',
+            recipient_list=[settings.LIST_OF_EMAIL_RECIPIENTS],
+        )
+        form.save()
+        return super(ContactFormView, self).form_valid(form)

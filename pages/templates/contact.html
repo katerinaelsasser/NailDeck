@@ -7,32 +7,30 @@
 
 <!----Header Content---->
 <div class="container-fluid header-title">
-    <div class="text-center header-text">
-      <h1 class="header-text">Contact Us</h1>
-      <h2>Have a question? Fill in the form below and send it in to our team who will be able to answer any questions you have.</h2>
-        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <form method="POST" class="form" action="{% url 'contact_view' %}">
-            {% csrf_token %}
-                <div class="form__group">
-                    <label class="form__group__label" for="name">Name<span class="form__required">*</span></label>
-                    {{contact_form.name}}
-                </div>
-                <div class="form__group">
-                    <label class="form__group__label" for="email">Email<span class="form__required">*</span></label>
-                    {{contact_form.email}}
-                </div>
-                <div class="form__group">
-                    <label class="form__group__label" for="message">Message<span class="form__required">*</span></label>
-                    {{contact_form.message}}
-                </div>
-                <button class="btn btn-dark" type="submit">Send Message</button>
+{% block title %}Send an email{% endblock %}
+
+    <div class="row">
+        <div class="span6">
+            <h1>Send an email</h1>
+            <form action="." method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Submit" />
             </form>
         </div>
     </div>
+
     <img class="img-fluid header-img" src="{% static 'images/display-9.jpg' %}">
 </div>
 
 <!---Social Images--->
 {% include 'components/socialcontact.html' %}
 
+{% block extrajs %}
+<script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#id_name').focus()
+});
+</script>
 {% endblock %}
