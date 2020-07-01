@@ -3,5 +3,6 @@ from .views import checkout, confirmation
 
 urlpatterns = [
     url(r'^$', checkout, name='checkout'),
-    url(r'^$', confirmation, name='confirmation'),
+    url('confirmation', confirmation, name='confirmation'),
+
 ]
