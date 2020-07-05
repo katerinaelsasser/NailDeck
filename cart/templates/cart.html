@@ -15,64 +15,38 @@
 {% if total == 0 %}
     <div class="container-fluid text-center py-3">
         <h1><a href="{% url 'products' %}"><i class="fa fa-shopping-cart"></i></a></h1>
-        <h2><a href="{% url 'products' %}"><strong>Shopping cart is empty</strong></a></h2>
+        <p class="empty-title"><strong>Shopping cart is empty</strong></p>
         <a class="btn btn-dark" href="{% url 'products' %}" role="button">Continue Shopping</a>
     </div>
 {% else %}
     <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
-    
     <div class="row">
-        <div class="row col-md-8 order-md-1">
+        <div class="row col-md-8">
+            <h1 class="text-center container mb-3 py-3">Items</h1>
             {% for item in cart_items %}
-            <div class="col-sm-12 col-md-3 mb-4">
-                    <div class="card border-0 shadow">
-                        <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-                        <div class="card-body text-center">
-                        <h1 class="card-title">{{ item.product.name }}</h1>
-                        <h2 class="card-text">{{ item.product.description }}</h2>
-                        <h1 class="card-text">£{{ item.product.price }}</h1>
-                            <div class="btn-group">
-                                <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">
-                            {% csrf_token %}
-                            <div class="form-group">
-                                <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                                <div class="input-group">
-                                    <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
-                                </div>
-                            </div>
-                            <div class="px-3">
-                            <button type="submit" class="btn-dark"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
-                            </div>
-                        </form>
-                            </div>
+            <div class="row container shadow cart-item">
+                <div class="product card-img-top col-sm-3" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+                <p class="col-sm-3">{{ item.product.name }}</p>
+                <p class="col-sm-3">£{{ item.product.price }}</p>
+                <form class="form-inline col-sm-3" method="post" action="{% url 'adjust_cart' item.id %}">
+                    {% csrf_token %}
+                    <div class="input-group container">
+                        <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-dark"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
                         </div>
                     </div>
-                </div>
+                </form>
+            </div>
             {% endfor %}
         </div>
     <!---Total-->
         <div class="col-md-4 order-md-2 mb-4">
         <h1 class="text-center mb-3 py-3">
-            Your cart
+            Total
         </h1>
-        <ul class="list-group mb-3">
-            <li class="list-group-item d-flex justify-content-between">
-            <div>
-                <h2>Order Subtotal</h2>
-            </div>
-            <span class="text-muted">£{{ total }}</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-            <div>
-                <h2>Delivery</h2>
-            </div>
-            <span class="text-muted">Free</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between">
-            <h2><strong>Total</strong></h2>
-            <strong>£{{ total }}</strong>
-            </li>
-        </ul>
+        <p class="text-center total-amount">£{{ total }}</p>
+        
         <div class="text-center">   
                 <a href="{% url 'checkout' %}" class="btn-dark btn-lg btn-block" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
             </div>
