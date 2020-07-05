@@ -80,13 +80,3 @@ def register(request):
 
     args = {'user_form': user_form}
     return render(request, 'register.html', args)
-
-
-# Admin
-@login_required
-def admin_profile(request):
-#display products
-    products = Product.objects.all()
-#display orders
-    orders = Order.objects.all()
-    return render(request, 'adminprofile.html', {"products": products, "orders": orders})
