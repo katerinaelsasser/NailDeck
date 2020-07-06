@@ -136,8 +136,16 @@ The images that have been displayed on the website are from [Unsplash](https://u
 ### Existing Features
 ### Future Features
 ### Information Architecture
-### Database choice
-## Data Models
+
+## Information Architecture
+### Database Choice
+For this project, the database used is SQL. For my local machine, sqlite3 datbase was installed with Django. When deployed, Heroku provided the SQL database which is a PostgreSQL database.
+
+### Data Modals
+#### User Modals
+#### Product Modal
+#### Checkout Modal
+#### Order Modal
 ## Technologies Used]()
 ## Testing]()
 ## Deployment]()
