@@ -2,11 +2,11 @@ from django.db import models
 
 # Create your models here.
 class Product(models.Model):
-    Nail_Polishes = 'Polishes'
-    Nail_Care = 'NailCare'
-    Category_Options = [(Nail_Polishes, 'Polishes'), (Nail_Care, 'NailCare'),
-    ]
-    category = models.CharField(max_length=20, choices=Category_Options, default=Nail_Polishes)
+    choices =(
+        ('nail_polishes', 'Polishes'),
+        ('nail_care', 'Care')
+    )
+    category = models.CharField(max_length=20, choices=choices)
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
