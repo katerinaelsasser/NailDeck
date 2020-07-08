@@ -9,19 +9,15 @@ h2 {
     padding: 0;
 }
 
+/*---------navbar------------*/
 .navbar-brand {
     font-family: 'Meddon', cursive;
+    font-size: 2rem;
 }
 
 .nav-link {
     font-family: 'Tangerine', cursive;
-}
-/*------whole website---------*/
-body,
-.container-fluid,
-.row {
-    padding: 0;
-    margin: 0;
+    font-size: 1.875rem;
 }
 
 .icon-bar {
@@ -39,6 +35,19 @@ body,
 .label-warning[href],
 .badge-warning[href] {
     background-color: #fff;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+/*------whole website---------*/
+body,
+.container-fluid,
+.row {
+    padding: 0;
+    margin: 0;
 }
 
 .product {
@@ -72,16 +81,6 @@ caption p {
 
 .product-description {
     min-height: 2.5rem;
-}
-
-/*------navbar------*/
-
-.topnav-right {
-  float: right;
-}
-
-.nav-link {
-    font-size: 1.875rem;
 }
 
 /*------footer-----*/
