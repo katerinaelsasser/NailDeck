@@ -1,12 +1,36 @@
 {% extends 'base.html' %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block content %}
 
-    {% block content %}
-        {% for category in categories %}
-        <h1> {{category}} </h1>
-
-        {% for product in category.get_products %}
-            <p> {{product}} </p>
+<!-----Product Display------>
+<div class="container-fluid">
+    <div class="row mb-2 px-3 py-5">
+    {% for polishes in categories %}
+    {% for product in polishes.get_products %}
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                <div class="card-body text-center">
+                    <h1 class="card-title">{{ product.name }}</h1>
+                    <h2 class="card-text">{{ product.description }}</h2>
+                    <h1 class="card-text">£{{ product.price }}</h1>
+                    <div class="btn-group">
+                        <form method="post" action="{% url 'add_to_cart' product.id %}">
+                            {% csrf_token %}
+                            <div class="input-group">
+                                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Qty" required>
+                                <span class="input-group-btn px-3">
+                                    <button class="btn btn-dark" type="submit">Add</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% endfor %}
-
         {% endfor %}
+    </div>
+</div>
     {% endblock %}
