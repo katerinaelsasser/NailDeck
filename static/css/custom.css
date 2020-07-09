@@ -99,6 +99,7 @@ footer {
 .header-title {
     position: relative;
     width: 100%;
+    margin: 0;
 }
 
 .header-img {
