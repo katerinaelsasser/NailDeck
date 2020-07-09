@@ -1,23 +1,15 @@
 from django import forms
-from .models import Contact
-from .forms import ContactForm
 
-class ContactFormView(FormView):
+class ContactForm(forms.Form):
 
-    form_class = ContactForm
-    template_name = "email_form.html"
-    success_url = '/email-sent/'
+    name = forms.CharField()
+    email = forms.EmailField()
+    message = forms.CharField(
+    )
 
-    def form_valid(self, form):
-        message = "{name} / {email} said: ".format(
-            name=form.cleaned_data.get('name'),
-            email=form.cleaned_data.get('email'))
-        message += "\n\n{0}".format(form.cleaned_data.get('message'))
-        send_mail(
-            subject=form.cleaned_data.get('subject').strip(),
-            message=message,
-            from_email='contact-form@myapp.com',
-            recipient_list=[settings.LIST_OF_EMAIL_RECIPIENTS],
-        )
-        form.save()
-        return super(ContactFormView, self).form_valid(form)
+    class Meta:
+        fields = [
+            'name',
+            'email',
+            'message',
+        ]
