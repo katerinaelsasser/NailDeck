@@ -16,20 +16,23 @@ def terms_view(request):
 
 #Contact page
 def contact_view(request):
-    if request.method == 'POST':
-        contact_form = ContactForm(request.POST)
-        if contact_form.is_valid():
-            name = contact_form.cleaned_data['name']
-            message = contact_form.cleaned_data['message']
-            from_email = contact_form.cleaned_data['email']
-            send_mail(name, message, from_email, [
-                      'admin@naildeck.com'], fail_silently=False)
-            messages.success(
-                request, "Your message has been sent, we will be in touch soon.")
-            return redirect('contact')
+    if request.method == 'GET':
+        form = ContactForm()
     else:
-        contact_form = ContactForm()
-        return render(request, 'contact.html', {'contact_form': contact_form})
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['k.elsasser@aol.co.uk'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('success')
+    return render(request, "contact.html", {'form': form})
+
+def successView(request):
+    return HttpResponse('Success! Thank you for your message.')
 
 # Your Images Page
 def social_view(request):
