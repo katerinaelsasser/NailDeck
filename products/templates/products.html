@@ -22,12 +22,12 @@
                 <div class="card-body text-center">
                     <h1 class="card-title">{{ product.name }}</h1>
                     <h2 class="card-text"><strong>Description:</strong> {{ product.description }}</h2>
-                    <h2 class="card-text pricing">£{{ product.price }}</h2>
+                    <h2 class="card-text pricing"><strong>£{{ product.price }}</strong></h2>
                     <div class="btn-group">
                         <form method="post" action="{% url 'add_to_cart' product.id %}">
                             {% csrf_token %}
                             <div class="container">
-                                <h2>Add An Amount</h2>
+                                <h2><strong>Add Amount:</strong></h2>
                             </div>
                             <div class="input-group container">
                                 <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
