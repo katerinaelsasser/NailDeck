@@ -6,15 +6,14 @@
 <!-----Product Display------>
 <div class="container-fluid">
     <div class="row mb-2 px-3 py-5">
-    {% for polishes in categories %}
-    {% for product in polishes.get_products %}
+    {% for polish in polishes %}
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-0 shadow">
                 <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body text-center">
-                    <h1 class="card-title">{{ product.name }}</h1>
-                    <h2 class="card-text">{{ product.description }}</h2>
-                    <h1 class="card-text">£{{ product.price }}</h1>
+                    <h1 class="card-title">{{ polish.name }}</h1>
+                    <h2 class="card-text">{{ polish.description }}</h2>
+                    <h1 class="card-text">£{{ polish.price }}</h1>
                     <div class="btn-group">
                         <form method="post" action="{% url 'add_to_cart' product.id %}">
                             {% csrf_token %}
@@ -29,7 +28,6 @@
                 </div>
             </div>
         </div>
-        {% endfor %}
         {% endfor %}
     </div>
 </div>
