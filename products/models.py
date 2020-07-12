@@ -1,15 +1,13 @@
 from django.db import models
 
-# Create your models here.
+# Categories 
 class Category(models.Model):
-    name = models.CharField(max_length=30)
-
-    class Meta:
-            ordering = ["name"] 
+    title = models.CharField(max_length=30)
 
     def __str__(self):
-        return self.name
-        
+        return self.title
+
+#Products
 class Product(models.Model):
     CHOICES =(
         ('polishes', 'Polishes'),
