@@ -1,6 +1,15 @@
 from django.db import models
 
 # Create your models here.
+class Category(models.Model):
+    name = models.CharField(max_length=30)
+
+    class Meta:
+            ordering = ["name"] 
+
+    def __str__(self):
+        return self.name
+        
 class Product(models.Model):
     CHOICES =(
         ('polishes', 'Polishes'),
@@ -12,8 +21,5 @@ class Product(models.Model):
     image = models.ImageField(upload_to='images')
     category = models.CharField(max_length=11, choices=CHOICES, default='polishes')
 
-class Category(models.Model):
-    title = models.CharField(max_length=225)
-    
     def __str__(self):
         return self.name
