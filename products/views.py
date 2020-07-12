@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Product
+from .models import Product, Category
 
 # Product Page
 def all_products(request):
@@ -14,7 +14,8 @@ def polish_category(request, *args, **kwargs):
     """
     Displays all products that are in the polish category
     """
-    polishes = Product.objects.filter(category=polishes)
+    polish_category = Category.objects.get(category_name="polishes")
+    polishes = Product.objects.filter(category='polishes')
     return render(request, "polish.html", {"polishes": polishes})
 
 # Nail Care

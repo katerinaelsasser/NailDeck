@@ -6,12 +6,13 @@
 <!-----Product Display------>
 <div class="container-fluid">
     <div class="row mb-2 px-3 py-5">
-    {% for polish in polishes %}
+    {% for product in products %}
+    {% if product.category == "polishes" %}
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-0 shadow">
                 <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body text-center">
-                    <h1 class="card-title">{{ polish.name }}</h1>
+                    <h1 class="card-title">{{ product.name }}</h1>
                     <h2 class="card-text">{{ polish.description }}</h2>
                     <h1 class="card-text">£{{ polish.price }}</h1>
                     <div class="btn-group">
