@@ -50,6 +50,13 @@ body,
     margin: 0;
 }
 
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.875rem;
+}
+
+/*-------product display-----------*/
 .product {
     background-size: contain;
     background-position: center center;
@@ -59,28 +66,8 @@ body,
     margin: 0 auto;
 }
 
-caption p {
-    word-wrap: break-word;
-}
-
-.row.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 1.875rem;
-}
-
-.panel-default {
-    border-color: transparent;
-    padding: 0 0.625rem;
-}
-
-.panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
-}
-
-.product-description {
-    min-height: 2.5rem;
+.pricing {
+    font-size: 3rem;
 }
 
 /*------footer-----*/

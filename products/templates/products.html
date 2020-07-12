@@ -16,21 +16,24 @@
 <div class="container-fluid">
     <div class="row mb-2 px-3 py-5">
     {% for product in products %}
-        <div class="col-xl-3 col-md-6 mb-4">
+        <div class="col-xl-4 col-md-6 mb-4">
             <div class="card border-0 shadow">
                 <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                 <div class="card-body text-center">
                     <h1 class="card-title">{{ product.name }}</h1>
-                    <h2 class="card-text">{{ product.description }}</h2>
-                    <h1 class="card-text">£{{ product.price }}</h1>
+                    <h2 class="card-text"><strong>Description:</strong> {{ product.description }}</h2>
+                    <h2 class="card-text pricing">£{{ product.price }}</h2>
                     <div class="btn-group">
                         <form method="post" action="{% url 'add_to_cart' product.id %}">
                             {% csrf_token %}
-                            <div class="input-group">
-                                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Qty" required>
-                                <span class="input-group-btn px-3">
-                                    <button class="btn btn-dark" type="submit">Add</button>
-                                </span>
+                            <div class="container">
+                                <h2>Add An Amount</h2>
+                            </div>
+                            <div class="input-group container">
+                                <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-dark"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+                                </div>
                             </div>
                         </form>
                     </div>
