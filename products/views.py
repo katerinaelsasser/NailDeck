@@ -14,7 +14,7 @@ def polish_category(request, *args, **kwargs):
     """
     Displays all products that are in the polish category
     """
-    Polishes = Products.objects.filter(category=polishes)
+    polishes = Product.objects.filter(category=polishes)
     return render(request, "polish.html", {"polishes": polishes})
 
 # Nail Care
