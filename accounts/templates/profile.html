@@ -7,19 +7,33 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
     <div class="header-text text-center">
-        <h1>Welcome Back Aboard, {{ user.username }} </h1>
-        <h2>Welcome to the Nail Deck crew!</h2>
+        <h1>Welcome Aboard, {{ user.username }} </h1>
     </div>
 </div>
-<!-------Start Shopping-------->
+<!-------user link bar--------->
+
 <div class="container-fluid text-center py-3">
+    <div class="row">
+    <div class="col-4">
         <h1><i class="fa fa-dharmachakra"></i></h1>
-        <h1 class="py-3">Start searching for your treasure today!</h1>
+        <h2 class="py-3">Start searching for your treasure today!</h2>
         <a class="btn btn-dark" href="{% url 'products' %}" role="button">Start Shopping</a>
     </div>
+    <div class="col-4">
+        <h1><i class="fa fa-gem"></i></h1>
+        <h2 class="py-3">View Orders</h2>
+        <a class="btn btn-dark" href="#" role="button">View all</a>
+    </div>
+    <div class="col-4">
+        <h1><i class="fa fa-cogs"></i></h1>
+        <h2 class="py-3">Update your account detail</h2>
+        <a class="btn btn-dark" href="#" role="button">Update Detail</a>
+    </div>
+    </div>
+
 <!---Order History---->
 <div class="container-fluid text-center py-3">
-<h1 class="py-3">View Your Orders</h1>
+<h2 class="py-3">View Your Orders</h2>
 <table class="table container">
   <thead>
     <tr>
