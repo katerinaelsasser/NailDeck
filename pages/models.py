@@ -1,6 +1,4 @@
 from django.db import models
-from django.forms import ModelForm
-from django.forms import Textarea
 
 class Contact(models.Model):
     name = models.CharField(max_length=100)
