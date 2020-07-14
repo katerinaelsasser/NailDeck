@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.urls import reverse_lazy
 from .forms import ContactForm
+from .models import Contact
 
 # Home Page 
 def homepage(request):
@@ -18,7 +20,7 @@ def terms_view(request):
 def contact_view(request):
     class ContactCreate(CreateView):
     model = Contact
-    fields = ["first_name", "last_name", "message"]
+    fields = ["name", "email", "message"]
     success_url = reverse_lazy("thanks")
 
 

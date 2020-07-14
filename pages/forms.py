@@ -1,7 +1,13 @@
 from django import forms
 
-class ContactForm(forms.Form):
-
-    email = forms.EmailField(required=True)
-    name = forms.CharField(required=True)
-    message = forms.CharField(widget=forms.Textarea, required=True)
+class ContactForm(ModelForm):
+    class Meta:
+        model = Contact
+        fields = ["first_name", "last_name", "message"]
+        widgets = {
+            "message": Textarea(
+                attrs={
+                    "placeholder": "Would love to talk about Philip K. Dick"
+                }
+            )
+        }
