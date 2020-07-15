@@ -20,7 +20,7 @@ def terms_view(request):
 #Contact page
 class ContactCreate(CreateView):
     model = Contact
-    fields = ["first_name", "email", "message"]
+    fields = ["full_name", "email", "message"]
     success_url = reverse_lazy("thanks")
 
 
