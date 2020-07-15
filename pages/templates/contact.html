@@ -11,7 +11,7 @@
 
     <div class="header-text text-center">
     <h2>Contact Us</h2>
-        <form method="POST" action="{% url "contact" %}">
+        <form method="POST" action="{% url 'contact' %}">
     {% csrf_token %}
     {{ form }}
     <button type="submit">SEND</button>

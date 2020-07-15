@@ -6,11 +6,11 @@ from .models import Contact
 class ContactForm(ModelForm):
     class Meta:
         model = Contact
-        fields = ["name", "email", "message"]
+        fields = ["full_name", "email", "message"]
         widgets = {
             "message": Textarea(
                 attrs={
-                    "placeholder": "Would love to talk about Philip K. Dick"
+                    "placeholder": "Leave us a message"
                 }
             )
         }

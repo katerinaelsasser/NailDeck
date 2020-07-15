@@ -20,12 +20,12 @@ def terms_view(request):
 #Contact page
 class ContactCreate(CreateView):
     model = Contact
-    fields = ["name", "email", "message"]
+    fields = ["first_name", "email", "message"]
     success_url = reverse_lazy("thanks")
 
 
 def thanks(request):
-    return HttpResponse("Thank you! Will get in touch soon.")
+    return HttpResponse("Thank you! We will get in touch soon.")
 
 # Your Images Page
 def social_view(request):
