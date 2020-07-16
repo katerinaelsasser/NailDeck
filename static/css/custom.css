@@ -86,7 +86,7 @@ footer {
 .header-title {
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: 4rem;
 }
 
 .header-img {
@@ -250,4 +250,10 @@ footer {
 
 .form-titles {
     font-size: 4rem;
+}
+
+/*----------index-------------*/
+
+.index-titles {
+    color: #E95420;
 }
