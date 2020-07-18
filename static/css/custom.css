@@ -282,3 +282,10 @@ footer {
     margin: 0;
     padding: 0;
 }
+
+.login-title {
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+    margin: 0;
+    padding: 0;
+}
