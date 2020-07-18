@@ -256,7 +256,9 @@ footer {
 
 .index-header {
     font-size: 3rem;
+    font-family: 'Tangerine', cursive;
     margin: 0;
+    padding: 0;
 }
 
 .index-titles {
@@ -267,5 +269,7 @@ footer {
 
 .register-title {
     font-size: 3rem;
+    font-family: 'Tangerine', cursive;
     margin: 0;
+    padding: 0;
 }
