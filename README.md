@@ -12,6 +12,11 @@ Content
     * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
         * [Site User](https://github.com/katerinaelsasser/NailDeck#site-user)
         * [Site Owner](https://github.com/katerinaelsasser/NailDeck#site-owner)
+    * [Surface]()
+    * [Strategy]()
+    * [Structure]()
+    * [Skeleton]()
+    * [Scope]()
     * [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices)
         * [Overall](https://github.com/katerinaelsasser/NailDeck#overall)
         * [Fonts](https://github.com/katerinaelsasser/NailDeck#fonts)
@@ -79,6 +84,13 @@ As the owner of the website, I want/expect:
 * To be able to put new products on with ease.
 * Information of the business displayed so vistors can view it.
 * Contact details must be displayed so the vistors can find it if needed.
+
+Surface
+Strategy
+Structure
+Skeleton
+Scope
+
 
 ## Design Choices 
 ### Overall

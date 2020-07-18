@@ -254,12 +254,18 @@ footer {
 
 /*----------index-------------*/
 
+.index-header {
+    font-size: 3rem;
+    margin: 0;
+}
+
 .index-titles {
     color: #E95420;
 }
 
-/*----------index-------------*/
+/*----------register-------------*/
 
 .register-title {
     font-size: 3rem;
+    margin: 0;
 }

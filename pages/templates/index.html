@@ -6,7 +6,7 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-1.jpg' %}">
     <div class="header-text text-center">
-        <h1>Welcome Aboard</h1>
+        <p class="index-header">Welcome Aboard</p>
     </div>
 </div>
 
@@ -26,33 +26,33 @@
         <p>We have travelled far and wide to get the treasures from around the world.</p>
         <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
     </div>
-    {%  else %}
+{%  else %}
     <!-----about display------->
-    <div class="py-3 container text-center col-md-3">
+    <div class="py-3 text-center col-md-3">
         <h1><a href="{% url 'about' %}"><i class="fa fa-hand-sparkles"></i></a></h1>
         <h2 class="index-titles"><strong>About Nail Deck</strong></h2>
         <p>Nail Deck is inspired by the famous pirates of the sea and bring the buried treasure to your home.</p>
         <a class="btn btn-dark" href="{% url 'about' %}" role="button">Learn More »</a>
     </div>
     <!---products link--->
-    <div class="col-md-4 py-3">
+    <div class="py-3 text-center col-md-3">
         <h1><a href="{% url 'products' %}"><i class="fa fa-gem"></i></a></h1>
         <h2 class="index-titles"><strong>View Our Treatures</strong></h2>
-        <p>We have travelled far and wide to get the treasures from around the world.</p>
+        <p>We have traveled far and wide to get the treasures of nail polishes and nail care available to buy.</p>
         <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
     </div>
     <!---login link--->
-    <div class="col-md-4 py-3">
+    <div class="py-3 text-center col-md-3">
         <h1><a href="{% url 'login' %}"><i class="fa fa-skull-crossbones"></i></a></h1>
         <h2 class="index-titles"><strong>Welcome Back Aboard</strong></h2>
         <p>Have an account with us? Then come back aboard the Nail Deck group and start shopping today.</p>
         <a class="btn btn-dark" href="{% url 'login' %}" role="button">Log In »</a>
     </div>
     <!---register link--->
-    <div class="col-md-4 py-3">
+    <div class="py-3 text-center col-md-3">
         <h1><a href="{% url 'login' %}"><i class="fa fa-dharmachakra"></i></a></h1>
         <h2 class="index-titles"><strong>Become A Pirate</strong></h2>
-        <p>Don't have an account? Become a pirate today to shop our range.</p>
+        <p>Don't have an account with us? Become a pirate of NailDeck crew to shop products today.</p>
         <a class="btn btn-dark" href="{% url 'register' %}" role="button">Create an account »</a>
     </div>
     {% endif %}
