@@ -9,7 +9,9 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarColor02">
     <ul class="navbar-nav">
-        <li class="nav-item dropdown">
+       
+        {% if user.is_authenticated %}
+         <li class="nav-item dropdown">
              <a class="nav-link dropdown-toggle" href="#" id="productsDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Treasure
             </a>
@@ -29,15 +31,14 @@
                 About
             </a>
         </li>   
-    <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="{% url 'contact' %}">
                 Contact
             </a>
         </li>  
-        {% if user.is_authenticated %}
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="profileDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pirate
+                <i class="fa fa-skull-crossbones"></i>
             </a>
             <div class="dropdown-menu" aria-labelledby="profileDropdownMenuLink">
             <h2>     
@@ -57,6 +58,21 @@
                 </a>
         </li>
         {%  else %}
+`       <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">                
+                Treasure
+            </a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">
+                About
+            </a>
+        </li>   
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">
+                Contact
+            </a>
+        </li>  
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="loginMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-skull"></i>
