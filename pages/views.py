@@ -1,9 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import CreateView
-from django.urls import reverse_lazy
-from .forms import ContactForm
-from .models import Contact
 from django.http import HttpResponse
+from .forms import contact_form
 
 # Home Page 
 def homepage(request):
@@ -41,4 +39,3 @@ def contact(request):
 
 def success(request):
     return HttpResponse('Success! Thank you for your message.')
-This is urls.py
