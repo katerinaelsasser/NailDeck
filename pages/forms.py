@@ -1,16 +1,11 @@
-from django.forms import ModelForm
-from django.forms import Textarea
-from .models import Contact
+from django import forms
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.models import User
 
-
-class ContactForm(ModelForm):
-    class Meta:
-        model = Contact
-        fields = ["full_name", "email", "message"]
-        widgets = {
-            "message": Textarea(
-                attrs={
-                    "placeholder": "Leave us a message"
-                }
-            )
-        }
+class contact_form(forms.Form):
+    contact_name = forms.CharField(label='Contact Name', max_length=255)
+    contact_email = forms.CharField(label='Contact Email',max_length=255)
+    contact_message = forms.CharField(
+        required=True,
+        widget=forms.Textarea
+    )
