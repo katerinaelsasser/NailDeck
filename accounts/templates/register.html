@@ -7,8 +7,11 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-8.jpg' %}">
     <div class="header-text text-center">
-        <h1>Register To Shop</h1>
-        <div class="container">
+        <h2><strong>Register To Shop</strong></h2>
+    </div>
+</div>
+   
+<div class="container text-center">
             <form method="post" action="{% url 'register' %}" class="accountform">
                 <fieldset class="form-group">
                     <p>Already have an account? <a href="{% url 'login' %}">Login In</a></p>
@@ -18,7 +21,4 @@
                 </fieldset>
             </form>
         </div>
-    </div>
-</div>
-   
 {% endblock %}
