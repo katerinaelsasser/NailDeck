@@ -10,14 +10,17 @@
     <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
 
     <div class="header-text text-center">
-    <h2>Contact Us</h2>
-        <form method="POST" action="{% url 'contact' %}">
-    {% csrf_token %}
-    {{ form }}
-    <button type="submit">SEND</button>
-</form>
+    <p class="contact-title">Contact Us</p>
     </div>
+</div>
 
+<!--------Form--------->
+<div class="container text-center">
+    <form method="POST" action="{% url 'contact' %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">SEND</button>
+    </form>
 </div>
 <!---Social Images--->
 {% include 'components/socialcontact.html' %}

@@ -123,6 +123,14 @@ footer {
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
 }
+
+.login-title {
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+    margin: 0;
+    padding: 0;
+}
+
 .login,
 .image {
   min-height: 100vh;
@@ -283,7 +291,7 @@ footer {
     padding: 0;
 }
 
-.login-title {
+.contact-title {
     font-size: 3rem;
     font-family: 'Tangerine', cursive;
     margin: 0;
