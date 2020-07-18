@@ -273,3 +273,12 @@ footer {
     margin: 0;
     padding: 0;
 }
+
+/*----------about-------------*/
+
+.about-title {
+    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+    margin: 0;
+    padding: 0;
+}
