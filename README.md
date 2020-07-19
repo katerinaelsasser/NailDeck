@@ -132,7 +132,11 @@ As the owner of the website, I want/expect:
 
 ## Strategy
 ## Structure
+The layout of the website has to advertise the products to customers so they would pruchase the products. Products must be presentable and easy to purchase, there must be a clear and easy to use checkout where customers can make purchases. The website is advertise for a wide range of audience who would use all devices to make purchases, which means all device displays must be readable.
+
 ## Skeleton
+
+
 ## Surface
 The surface of the website has to be fit in with the theme and with what would appeal to the target audience. I started to think about the layout, the colours, the typology and the imagery used throughout (see the [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices) for full details of what things I decided to present for the surface). Mockups and a flowchart was created to help create all the pages, in all the mockups I noticed that the layouts were simple so customers can understand and have ease to find pages. The images that are used are images of the products the company sells and the products in use as this is advertising for the company and the customers can see what the products look like.
 
