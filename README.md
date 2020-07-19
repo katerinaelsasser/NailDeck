@@ -25,15 +25,15 @@ Content
         * [Images](https://github.com/katerinaelsasser/NailDeck#images)
     * [Wireframes/Flowchart](https://github.com/katerinaelsasser/NailDeck#wireframesflowchart)
 * [Features](https://github.com/katerinaelsasser/NailDeck#features)
-    * [Existing Features]()
-    * [Future Features]()
+    * [Existing Features](https://github.com/katerinaelsasser/NailDeck#existing-features)
+    * [Future Features](https://github.com/katerinaelsasser/NailDeck#future-features)
 * [Information Architecture]()
     * [Database choice]()
     * [Data Models]()
-* [Technologies Used]()
-    * [Languages]()
-    * [Databases]()
-    * [Liabries]()
+* [Technologies Used](https://github.com/katerinaelsasser/NailDeck#technologies-used)
+    * [Languages](https://github.com/katerinaelsasser/NailDeck#languages)
+    * [Databases](https://github.com/katerinaelsasser/NailDeck#databases)
+    * [Liabries](https://github.com/katerinaelsasser/NailDeck#libaries)
 * [Testing]()
 * [Deployment]()
     * [Running Locally]()
@@ -215,17 +215,43 @@ Throughout the page, there is a navigation bar on the header and the footer that
 * Order confirmation will also send an email to the customer confirming the purchase.
 * More categories will be created for more products.
 
-### Information Architecture
-
 ## Information Architecture
 ### Database Choice
 For this project, the database used is SQL. For my local machine, sqlite3 datbase was installed with Django. When deployed, Heroku provided the SQL database which is a PostgreSQL database.
 
 ### Data Modals
-#### User Modals
 #### Product Modal
+The products have the following model:
+| Name        | Key in DB           | Validation  | Field Type |
+| ------------- |:-------------:| -----:|| -----:|
+| Name      | name | max_length=254, default='' |CharField |
+| Description     | description |  | TextField|
+| Price     | price  | max_digits=6, decimal_places=2 | DecimalField|
+| Image     | image | upload_to='images' | ImageField|
+| Category     | category | max_length=11, choices=CHOICES, default='polishes' |CharField |
+
 #### Checkout Modal
+| Name        | Key in DB           | Validation  | Field Type |
+| ------------- |:-------------:| -----:|| -----:|
+| User      | user | User, on_delete=models.PROTECT, default=None | ForeignKey|
+| Full Name     | full_name | max_length=50, blank=False | CharField|
+| Phone Number     | phone_number | max_length=20, blank=False |CharField |
+| Country     | country | max_length=40, blank=False |CharField |
+| Postcode     | postcode | max_length=20, blank=True |CharField |
+| Town/City     | town_or_city | max_length=40, blank=False | CharField|
+| Street Address     | street_address | max_length=40, blank=False | CharField|
+| Country     | county | max_length=40, blank=False | CharField|
+| Date     | date |  |DateField |
+
 #### Order Modal
+| Name        | Key in DB           | Validation  | Field Type |
+| ------------- |:-------------:| -----:|| -----:|
+| Order      | order | Order, null=False |ForeignKey |
+| Product     | product | Product, null=False | ForeignKey|
+| Quantity     | quantity | blank=False |IntegerField |
+
+#### User Modals
+The user model is the standard one supplied by `django.contrib.auth.models`.
 ## Technologies Used
 ### Languages
 * HTML
