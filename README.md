@@ -63,7 +63,7 @@ The target audience for the brand Nail Deck are:
 Research was the biggest thing for this website as this is going to be in competition with other shops. I looked at what other competition had and what they haven't got. The research I do on this, will effect what I feature on the website pages.
 
 ### Research
-I put together pros and cons to a select group of companies that sell the same products. These companies are Barry M, Boots, ASOS, Next and Etsy.
+I put together pros and cons to a select group of companies that sell the same products. These companies are Barry M, Boots, ASOS and Etsy.
 
 #### [Barry M](https://barrym.com/)
 * Pros 
@@ -76,22 +76,37 @@ I put together pros and cons to a select group of companies that sell the same p
 * Cons 
     * A lot of features, possibly too many.
     * Navigration bar dropdown is messy.
+    * Blank space on the dropdown.
     
-#### Boots
-* Pros 
-* Cons
-
-#### ASOS
-* Pros 
-* Cons
-
-#### Next
+#### [Boots](https://www.boots.com/)
 * Pros
-* Cons 
-
-#### Etsy
-* Pros
+    * Elements that to connect to different pages on homepage.
+    * Easy to find products.
+    * Shopping cart is clear to understand.
 * Cons
+    * Too many features.
+    * Elements on slideshow not responsive.
+    * Too many categories.
+
+#### [ASOS](https://www.asos.com/women/)
+* Pros 
+    * Dropdown is clear to understand.
+    * Pages are responsive to the different devices.
+    * Products presented clearly.
+* Cons
+    * Nav Links don't take to pages when clicked on, only show the dropdown.
+    * Can't buy products without having to go on to the individual display.
+    * Can't select a quanity of products.
+
+#### [Etsy](https://www.etsy.com/uk/)
+* Pros
+    * Homepage is clear for navigating as well as advertising products.
+    * Easy to navigate through the website.
+    * Lots of detail on individual product display.
+* Cons
+    * When clicking on a product, it opens another tab to that link.
+    * Have to go on to individual product display to purchase.
+    * Difficult to find a contact page.
 
 ## User stories 
 ### Site user
