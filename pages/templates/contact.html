@@ -10,28 +10,33 @@
     <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
 
     <div class="header-text text-center">
-    <p class="contact-title">Contact Us</p>
+    <p class="contact-title"><strong>Contact Us</strong></p>
     </div>
 </div>
 
 <!--------Form--------->
 <div class="container text-center">
-    <form method="POST" action="{% url 'contact' %}">
-        {% csrf_token %}
-        <div class="form__group">
-            <h2><strong>Name *</strong></h2>
-            {{form.contact_name}}
-        </div>
-        <div class="form__group">
-            <h2><strong>Email *</strong></h2>
-            {{form.contact_email}}
-        </div>
-        <div class="form__group">
-            <h2><strong>Message *</strong></h2>
-            {{form.contact_message}}
-        </div>
-        <a class="btn btn-dark" href="{% url 'products' %}" role="button" type="submit">Send</a>
-    </form>
+    <div class="py-3">
+    <h2>Have a question, send us a message in the form below.</h2>
+    </div>
+    <div class="py-3"> 
+        <form method="POST" action="{% url 'contact' %}">
+            {% csrf_token %}
+            <div class="form__group">
+                <h2><strong>Name *</strong></h2>
+                {{form.contact_name}}
+            </div>
+            <div class="form__group">
+                <h2><strong>Email *</strong></h2>
+                {{form.contact_email}}
+            </div>
+            <div class="form__group">
+                <h2><strong>Message *</strong></h2>
+                {{form.contact_message}}
+            </div>
+            <a class="btn btn-dark" href="{% url 'products' %}" role="button" type="submit">Send</a>
+        </form>
+    </div>
 </div>
 
 <!---Social Images--->
