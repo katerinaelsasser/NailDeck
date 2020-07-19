@@ -261,20 +261,11 @@ footer {
 }
 
 /*----------index-------------*/
-
-x {
-    font-size: 3rem;
-    font-family: 'Tangerine', cursive;
-    margin: 0;
-    padding: 0;
-}
-
 .index-titles {
     color: #E95420;
 }
 
 /*----------header titles-------------*/
-
 .contact-title,
 .about-title,
 .index-header,
@@ -284,4 +275,9 @@ x {
     font-family: 'Tangerine', cursive;
     margin: 0;
     padding: 0;
+}
+
+/*----------profile-------------*/
+.profile-titles {
+    color: #E95420;
 }
