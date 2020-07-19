@@ -240,14 +240,6 @@ footer {
 }
 /*---------cart-----------*/
 
-.empty-title {
-    font-size: 3rem;
-    font-family: 'Tangerine', cursive;
-}
-
-.cart-titles {
-    font-size: 4rem;
-}
 .total-amount{
     font-size: 3rem;
 }
