@@ -262,7 +262,7 @@ footer {
 
 /*----------index-------------*/
 
-.index-header {
+x {
     font-size: 3rem;
     font-family: 'Tangerine', cursive;
     margin: 0;
@@ -273,25 +273,13 @@ footer {
     color: #E95420;
 }
 
-/*----------register-------------*/
+/*----------header titles-------------*/
 
-.register-title {
-    font-size: 3rem;
-    font-family: 'Tangerine', cursive;
-    margin: 0;
-    padding: 0;
-}
-
-/*----------about-------------*/
-
-.about-title {
-    font-size: 3rem;
-    font-family: 'Tangerine', cursive;
-    margin: 0;
-    padding: 0;
-}
-
-.contact-title {
+.contact-title,
+.about-title,
+.index-header,
+.register-title,
+.product-titles {
     font-size: 3rem;
     font-family: 'Tangerine', cursive;
     margin: 0;
