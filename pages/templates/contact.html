@@ -18,10 +18,22 @@
 <div class="container text-center">
     <form method="POST" action="{% url 'contact' %}">
         {% csrf_token %}
-        {{ form }}
+        <div class="form__group">
+            <h2><strong>Name *</strong></h2>
+            {{form.contact_name}}
+        </div>
+        <div class="form__group">
+            <h2><strong>Email *</strong></h2>
+            {{form.contact_email}}
+        </div>
+        <div class="form__group">
+            <h2><strong>Message *<strong></h2>
+            {{form.contact_message}}
+        </div>
         <button type="submit">SEND</button>
     </form>
 </div>
+
 <!---Social Images--->
 {% include 'components/socialcontact.html' %}
 
