@@ -7,7 +7,7 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-3.jpg' %}">
     <div class="header-text text-center">
-        <h1>Your Cart</h1>
+        <p class="cart-title">Your Cart</p>
     </div>
 </div>
 
@@ -22,7 +22,7 @@
     <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <div class="row">
         <div class="row col-md-8">
-            <h2 class="text-center container cart-title">Items</h2>
+            <p class="text-center container cart-title cart-title">Items</p>
             {% for item in cart_items %}
             <div class="row container shadow cart-item">
                 <div class="product card-img-top col-sm-3" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
