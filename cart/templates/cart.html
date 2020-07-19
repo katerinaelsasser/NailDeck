@@ -22,7 +22,7 @@
     <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <div class="row">
         <div class="row col-md-8">
-            <p class="text-center container cart-title cart-title">Items</p>
+            <p class="text-center container cart-title">Items</p>
             {% for item in cart_items %}
             <div class="row container shadow cart-item">
                 <div class="product card-img-top col-sm-3" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
@@ -42,7 +42,7 @@
         </div>
     <!---Total-->
         <div class="col-md-4 order-md-2 mb-4">
-        <h2 class="text-center mb-3 py-3 cart-title">Total</h2>
+        <p class="text-center mb-3 py-3 cart-title">Total</p>
         <p class="text-center total-amount">£{{ total }}</p>
         
         <div class="text-center">   
