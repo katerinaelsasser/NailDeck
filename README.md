@@ -8,15 +8,15 @@ Content
         * [Target Audience](https://github.com/katerinaelsasser/NailDeck#target-audience)
         * [Visitor Goals](https://github.com/katerinaelsasser/NailDeck#visitor-goals)
         * [Online Shop Goals](https://github.com/katerinaelsasser/NailDeck#online-shop-goals)
+    * [Scope]()
     * [Research](https://github.com/katerinaelsasser/NailDeck#research)
     * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
         * [Site User](https://github.com/katerinaelsasser/NailDeck#site-user)
         * [Site Owner](https://github.com/katerinaelsasser/NailDeck#site-owner)
-    * [Surface]()
     * [Strategy]()
     * [Structure]()
     * [Skeleton]()
-    * [Scope]()
+    * [Surface]()
     * [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices)
         * [Overall](https://github.com/katerinaelsasser/NailDeck#overall)
         * [Fonts](https://github.com/katerinaelsasser/NailDeck#fonts)
@@ -59,9 +59,35 @@ The target audience for the brand Nail Deck are:
 * There must be a clear navigation linking all pages together.
 * Admin must be able to access both the main website and the admin page.
 
+## Scope
+Research was the biggest thing for this website as this is going to be in competition with other shops. I looked at what other competition had and what they haven't got. The research I do on this, will effect what I feature on the website pages.
 
-## Research
-Before creating the website, I looked at other companies that sell the same products. Including Barry M, Boots, ASOS, Next and Etsy. I looked at what they featured on the website and I looked at what they all had in common as well as what worked well. The research I do on this, will effect what I feature on the website pages.
+### Research
+I put together pros and cons to a select group of companies that sell the same products. These companies are Barry M, Boots, ASOS, Next and Etsy.
+
+#### [Barry M](https://barrym.com/)
+* Pros 
+    * A lot of details of the products on display
+    * Add to cart button on the product image
+
+* Cons 
+    * A lot of features, possibly too many.
+    
+#### Boots
+* Pros 
+* Cons
+
+#### ASOS
+* Pros 
+* Cons
+
+#### Next
+* Pros
+* Cons 
+
+#### Etsy
+* Pros
+* Cons
 
 ## User stories 
 ### Site user
@@ -85,12 +111,11 @@ As the owner of the website, I want/expect:
 * Information of the business displayed so vistors can view it.
 * Contact details must be displayed so the vistors can find it if needed.
 
-Surface
-Strategy
-Structure
-Skeleton
-Scope
-
+## Strategy
+## Structure
+## Skeleton
+## Surface
+The surface of the website has to be fit in with the theme and with what would appeal to the target audience. I started to think about the layout, the colours, the typology and the imagery used throughout (see the [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices) for full details of what things I decided to present for the surface). Mockups and a flowchart was created to help create all the pages, in all the mockups I noticed that the layouts were simple so customers can understand and have ease to find pages. The images that are used are images of the products the company sells and the products in use as this is advertising for the company and the customers can see what the products look like.
 
 ## Design Choices 
 ### Overall
