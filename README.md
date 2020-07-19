@@ -31,6 +31,9 @@ Content
     * [Database choice]()
     * [Data Models]()
 * [Technologies Used]()
+    * [Languages]()
+    * [Databases]()
+    * [Liabries]()
 * [Testing]()
 * [Deployment]()
     * [Running Locally]()
@@ -223,22 +226,25 @@ For this project, the database used is SQL. For my local machine, sqlite3 datbas
 #### Product Modal
 #### Checkout Modal
 #### Order Modal
-## Technologies Used]()
+## Technologies Used
+### Languages
+* HTML
+* CSS
+* JavaScript
+* Python
+### Databases
+* PostgreSQL
+* SQlite3
+### Libaries
+* jQuery
+* Git
+* Bootstrap
+* Font-Awesome
+* Sweetalert2
+* Stripe
+* Django
 ## Testing]()
 ## Deployment]()
 ### Running Locally]()
 ### Deploying To Heroku]()
 ## Credits
-
-
-
-
-
-Existing Features
-Buttons - This allows the users to get to a page by clicking on it.
-Form - This allows the user to contact the company by filling the sections out and pressing submit.
-Hover - This allows the user to see clearly which navigation title they might click on by hovering over one of the titles.
-Dropdown - This allows the user to view the navigation bar in the mobile view.
-Social Media Links - This allows the user to get the social media page by clicking on the designated social media name.
-Features Left to Implement
-In the future as Sparki gets found more by customers and their services get use, the company will hopefully get review from those customers. When they are a few reviews, they will want to display the reviews on their website. I would put those reviews on the home page as future customers will the home page covered in good reviews which will help with advertisement for Sparki. Also when Sparki starts posting more on their social media platforms, they will want that placed on their website on the home page as well.
