@@ -68,7 +68,7 @@ body,
 }
 
 .pricing {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 /*------footer-----*/
@@ -253,8 +253,10 @@ footer {
     font-size: 4rem;
 }
 
-/*----------index-------------*/
-.index-titles {
+/*----------subheader colours-------------*/
+.index-titles,
+.profile-titles,
+.product-title {
     color: #E95420;
 }
 
@@ -262,10 +264,5 @@ footer {
 .fa-seedling,
 .fa-paw {
     font-size: 3rem;
-    color: #E95420;
-}
-
-/*----------profile-------------*/
-.profile-titles {
     color: #E95420;
 }
