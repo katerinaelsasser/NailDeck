@@ -30,12 +30,52 @@
         <div class="row">
             <div class="form-group col-md-6">
             <h2 class="form-titles">Delivery Details</h2>
-                {{ order_form | as_bootstrap }}
+                <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="full_name">Full Name:<span class="form__required"> *</span></label>
+                            {{ order_form.full_name }}
+                        </div>
+                        <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="address_line_1">Address Line 1:<span class="form__required"> *</span></label>
+                            {{ order_form.street_address }}
+                        </div>
+                        <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="city">Town/City:<span class="form__required"> *</span></label>
+                            {{ order_form.town_or_city }}
+                        </div>
+                        <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="postcode">Postcode:<span class="form__required"> *</span></label>
+                            {{ order_form.postcode }}
+                        </div>
+                        <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="country">Country:<span class="form__required"> *</span></label>
+                            {{ order_form.country }}
+                        </div>
+                        <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="phone_number">Phone Number:<span class="form__required"> *</span></label>
+                            {{ order_form.phone_number }}
+                        </div>
             </div>
             <div class="form-group col-md-6">
                 <h2 class="form-titles">Payment Details</h2>
-
-                {{ payment_form | as_bootstrap }}
+                <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="card_number">Card Number:<span class="form__required"> *</span></label>
+                            {{ payment_form.credit_card_number }}
+                        </div>
+                        <div class="checkout__form__group">
+                            <label class="checkout__form__group__label" for="cvv">CVV:<span class="form__required"> *</span></label>
+                            {{ payment_form.cvv }}
+                        </div>
+                        <div class="checkout__form__group checkout__form__group__inline">
+                            <label class="checkout__form__group__label" for="expiry_month">Expiry Month:<span class="form__required"> *</span></label>
+                            {{ payment_form.expiry_month }}
+                        </div>
+                        <div class="checkout__form__group checkout__form__group__inline">
+                            <label class="checkout__form__group__label" for="expiry_year">Expiry Year:<span class="form__required"> *</span></label>
+                            {{ payment_form.expiry_year }}
+                        </div>
+                        <div class="checkout__form__group">
+                            {{ payment_form.stripe_id }}
+                        </div>
             <div class="container text-center py-3">
                 <h1>Total: £{{ total }}</h1>
             </div>
@@ -43,7 +83,7 @@
         </div>
         {% csrf_token %}
         <div class="form-group text-center">
-            <input class="btn-dark btn-lg btn-block" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+        <button class="btn btn-dark btn-lg btn-block" id="submit_payment_btn" type="submit">Submit Payment</button>
         </div>
     </form>
 </div>
