@@ -69,9 +69,13 @@ I put together pros and cons to a select group of companies that sell the same p
 * Pros 
     * A lot of details of the products on display
     * Add to cart button on the product image
+    * Responsive website
+    * The home page sums up all of the pages.
+    * Works well in different views (desktop, mobile, medium, etc.).
 
 * Cons 
     * A lot of features, possibly too many.
+    * Navigration bar dropdown is messy.
     
 #### Boots
 * Pros 
