@@ -8,15 +8,15 @@ Content
         * [Target Audience](https://github.com/katerinaelsasser/NailDeck#target-audience)
         * [Visitor Goals](https://github.com/katerinaelsasser/NailDeck#visitor-goals)
         * [Online Shop Goals](https://github.com/katerinaelsasser/NailDeck#online-shop-goals)
+    * [Strategy]()
+    * [Structure]()
+    * [Skeleton]()
     * [Scope](https://github.com/katerinaelsasser/NailDeck#scope)
     * [Research](https://github.com/katerinaelsasser/NailDeck#research)
     * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
         * [Site User](https://github.com/katerinaelsasser/NailDeck#site-user)
         * [Site Owner](https://github.com/katerinaelsasser/NailDeck#site-owner)
-    * [Strategy]()
-    * [Structure]()
-    * [Skeleton]()
-    * [Surface]()
+    * [Surface](https://github.com/katerinaelsasser/NailDeck#surface)
     * [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices)
         * [Overall](https://github.com/katerinaelsasser/NailDeck#overall)
         * [Fonts](https://github.com/katerinaelsasser/NailDeck#fonts)
@@ -58,6 +58,17 @@ The target audience for the brand Nail Deck are:
 * The website should work on all size devices (sm, md, lg). This includes the navigation and the features,
 * There must be a clear navigation linking all pages together.
 * Admin must be able to access both the main website and the admin page.
+
+## Strategy
+The main request from the company is that they want customers to purchase products from the website as well as this, the site owner wants the customer to have an account to purchase the items. Taking this into account, I have done the following:
+* I want to display their products all over the website to advertise them to get them to pruchase the products. For example: images from social media of customers using the products.
+* To get the customer to create an account, I have linked the product pages and the shopping cart page to a log in page, meaning the customer will have to login to access the page.
+
+## Structure
+The layout of the website has to advertise the products to customers so they would pruchase the products. Products must be presentable and easy to purchase, there must be a clear and easy to use checkout where customers can make purchases. The website is advertise for a wide range of audience who would use all devices to make purchases, which means all device displays must be readable.
+
+## Skeleton
+The main things about the website that will form the backbone are the navigation which will be featured on the header on each html page. By doing this, it will make the whole webpage look uniform. The only thing that will differ each page will be the section.
 
 ## Scope
 Research was the biggest thing for this website as this is going to be in competition with other shops. I looked at what other competition had and what they haven't got. The research I do on this, will effect what I feature on the website pages.
@@ -130,15 +141,6 @@ As the owner of the website, I want/expect:
 * Information of the business displayed so vistors can view it.
 * Contact details must be displayed so the vistors can find it if needed.
 
-## Strategy
-The main request from the company is that they want customers to purchase products from the website. Taking this to mind, I want to display their products all over the website to advertise them. For example: images from social media of customers using the products.
-
-## Structure
-The layout of the website has to advertise the products to customers so they would pruchase the products. Products must be presentable and easy to purchase, there must be a clear and easy to use checkout where customers can make purchases. The website is advertise for a wide range of audience who would use all devices to make purchases, which means all device displays must be readable.
-
-## Skeleton
-
-
 ## Surface
 The surface of the website has to be fit in with the theme and with what would appeal to the target audience. I started to think about the layout, the colours, the typology and the imagery used throughout (see the [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices) for full details of what things I decided to present for the surface). Mockups and a flowchart was created to help create all the pages, in all the mockups I noticed that the layouts were simple so customers can understand and have ease to find pages. The images that are used are images of the products the company sells and the products in use as this is advertising for the company and the customers can see what the products look like.
 
@@ -197,6 +199,7 @@ The images that have been displayed on the website are from [Unsplash](https://u
 * [Laptop Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/admin-profile-laptop.jpg)
 
 ## Features
+Throughout the page, there is a navigation bar on the header and the footer that takes you to the designated area. Throughout the wesbite there are responsive images as well as buttons to take the customer to the product pages.
 ### Existing Features
 ### Future Features
 ### Information Architecture
@@ -216,3 +219,16 @@ For this project, the database used is SQL. For my local machine, sqlite3 datbas
 ### Running Locally]()
 ### Deploying To Heroku]()
 ## Credits
+
+
+
+
+
+Existing Features
+Buttons - This allows the users to get to a page by clicking on it.
+Form - This allows the user to contact the company by filling the sections out and pressing submit.
+Hover - This allows the user to see clearly which navigation title they might click on by hovering over one of the titles.
+Dropdown - This allows the user to view the navigation bar in the mobile view.
+Social Media Links - This allows the user to get the social media page by clicking on the designated social media name.
+Features Left to Implement
+In the future as Sparki gets found more by customers and their services get use, the company will hopefully get review from those customers. When they are a few reviews, they will want to display the reviews on their website. I would put those reviews on the home page as future customers will the home page covered in good reviews which will help with advertisement for Sparki. Also when Sparki starts posting more on their social media platforms, they will want that placed on their website on the home page as well.
