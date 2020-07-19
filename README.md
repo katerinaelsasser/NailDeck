@@ -8,7 +8,7 @@ Content
         * [Target Audience](https://github.com/katerinaelsasser/NailDeck#target-audience)
         * [Visitor Goals](https://github.com/katerinaelsasser/NailDeck#visitor-goals)
         * [Online Shop Goals](https://github.com/katerinaelsasser/NailDeck#online-shop-goals)
-    * [Scope]()
+    * [Scope](https://github.com/katerinaelsasser/NailDeck#scope)
     * [Research](https://github.com/katerinaelsasser/NailDeck#research)
     * [User Stories](https://github.com/katerinaelsasser/NailDeck#user-stories)
         * [Site User](https://github.com/katerinaelsasser/NailDeck#site-user)
