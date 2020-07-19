@@ -7,8 +7,12 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
     <div class="header-text text-center">
-        <h1>Thank you for the order, {{ user.username }} </h1>
+        <p class="confirm-title">Confirmation</p>    
     </div>
+</div>
+
+<div class="container">
+    <h2>Thank you for the order, {{ user.username }} </h2>
 </div>
 
 {% endblock %}

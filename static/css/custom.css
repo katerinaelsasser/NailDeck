@@ -276,9 +276,11 @@ footer {
 .contact-title,
 .term-title,
 .about-title,
+.confirm-title,
 .index-header,
 .register-title,
 .product-titles,
+.checkout-title,
 .cart-title {
     font-size: 3rem;
     font-family: 'Tangerine', cursive;
