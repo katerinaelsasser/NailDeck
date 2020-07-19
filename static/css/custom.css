@@ -265,6 +265,13 @@ footer {
     color: #E95420;
 }
 
+/*----------about-------------*/
+.fa-seedling,
+.fa-paw {
+    font-size: 3rem;
+    color: #E95420;
+}
+
 /*----------header titles-------------*/
 .contact-title,
 .about-title,
