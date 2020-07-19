@@ -131,6 +131,8 @@ As the owner of the website, I want/expect:
 * Contact details must be displayed so the vistors can find it if needed.
 
 ## Strategy
+The main request from the company is that they want customers to purchase products from the website. Taking this to mind, I want to display their products all over the website to advertise them. For example: images from social media of customers using the products.
+
 ## Structure
 The layout of the website has to advertise the products to customers so they would pruchase the products. Products must be presentable and easy to purchase, there must be a clear and easy to use checkout where customers can make purchases. The website is advertise for a wide range of audience who would use all devices to make purchases, which means all device displays must be readable.
 
