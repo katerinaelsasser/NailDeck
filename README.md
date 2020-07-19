@@ -201,7 +201,17 @@ The images that have been displayed on the website are from [Unsplash](https://u
 ## Features
 Throughout the page, there is a navigation bar on the header and the footer that takes you to the designated area. Throughout the wesbite there are responsive images as well as buttons to take the customer to the product pages.
 ### Existing Features
+* Customers can create a account, use the login, adjust account details on profile dashboard.
+* If users forget thier password, they can reset the password.
+* There is a contact form for users to contact the company.
+* List of products, including product categories display select products related to that list.
+* Products can be added, adjusted and removed from the shopping basket.
+* Customers can purchase products in their shopping basket. The checkout uses a Stripe API, this is where payment details will be process and a order will be placed.
 ### Future Features
+* Product listings will have filters for specific products, including filtering by colour.
+* Order confirmation will also send an email to the customer confirming the purchase.
+* More categories will be created for more products.
+
 ### Information Architecture
 
 ## Information Architecture
