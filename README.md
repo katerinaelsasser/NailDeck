@@ -272,5 +272,44 @@ The user model is the standard one supplied by `django.contrib.auth.models`.
 ## Testing]()
 ## Deployment]()
 ### Running Locally]()
+To run the website locally, I used the following steps.
+
+#### Before:
+Before starting, the following must be check:
+* That GitPod has the following installed on the machine:
+    * PIP
+    * Python3
+    * Git
+* An account has been created for the following services:
+    * Sendgrid
+    * Stripe
+
+#### Instructions:
+1. Clone the repository by typing in the command below into your terminal or downloading from here.
+` git clone https://github.com/geomint/thecoffeeshop `
+2. Navigate to the correct location in your terminal.
+3. Enter the command below into your terminal.
+` python3 -m .venv venv `
+4. Use the commoand below to initialize the environment.
+` .venv\bin\activate `
+* (Optional) Depending on the operating system, Upgrade pip locally with
+` pip install --upgrade pip `
+5. Install the requirmenets using the below
+` pip3 -r requirements.txt `
+6. In the IDE, create a file where you can store your secret information for the app. I placed these in the a file called `env.py` file.
+` os.environ.setdefault("STRIPE_PUBLISHABLE", "") `
+    os.environ.setdefault("STRIPE_SECRET", "")
+    os.environ.setdefault("DATABASE_URL", "")
+    os.environ.setdefault("SECRET_KEY", "")
+    os.environ.setdefault("AWS_ACCESS_KEY_ID", "")
+    os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "")
+`
+7: Enter the following command into the terminal to migrate models into database.
+python3 manage.py migrate
+8: Then you need to Create a 'superuser' for the project using the terminal, enter the following command.
+python3 manage.py createsuperuser
+9: The app can now be ran locally using the following command.
+python3 manage.py runserver
+
 ### Deploying To Heroku]()
 ## Credits
