@@ -1,18 +1,15 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% block content %}
-<main>
+<main class="container-fluid">
 <!----Header Display---->
-<div class="container-fluid header-title">
+<div class="header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-1.jpg' %}" alt="Responsive image"/>
     <div class="header-text text-center">
         <h2>Welcome Aboard</h2>
     </div>
 </div>
-<div class="container text-center py-3">
-<h2>We have sailed far and wide to collect the best nail polish treasures prefect for every pirate to sail the seven seas. Walk the plank to our many treasures if you dare.</h2>
- <h2>But bewarned, dead men tell no tales!</h2>
-</div>
+
 <div class="row text-center">
 {% if user.is_authenticated %}
     <!-----about display------->
@@ -62,9 +59,7 @@
 </div>    
 
 <!----image divider----->
-<div class="container-fluid">
-    <img class="img-fluid" src="{% static 'images/header/display-10.jpg' %}">
-</div>
+<img class="img-fluid" src="{% static 'images/header/display-10.jpg' %}">
 
 <!---Social Images--->
 {% include 'components/socialindex.html' %}
