@@ -270,9 +270,9 @@ The user model is the standard one supplied by `django.contrib.auth.models`.
 * Sweetalert2
 * Stripe
 * Django
-## Testing]()
-## Deployment]()
-### Running Locally]()
+## Testing
+## Deployment
+### Running Locally
 To run the website locally, I used the following steps.
 
 #### Before:
