@@ -298,18 +298,17 @@ Before starting, the following must be check:
 ` pip3 -r requirements.txt `
 6. In the IDE, create a file where you can store your secret information for the app. I placed these in the a file called `env.py` file.
 ` os.environ.setdefault("STRIPE_PUBLISHABLE", "") `
-    os.environ.setdefault("STRIPE_SECRET", "")
-    os.environ.setdefault("DATABASE_URL", "")
-    os.environ.setdefault("SECRET_KEY", "")
-    os.environ.setdefault("AWS_ACCESS_KEY_ID", "")
-    os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "")
-`
-7: Enter the following command into the terminal to migrate models into database.
-python3 manage.py migrate
-8: Then you need to Create a 'superuser' for the project using the terminal, enter the following command.
-python3 manage.py createsuperuser
-9: The app can now be ran locally using the following command.
-python3 manage.py runserver
+` os.environ.setdefault("STRIPE_SECRET", "") `
+` os.environ.setdefault("DATABASE_URL", "") `
+` os.environ.setdefault("SECRET_KEY", "") `
+` os.environ.setdefault("AWS_ACCESS_KEY_ID", "") `
+` os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "") `
+7. Put the following command into the terminal to migrate models into database.
+` python3 manage.py migrate `
+8. Add the following command to the terminal to create a 'superuser' for the project. 
+` python3 manage.py createsuperuser `
+9. Use the command below to run the project locally.
+` python3 manage.py runserver `
 
 ### Deploying To Heroku]()
 ## Credits
