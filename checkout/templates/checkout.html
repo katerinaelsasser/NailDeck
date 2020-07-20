@@ -14,10 +14,8 @@
 <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
     <!----Payment form----->
     <form role="form" method="POST" id="payment-form" action="{% url 'checkout' %}">
-        <div id="credit-card-errors" style="display: none;">
-            <div id="alert-message block-message error" id="stripe-error-message"></div>
-        </div>
         <div class="row">
+        {% csrf_token %}
             <div class="form-group col-md-6">
             <h2 class="form-titles">Delivery Details</h2>
                 <div class="checkout__form__group">
@@ -25,7 +23,7 @@
                             {{ order_form.full_name }}
                         </div>
                         <div class="checkout__form__group">
-                            <label class="checkout__form__group__label" for="address_line_1">Address Line 1:<span class="form__required"> *</span></label>
+                            <label class="checkout__form__group__label" for="address_line_1">Address:<span class="form__required"> *</span></label>
                             {{ order_form.street_address }}
                         </div>
                         <div class="checkout__form__group">
@@ -63,7 +61,7 @@
                             <label class="checkout__form__group__label" for="expiry_year">Expiry Year:<span class="form__required"> *</span></label>
                             {{ payment_form.expiry_year }}
                         </div>
-                        <div class="checkout__form__group">
+                <div class="checkout__form__group">
                             {{ payment_form.stripe_id }}
                         </div>
             <div class="container text-center py-3">
