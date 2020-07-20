@@ -24,12 +24,9 @@
 <body>
     <!-- nav bar -->
    {% include 'layout/navbar.html' %}
-
-       
-
     <!---Content---> 
+    {% if messages %}
     <div class="py-5">       
-        {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
                 {% for message in messages %}
@@ -37,8 +34,8 @@
                 {% endfor %}
             </div>
         </div>
-    {% endif %} 
     </div>
+     {% endif %} 
     {% block content %} {% endblock %}
 
     <!---Footer--->
