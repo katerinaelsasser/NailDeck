@@ -222,8 +222,9 @@ For this project, the database used is SQL. For my local machine, sqlite3 datbas
 ### Data Modals
 #### Product Modal
 The products have the following model:
-| Name        | Key in DB           | Validation  | Field Type |
-| ------------- |:-------------:| -----:|| -----:|
+
+| Name          | Key in DB     | Validation  | Field Type |
+| ------------- |:-------------:| -----:      | -----:     |
 | Name      | name | max_length=254, default='' |CharField |
 | Description     | description |  | TextField|
 | Price     | price  | max_digits=6, decimal_places=2 | DecimalField|
@@ -232,7 +233,7 @@ The products have the following model:
 
 #### Checkout Modal
 | Name        | Key in DB           | Validation  | Field Type |
-| ------------- |:-------------:| -----:|| -----:|
+| ------------- |:-------------:| -----:| -----:|
 | User      | user | User, on_delete=models.PROTECT, default=None | ForeignKey|
 | Full Name     | full_name | max_length=50, blank=False | CharField|
 | Phone Number     | phone_number | max_length=20, blank=False |CharField |
@@ -245,7 +246,7 @@ The products have the following model:
 
 #### Order Modal
 | Name        | Key in DB           | Validation  | Field Type |
-| ------------- |:-------------:| -----:|| -----:|
+| ------------- |:-------------:| -----:| -----:|
 | Order      | order | Order, null=False |ForeignKey |
 | Product     | product | Product, null=False | ForeignKey|
 | Quantity     | quantity | blank=False |IntegerField |
