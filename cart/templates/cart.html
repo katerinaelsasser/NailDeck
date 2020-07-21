@@ -7,7 +7,7 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-3.jpg' %}">
     <div class="header-text text-center">
-        <h2><strong>Your Cart</strong></h2>
+        <h2>Your Cart</h2>
     </div>
 </div>
 
@@ -15,7 +15,7 @@
 {% if total == 0 %}
     <div class="container-fluid text-center py-3">
         <h1><a href="{% url 'products' %}"><i class="fa fa-shopping-cart"></i></a></h1>
-        <h2 class="py-3"><strong>Shopping cart is empty</strong></h2>
+        <h2 class="py-3">Shopping cart is empty</h2>
         <a class="btn btn-dark" href="{% url 'products' %}" role="button">Continue Shopping</a>
     </div>
 {% else %}
