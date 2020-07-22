@@ -1,21 +1,5 @@
 {% load staticfiles %}
 <div class="row text-center">
-{% if user.is_authenticated %}
-    <!-----about display------->
-    <div class="py-3 container text-center col-md-6">
-        <h1><a href="{% url 'about' %}"><i class="fa fa-hand-sparkles"></i></a></h1>
-        <h2>About Nail Deck</h2>
-        <p>Nail Deck is inspired by the famous pirates of the sea and bring the buried treasure to your home.</p>
-        <a class="btn btn-dark" href="{% url 'about' %}" role="button">Learn More »</a>
-    </div>
-    <!-----about display------->
-    <div class="container text-center py-3 col-md-6">
-        <h1><a href="{% url 'products' %}"><i class="fa fa-gem"></i></a></h1>
-        <h2>View Our Treatures</h2>
-        <p>We have travelled far and wide to get the treasures from around the world.</p>
-        <a class="btn btn-dark" href="{% url 'products' %}" role="button">View our products »</a>
-    </div>
-{%  else %}
     <!-----about display------->
     <div class="py-3 text-center col-md-3">
         <h1><a href="{% url 'about' %}"><i class="fa fa-hand-sparkles"></i></a></h1>
@@ -44,5 +28,4 @@
         <p>Don't have an account with us? Become a pirate of NailDeck crew to shop products today.</p>
         <a class="btn btn-dark" href="{% url 'register' %}" role="button">Create an account »</a>
     </div>
-    {% endif %}
 </div> 

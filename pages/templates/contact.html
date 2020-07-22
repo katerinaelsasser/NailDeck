@@ -5,31 +5,31 @@
 <div class="container-fluid header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-13.jpg' %}">
     <div class="header-text text-center">
-    <h2><strong>Contact Us</strong></h2>
+    <h2>Contact Us</h2>
     </div>
 </div>
 
 <!--------Form--------->
 <div class="container text-center">
     <div class="py-3">
-    <h2>Have a question, send us a message in the form below.</h2>
+    <h2>Have a question you need answered? Fill out a form below and we will answer it.</h2>
     </div>
-    <div class="py-3"> 
+    <div class="py-3 container-fluid"> 
         <form method="POST" action="{% url 'contact' %}">
             {% csrf_token %}
-            <div class="form__group">
-                <h2><strong>Name *</strong></h2>
-                {{form.contact_name}}
-            </div>
-            <div class="form__group">
-                <h2><strong>Email *</strong></h2>
-                {{form.contact_email}}
-            </div>
-            <div class="form__group">
-                <h2><strong>Message *</strong></h2>
+                <div class="form-group col-sm-12">
+                    <h2>Name</h2>
+                    {{form.contact_name}}
+                </div>
+                <div class="form-group col-sm-12">
+                    <h2>Email</h2>
+                    {{form.contact_email}}
+                </div>
+            <div class="form-group col-sm-12">
+                <h2>Message</h2>
                 {{form.contact_message}}
             </div>
-            <button class="btn btn-dark" type="submit">Submit</button>
+            <button class="btn-primary btn-lg" type="submit">Submit</button>
         </form>
     </div>
 </div>
