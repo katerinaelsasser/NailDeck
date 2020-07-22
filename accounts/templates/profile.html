@@ -15,19 +15,19 @@
 <div class="container-fluid text-center py-4">
     <div class="row">
     <div class="col-6 py-3">
-        <h1><a href="#ORDERS"><i class="fa fa-gem"></i></a></h1>
+        <h1><a href="#Orders"><i class="fa fa-gem"></i></a></h1>
         <h2 class="py-3"><strong>View Orders</strong></h2>
         <a class="btn btn-dark" href="#ORDERS" role="button">View all</a>
     </div>
     <div class="col-6 py-3">
-        <h1><a href="##Details"><i class="fa fa-cogs"></i></a></h1>
+        <h1><a href="#Details"><i class="fa fa-cogs"></i></a></h1>
         <h2 class="py-3"><strong>Update details</strong></h2>
         <a class="btn btn-dark" href="##Details" role="button">Update</a>
     </div>
 </div>
 
 <!---Order History---->
-<div class="container-fluid text-center py-3 border-top" id="ORDERS">
+<div class="container-fluid text-center py-3 border-top" id="Orders">
 <h2 class="py-3"><strong>Order History</strong></h2>
 <table class="table container">
   <thead>
@@ -79,6 +79,7 @@
             <h2 class="col-md-6"><strong>Email</strong></h2>
             <input class="col-md-6" value="{{ user.email }}">
         </div>
+        <button class="btn-primary btn-lg" type="submit">Submit</button>
     </form>
 </div>
 <div>
