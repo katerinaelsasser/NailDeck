@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% block content %}
+<!----Header Content---->
+<div class="container-fluid header-title">
+    <img class="img-fluid header-img" src="{% static 'images/header/display-13.jpg' %}">
+    <div class="header-text text-center">
+    <h2>Leave A Review</h2>
+    </div>
+</div>
+
+<!----View Reviews------>
+{% for review in reviews %}
+        <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+                <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                <div class="card-body text-center">
+                    <h2 class="card-title">{{ review.review_star }}</h2>
+                    <p class="card-text">{{ review.review_message }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+<!--------Form--------->
+<div class="container text-center">
+    <div class="py-3">
+    <h2>Leave us a review today! We would love to hear your thoughts.</h2>
+    </div>
+    <div class="py-3"> 
+        <form method="POST" action="{% url 'review' %}">
+            {% csrf_token %}
+            <div class="form__group">
+                <h2>Star Rating *</h2>
+                {{form.review_star}}
+            </div>
+            <div class="form__group">
+                <h2>Message *</h2>
+                {{form.review_message}}
+            </div>
+            <button class="btn btn-dark" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!---Social Images--->
+{% include 'components/socialcontact.html' %}
+
+{% endblock %}

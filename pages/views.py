@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.views.generic import CreateView
 from django.http import HttpResponse
-from .forms import contact_form
+from .forms import contact_form, review_form
+from .models import Review
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import redirect
 
@@ -37,3 +38,18 @@ def contact(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
     return render(request, "contact.html", {'form': form})
+
+# Review Form
+def review(request):
+    if request.method == 'GET':
+        form = review_form()
+    else:
+        form = review_form(request.POST)
+        if form.is_valid():
+            review_star = form.cleaned_data['review_star']
+            review_message = form.cleaned_data['review_message']
+            try:
+                return render(request, "reviewsent.html")
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+    return render(request, "reviews.html", {'form': form})
