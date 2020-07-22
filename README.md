@@ -160,10 +160,9 @@ I wanted to style the website with icons. The icons I wanted to feature must inc
 * The for the log in icon on the navbar has two icons. One for then the user is not logged in (which is the skull) and the other for when they are logged in (which is the skull and cross bones).
 ### Colours
 
+* Dark Grey - #212529
 * White - #FFFFFF
-* Orange - #FF7D45
-* Red - #C63232
-* Purple - #772953
+* Red - #
 * Black - #000000
 
 ### Images
