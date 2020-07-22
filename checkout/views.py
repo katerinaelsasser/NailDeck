@@ -22,7 +22,7 @@ def checkout(request):
             order = order_form.save(commit=False)
             order.date = timezone.now()
             order.save()
-            
+                        
             cart = request.session.get('cart', {})
             total = 0
             for id, quantity in cart.items():
