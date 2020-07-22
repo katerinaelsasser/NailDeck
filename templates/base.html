@@ -16,10 +16,6 @@
     <!----icon---->
      <link rel="shortcut icon" href="{% static 'images/logo/nav-logo.png' %}" type="image/x-icon" />
     <link rel="icon" href="{% static 'images/logo/nav-logo.png' %}" type="image/x-icon" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    {% block head_js %}
-    {% endblock head_js %}
 </head>
 <body>
     <!-- nav bar -->
@@ -55,6 +51,10 @@
     <!---Footer--->
     {% include 'layout/footer.html' %}
     <!---Script--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% block head_js %}
+    {% endblock head_js %}
     {% include 'components/footerjs.html' %}
 
 </body>
