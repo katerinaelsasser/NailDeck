@@ -36,6 +36,9 @@ h2 {
 .label-warning[href],
 .badge-warning[href] {
     background-color: #fff;
+}
+
+.badge-warning {
     background-color: #D9230F;
 }
 
