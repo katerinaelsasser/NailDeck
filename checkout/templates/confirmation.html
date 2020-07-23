@@ -10,9 +10,31 @@
         <h2>Confirmation</h2>    
     </div>
 </div>
-
-<div class="container">
-    <h2>Thank you for the order, {{ user.username }} </h2>
+<div class="container-fluid text-center">
+    <!------Intro------->
+    <div class="container py-3">
+        <h2 class="col-12">Thank you for the order!</h2>
+        <p class="py-2">Hi {{ user.username }}, your order has been recieved.</p>
+    </div>
+    <div class="row">
+    <!------Review------->
+        <div class="col-sm-12 col-md-6">
+            <i class="fa fa-question"></i>
+            <h2 class="col-12">Any queries?</h2>
+            <p class="py-2">Send us a message</p>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    <!------Queries------->
+        <div class="col-sm-12 col-md-6">
+            <i class="fa fa-comment"></i>
+            <h2 class="col-12">Leave us a review</h2>
+            <p class="py-2">Love to hear your thoughts!</p>
+            <a href="{% url 'review' %}" class="btn btn-primary btn-lg">Review Us</a>
+        </div>
+    </div>
+    <div class="container py-3 text-center">
+        <p class="py-2">Thank you from our team at</p>
+        <h1>Nail Deck</h1>
+    </div>
 </div>
-
 {% endblock %}
