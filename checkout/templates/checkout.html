@@ -19,12 +19,12 @@
     </div>
 <div class="row">
     <div class="form-group col-md-6">
-        <h2 class="form-titles">Delivery Details</h2>
+        <h2>Delivery Details</h2>
         {{ order_form | as_bootstrap }}
     </div>
 
     <div class="form-group col-md-6">
-        <h2 class="form-titles">Payment Details</h2>
+        <h2>Payment Details</h2>
         {{ payment_form | as_bootstrap }}
     </div>
     {% csrf_token %}
