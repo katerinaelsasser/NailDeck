@@ -33,11 +33,11 @@
             {% csrf_token %}
             <div class="form__group">
                 <h2>Star Rating *</h2>
-                {{form.review_star}}
+                {{form.review_star | as_bootstrap }}
             </div>
             <div class="form__group">
                 <h2>Message *</h2>
-                {{form.review_message}}
+                {{form.review_message | as_bootstrap }}
             </div>
             <button class="btn btn-dark" type="submit">Submit</button>
         </form>
