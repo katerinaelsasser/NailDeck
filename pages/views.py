@@ -25,10 +25,10 @@ def social_view(request):
 # Contact Form
 def contact(request):
     if request.method == 'GET':
-        form = contact_form()
+        form_contact = contact_form()
     else:
-        form = contact_form(request.POST)
-        if form.is_valid():
+        form_contact = contact_form(request.POST)
+        if form_contact.is_valid():
             contact_name = form.cleaned_data['contact_name']
             contact_email = form.cleaned_data['contact_email']
             contact_message = form.cleaned_data['contact_message']
@@ -37,19 +37,19 @@ def contact(request):
                 return render(request, "contactsent.html")
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-    return render(request, "contact.html", {'form': form})
+    return render(request, "contact.html", {'form_contact': form_contact})
 
 # Review Form
 def review(request):
     if request.method == 'GET':
-        form = review_form()
+        form_review = review_form()
     else:
-        form = review_form(request.POST)
-        if form.is_valid():
+        form_review = review_form(request.POST)
+        if form_review.is_valid():
             review_star = form.cleaned_data['review_star']
             review_message = form.cleaned_data['review_message']
             try:
                 return render(request, "reviewsent.html")
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-    return render(request, "reviews.html", {'form': form})
+    return render(request, "reviews.html", {'form_review': form_review})
