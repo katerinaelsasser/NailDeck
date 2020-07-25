@@ -35,21 +35,24 @@
     <div class="row mb-2 px-3 py-5">
     {% for product in products %}
         {% if product.category == "Polishes" %}
-            <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-4 col-md-6 mb-4">
                 <div class="card border-0 shadow">
                     <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
                     <div class="card-body text-center">
-                        <h1 class="card-title">{{ product.name }}</h1>
-                        <h2 class="card-text">{{ polish.description }}</h2>
-                        <h1 class="card-text">£{{ polish.price }}</h1>
+                        <h2 class="card-title">{{ product.name }}</h2>
+                        <p class="card-text"><strong>Description:</strong> {{ product.description }}</p>
+                        <p class="card-text pricing"><strong>£{{ product.price }}</strong></p>
                         <div class="btn-group">
                             <form method="post" action="{% url 'add_to_cart' product.id %}">
                                 {% csrf_token %}
-                                <div class="input-group">
-                                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Qty" required>
-                                    <span class="input-group-btn px-3">
-                                        <button class="btn btn-dark" type="submit">Add</button>
-                                    </span>
+                                <div class="container">
+                                    <p><strong>Add Amount:</strong></p>
+                                </div>
+                                <div class="input-group container">
+                                    <input name="quantity" type="number" min="0" max="10" class="form-control" value="1">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-dark"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -57,9 +60,7 @@
                 </div>
             </div>
         {% else %}
-            <div class="text-center">
-                <p>No products</p>
-            </div>
+            
         {% endif %}
     {% endfor %}
     </div>
