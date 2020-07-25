@@ -17,8 +17,9 @@ def polish_category(request, *args, **kwargs):
     """
     Displays all products that are in the polish category
     """
-    context = get_context('Polishes')
-    return render(request, "polish.html", context)
+    # context = get_context('Polishes')
+    products = Product.objects.all()
+    return render(request, "polish.html", {"products": products})
 
 # Nail Care
 @login_required
@@ -26,13 +27,6 @@ def care_category(request, *args, **kwargs):
     """
     Displays all products that are in the care category
     """
-    context = get_context('Care')
-    return render(request, "care.html", context)
-
-def get_context(category_name):
-    """ Returns relevant context for category views """
-    context = {
-        'products': Product.objects.all().filter(category=category_name),
-        'category': category_name
-    }
-    return context
+    # context = get_context('Care')
+    products = Product.objects.all()
+    return render(request, "care.html", {"products": products})
