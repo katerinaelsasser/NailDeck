@@ -272,6 +272,14 @@ The user model is the standard one supplied by `django.contrib.auth.models`.
 * Stripe
 * Django
 ## Testing
+### Vailidation Services
+Vailidation services were used to check HTML, CSS and Javascipt that was used throughout the website.
+The following code 
+HTML - W3C Markup Validation.
+CSS - W3C CSS validation.
+JavaScript - JSHint.
+
+
 ## Deployment
 ### Running Locally
 To run the website locally, I used the following steps.
