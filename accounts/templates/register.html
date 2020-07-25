@@ -16,7 +16,7 @@
                 <fieldset class="form-group">
                     {% csrf_token %}
                     {{  user_form | as_bootstrap }}
-                    <button type="submit" class="btn btn-dark btn-lg btn-block">Create account</button>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Create account</button>
                 </fieldset>
             </form>
             <h2>Already have an account? <a href="{% url 'login' %}">Login In</a></h2>
