@@ -49,7 +49,7 @@ def review(request):
             review_star = form.cleaned_data['review_star']
             review_message = form.cleaned_data['review_message']
             try:
-                return render(request, "reviewsent.html")
+                return render(request, "review.html")
             except BadHeaderError:
-                return HttpResponse('Invalid header found.')
+                return HttpResponse('Invalid.')
     return render(request, "reviews.html", {'form_review': form_review})

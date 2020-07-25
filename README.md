@@ -153,24 +153,26 @@ The overall design layout of the website has to have a simple layout with elemen
 
 ### Fonts
 The font I have decided to use two font styles. These fonts are for the headers, with these they would bring the element of the pirate theme to the text as they are handwriting and it would give the effect of a treasure map. 
-* Font 1 (Meddon) - This font is chose for h1 tags for the title of the website and also the titles of the products. 
+* Font 1 (Meddon) - This font is chose for h1 tags for brand of the company. 
 * Font 2 (Tangerine) - This font is use for titles that are h2 and any sub titles.
 ### Icons
 I wanted to style the website with icons. The icons I wanted to feature must include some pirate themed icons, such as skull and cross bones.
 * The for the log in icon on the navbar has two icons. One for then the user is not logged in (which is the skull) and the other for when they are logged in (which is the skull and cross bones).
 ### Colours
 
-* Dark Grey - #212529
 * White - #FFFFFF
-* Red - #
-* Black - #000000
+* Red - #D9230F
+* Dark Grey - #212529
+
+![ColourPallet](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/colourpallet.png)
 
 ### Images
-The images that have been displayed on the website are from [Unsplash](https://unsplash.com/) & [Pixabay](https://pixabay.com/). These are royalty free image website. The images that I have used are images of hands with nail varnish on the nails. I have tried to find images of people who are located at beaches or somewhere tropical in the image. These images would be help create the visual of the pirate theme while advertising the products.
+The images that have been displayed on the website are from [Unsplash](https://unsplash.com/) & [Pixabay](https://pixabay.com/). These are royalty free image website. The images that I have used are images of hands with nail varnish on the nails or products of nail care. I have tried to find images of people who are located at beaches or somewhere tropical in the image. These images would be help create the visual of the pirate theme while advertising the products.
 
 ## Wireframes/Flowchart
 
 ### FlowChart 
+View the flowchart for this website [here](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/flowchart2020.jpg).
 
 ### Product Layout
 * [Mobile Version](https://github.com/katerinaelsasser/NailDeck/blob/master/wireframes/products-mobile.jpg)
