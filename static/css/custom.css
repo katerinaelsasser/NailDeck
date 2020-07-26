@@ -112,6 +112,12 @@ footer {
     font-size: 3rem;
 }
 
+.toast {
+    position: absolute; 
+    top: 0; 
+    right: 0;
+}
+
 /*------your images------*/
 .insta-accounts {
   padding: 0.9375rem;
@@ -150,5 +156,3 @@ footer {
     font-size: 3rem;
     color: #D9230F;
 }
-
-/*----------contact/review------------*/
