@@ -2,16 +2,16 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-
-<!----Log In Form-->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-7.jpg' %}">
-    <div class="header-text text-center">
-        <h2 >Log In</h2>
+<section class="container-fluid">
+    <!----Log In Form-->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-7.jpg' %}">
+        <div class="header-text text-center">
+            <h2 >Log In</h2>
+        </div>
     </div>
-</div>
 
-<div class="container text-center">
+    <div class="container text-center">
         <form method="post" action="{% url 'login' %}" class="accountform">
             <fieldset class="form-group">
                 {% csrf_token %}
@@ -28,4 +28,5 @@
             <a href="{% url 'register' %}">Create an account today</a>
         </p> 
     </div>
+</section>
 {% endblock %}

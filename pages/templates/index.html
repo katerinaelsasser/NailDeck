@@ -3,23 +3,23 @@
 {% block content %}
 <section class="container-fluid">
 <!----Header Display---->
-<div class="header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-1.jpg' %}" alt="Responsive image"/>
-    <div class="header-text text-center">
-        <h2>Ahoy!</h2>
+    <div class="header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-1.jpg' %}" alt="Responsive image"/>
+        <div class="header-text text-center">
+            <h2>Ahoy!</h2>
+        </div>
     </div>
-</div>
 
-{% include 'components/weblinks.html' %}
-   
-<!----image divider----->
-<img class="img-fluid" src="{% static 'images/header/display-10.jpg' %}">
+    {% include 'components/weblinks.html' %}
+    
+    <!----image divider----->
+    <img class="img-fluid" src="{% static 'images/header/display-10.jpg' %}">
 
-<!----about section----->
-{% include 'components/aboutsection.html' %}
+    <!----about section----->
+    {% include 'components/aboutsection.html' %}
 
-<!---Social Images--->
-{% include 'components/socialindex.html' %}
+    <!---Social Images--->
+    {% include 'components/socialindex.html' %}
 
 </section>
 {% endblock %}

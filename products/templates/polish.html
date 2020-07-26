@@ -2,20 +2,20 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-
-<!----Header Display---->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-2.jpg' %}">
-    <div class="header-text text-center">
-        <h2>Treasures</h2>
+<section class="container-fluid">
+    <!----Header Display---->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-2.jpg' %}">
+        <div class="header-text text-center">
+            <h2>Treasures</h2>
+        </div>
     </div>
-</div>
 
-<!---Intro------>
-<div class="container py-3 text-center">
+    <!---Intro------>
+    <div class="container py-3 text-center">
         <h2>Check our nail polish treasures and explore the items every pirate hunts for. Scroll down to see all nail polish products.</h2>
         <div class="row">
-         <!-----Polish display------->
+        <!-----Polish display------->
             <div class="py-3 container text-center col-md-6">
                 <h1><a href="{% url 'products' %}"><i class="fa fa-gem header-fa"></i></a></h1>
                 <h2 class="subheader">View All Products</h2>
@@ -28,41 +28,42 @@
                 <a class="btn btn-primary" href="{% url 'care_category' %}" role="button">View »</a>
             </div>
         </div>
-</div>
+    </div>
 
-<!-----Product Display------>
-<div class="container-fluid">
-    <div class="row mb-2 px-3 py-5">
-    {% for product in products %}
-        {% if product.category == "Polishes" %}
-            <div class="col-xl-4 col-md-6 mb-4">
-                <div class="card border-0 shadow">
-                    <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
-                    <div class="card-body text-center">
-                        <h2 class="card-title">{{ product.name }}</h2>
-                        <p class="card-text"><strong>Description:</strong> {{ product.description }}</p>
-                        <p class="card-text pricing"><strong>£{{ product.price }}</strong></p>
-                        <div class="btn-group">
-                            <form method="post" action="{% url 'add_to_cart' product.id %}">
-                                {% csrf_token %}
-                                <div class="container">
-                                    <p><strong>Add Amount:</strong></p>
-                                </div>
-                                <div class="input-group container">
-                                    <input name="quantity" type="number" min="0" max="10" class="form-control" value="1">
-                                    <div class="input-group-append">
-                                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+    <!-----Product Display------>
+    <div class="container-fluid">
+        <div class="row mb-2 px-3 py-5">
+        {% for product in products %}
+            {% if product.category == "Polishes" %}
+                <div class="col-xl-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                        <div class="card-body text-center">
+                            <h2 class="card-title">{{ product.name }}</h2>
+                            <p class="card-text"><strong>Description:</strong> {{ product.description }}</p>
+                            <p class="card-text pricing"><strong>£{{ product.price }}</strong></p>
+                            <div class="btn-group">
+                                <form method="post" action="{% url 'add_to_cart' product.id %}">
+                                    {% csrf_token %}
+                                    <div class="container">
+                                        <p><strong>Add Amount:</strong></p>
                                     </div>
-                                </div>
-                            </form>
+                                    <div class="input-group container">
+                                        <input name="quantity" type="number" min="0" max="10" class="form-control" value="1">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        {% else %}
-            
-        {% endif %}
-    {% endfor %}
+            {% else %}
+                
+            {% endif %}
+        {% endfor %}
+        </div>
     </div>
-</div>
+</section>
     {% endblock %}

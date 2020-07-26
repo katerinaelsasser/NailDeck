@@ -1,152 +1,153 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% block content %}
+<section class="container-fluid">
 
-<!----Header---->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-10.jpg' %}">
-    <div class="text-center header-text">
-      <h2>#NAILDECK</h2>
-    </div>
-</div>
-
-<!-----image display------->
-
-<div class="container-fluid">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <p class="py-3">We love see your images of our products. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
-        <p>Follow us on <a href="https://www.instagram.com/">Instagram</a> and <a href="https://en-gb.facebook.com/">Facebook</a>.</p>
-    </div>
-    <div class="row">
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-1.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@JessicaFair</a></p>
-        </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-2.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@Sammy_Doe</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-3.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@Kit.E</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-4.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@M.Bay</a></p>
-        </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-5.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@BethH</a></p>
-        </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-6.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@Lucy_Smith</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-7.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@LouiseXOX</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-8.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@CBennet</a></p>
-        </div>
-        </div>
-         <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-9.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@BethH</a></p>
-        </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-10.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@Lucy_Smith</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-11.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@LouiseXOX</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-12.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@CBennet</a></p>
-        </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-13.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@KylieJ</a></p>
-        </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-14.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@3lli3G</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-15.jpg' %}">
-            </a>
-            <div class="insta-accounts">
-                <p><a href="https://www.instagram.com/">@JennyFey</a></p>
-            </div>
-        </div>
-        <div class="insta-accounts col-sm-3">
-            <a href="{% url 'products' %}">
-                <img class="img-fluid" src="{% static 'images/instagram-16.jpg' %}">
-            </a>
-        <div class="insta-accounts">
-            <p><a href="https://www.instagram.com/">@KingK</a></p>
-        </div>
+    <!----Header---->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-10.jpg' %}">
+        <div class="text-center header-text">
+        <h2>#NAILDECK</h2>
         </div>
     </div>
-</div>
 
+    <!-----image display------->
+
+    <div class="container-fluid">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <p class="py-3">We love see your images of our products. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
+            <p>Follow us on <a href="https://www.instagram.com/">Instagram</a> and <a href="https://en-gb.facebook.com/">Facebook</a>.</p>
+        </div>
+        <div class="row">
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-1.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@JessicaFair</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-2.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@Sammy_Doe</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-3.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@Kit.E</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-4.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@M.Bay</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-5.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@BethH</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-6.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@Lucy_Smith</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-7.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@LouiseXOX</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-8.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@CBennet</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-9.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@BethH</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-10.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@Lucy_Smith</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-11.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@LouiseXOX</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-12.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@CBennet</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-13.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@KylieJ</a></p>
+            </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-14.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@3lli3G</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-15.jpg' %}">
+                </a>
+                <div class="insta-accounts">
+                    <p><a href="https://www.instagram.com/">@JennyFey</a></p>
+                </div>
+            </div>
+            <div class="insta-accounts col-sm-3">
+                <a href="{% url 'products' %}">
+                    <img class="img-fluid" src="{% static 'images/instagram-16.jpg' %}">
+                </a>
+            <div class="insta-accounts">
+                <p><a href="https://www.instagram.com/">@KingK</a></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}

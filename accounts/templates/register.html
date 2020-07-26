@@ -2,23 +2,24 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-
-<!----Register Form-->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-8.jpg' %}">
-    <div class="header-text text-center">
-        <h2>Register</h2>
-    </div>
-</div>
-   
-<div class="container text-center">
-            <form method="post" action="{% url 'register' %}" class="accountform">
-                <fieldset class="form-group">
-                    {% csrf_token %}
-                    {{  user_form | as_bootstrap }}
-                    <button type="submit" class="btn btn-primary btn-lg btn-block">Create account</button>
-                </fieldset>
-            </form>
-            <p>Already have an account? <a href="{% url 'login' %}">Login In</a></p>
+<section class="container-fluid">
+    <!----Register Form-->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-8.jpg' %}">
+        <div class="header-text text-center">
+            <h2>Register</h2>
         </div>
+    </div>
+    
+    <div class="container text-center">
+        <form method="post" action="{% url 'register' %}" class="accountform">
+            <fieldset class="form-group">
+                {% csrf_token %}
+                {{  user_form | as_bootstrap }}
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Create account</button>
+            </fieldset>
+        </form>
+        <p>Already have an account? <a href="{% url 'login' %}">Login In</a></p>
+    </div>
+</section>
 {% endblock %}

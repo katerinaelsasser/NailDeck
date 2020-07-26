@@ -2,86 +2,85 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-
-<!----Header Display---->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
-    <div class="header-text text-center">
-        <h2><strong>Ahoy, {{ user.username }}</strong></h2>
+<section class="container-fluid">
+    <!----Header Display---->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
+        <div class="header-text text-center">
+            <h2><strong>Ahoy, {{ user.username }}</strong></h2>
+        </div>
     </div>
-</div>
-<!-------user link bar--------->
-
-<div class="container-fluid text-center py-4">
-    <div class="row">
-    <div class="col-6 py-3">
-        <h1><a href="#Orders"><i class="fa fa-gem header-fa"></i></a></h1>
-        <h2 class="py-3"><strong>View Orders</strong></h2>
-        <a class="btn btn-primary" href="#ORDERS" role="button">View all</a>
+    <!-------user link bar--------->
+    <div class="container-fluid text-center py-4">
+        <div class="row">
+            <div class="col-6 py-3">
+                <h1><a href="#Orders"><i class="fa fa-gem header-fa"></i></a></h1>
+                <h2 class="py-3"><strong>View Orders</strong></h2>
+                <a class="btn btn-primary" href="#ORDERS" role="button">View all</a>
+            </div>
+            <div class="col-6 py-3">
+                <h1><a href="#Details"><i class="fa fa-cogs header-fa"></i></a></h1>
+                <h2 class="py-3"><strong>Update details</strong></h2>
+                <a class="btn btn-primary" href="##Details" role="button">Update</a>
+            </div>
+        </div>
     </div>
-    <div class="col-6 py-3">
-        <h1><a href="#Details"><i class="fa fa-cogs header-fa"></i></a></h1>
-        <h2 class="py-3"><strong>Update details</strong></h2>
-        <a class="btn btn-primary" href="##Details" role="button">Update</a>
-    </div>
-</div>
-
-<!---Order History---->
-<div class="container-fluid text-center py-3 border-top" id="Orders">
-<h2 class="py-3"><strong>Order History</strong></h2>
-<table class="table container">
-  <thead>
-    <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Products</th>
-      <th scope="col">Total</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% if all_orders %}
-    {% for all_order in all_orders %}
-    <tr>
-        <th>{{all_order.quantity}}</th>
-        <td>{{ all_order_item.product.name }}</td>
-        
-        <td>{{all_order.total}}</td>
+    <!---Order History---->
+    <div class="container-fluid text-center py-3 border-top" id="Orders">
+    <h2 class="py-3"><strong>Order History</strong></h2>
+    <table class="table container">
+    <thead>
+        <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Products</th>
+        <th scope="col">Total</th>
         </tr>
-        {% endfor %}
-    {% else %}
-         <tr>
-        <th>No Orders</th>
-        <td>-</td>
-        <td><a class="btn btn-primary" href="{% url 'products' %}" role="button">Order Today</a></td>
-        </tr>
-    {% endif %}
-  </tbody>
-</table>
-</div>
+    </thead>
+    <tbody>
+    {% if all_orders %}
+        {% for all_order in all_orders %}
+        <tr>
+            <th>{{all_order.quantity}}</th>
+            <td>{{ all_order_item.product.name }}</td>
+            
+            <td>{{all_order.total}}</td>
+            </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+            <th>No Orders</th>
+            <td>-</td>
+            <td><a class="btn btn-primary" href="{% url 'products' %}" role="button">Order Today</a></td>
+            </tr>
+        {% endif %}
+    </tbody>
+    </table>
+    </div>
 
-<!------Update Details---------->
-<div class="section details border-top" id="#Details">
-<h2 class="py-3"><strong>My details</strong></h2>
-<div class="container">
-    <form action="" method="POST">
-        <div class="form-group row py-2">
-            <h2 class="col-md-6"><strong>Username</strong></h2>
-            <input class="col-md-6" value="{{ user.username }}">
+    <!------Update Details---------->
+    <div class="section details border-top" id="#Details">
+        <h2 class="py-3"><strong>My details</strong></h2>
+        <div class="container">
+            <form action="" method="POST">
+                <div class="form-group row py-2">
+                    <h2 class="col-md-6"><strong>Username</strong></h2>
+                    <input class="col-md-6" value="{{ user.username }}">
+                </div>
+                <div class="form-group row py-2">
+                    <h2 class="col-md-6"><strong>First Name</strong></h2>
+                    <input class="col-md-6" value="{{ user.first_name }}">
+                </div>
+                <div class="form-group row py-2">
+                    <h2 class="col-md-6"><strong>Last Name</strong></h2>
+                    <input class="col-md-6" value="{{ user.last_name }}">
+                </div>
+                <div class="form-group row py-2">
+                    <h2 class="col-md-6"><strong>Email</strong></h2>
+                    <input class="col-md-6" value="{{ user.email }}">
+                </div>
+                <button class="btn-primary btn-lg" type="submit">Submit</button>
+            </form>
         </div>
-        <div class="form-group row py-2">
-            <h2 class="col-md-6"><strong>First Name</strong></h2>
-            <input class="col-md-6" value="{{ user.first_name }}">
-        </div>
-        <div class="form-group row py-2">
-            <h2 class="col-md-6"><strong>Last Name</strong></h2>
-            <input class="col-md-6" value="{{ user.last_name }}">
-        </div>
-        <div class="form-group row py-2">
-            <h2 class="col-md-6"><strong>Email</strong></h2>
-            <input class="col-md-6" value="{{ user.email }}">
-        </div>
-        <button class="btn-primary btn-lg" type="submit">Submit</button>
-    </form>
-</div>
-<div>
-
+    <div>
+</section>
 {% endblock %}

@@ -2,58 +2,58 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
+<section class="container-fluid">
 
-<!----Header Display---->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-3.jpg' %}">
-    <div class="header-text text-center">
-        <h2>Your Cart</h2>
-    </div>
-</div>
-
-<!---Basket--->
-{% if total == 0 %}
-    <div class="container-fluid text-center py-3">
-        <h1><a href="{% url 'products' %}"><i class="fa fa-shopping-cart header-fa"></i></a></h1>
-        <h2>Shopping cart is empty</h2>
-        <div class="py-3">
-            <a class="btn btn-primary" href="{% url 'products' %}" role="button">Continue Shopping</a>
+    <!----Header Display---->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-3.jpg' %}">
+        <div class="header-text text-center">
+            <h2>Your Cart</h2>
         </div>
     </div>
-{% else %}
-    <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
-    <div class="row">
-        <div class="row col-md-8 text-center">
-            <h2 class="container">Items</h2>
-            {% for item in cart_items %}     
-            <div class="row container shadow cart-item">
-                <div class="product card-img-top col-sm-3" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-                <h2 class="col-sm-3 text-center">{{ item.product.name }}</h2>
-                <h2 class="col-sm-3 text-center">£{{ item.product.price }}</h2>
-                <form class="form-inline col-sm-3" method="post" action="{% url 'adjust_cart' item.id %}">
-                    {% csrf_token %}
-                    <div class="input-group container">
-                        <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+
+    <!---Basket--->
+    {% if total == 0 %}
+        <div class="container-fluid text-center py-3">
+            <h1><a href="{% url 'products' %}"><i class="fa fa-shopping-cart header-fa"></i></a></h1>
+            <h2>Shopping cart is empty</h2>
+            <div class="py-3">
+                <a class="btn btn-primary" href="{% url 'products' %}" role="button">Continue Shopping</a>
+            </div>
+        </div>
+    {% else %}
+        <div class="conatiner-fluid px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+        <div class="row">
+            <div class="row col-md-8 text-center">
+                <h2 class="container">Items</h2>
+                {% for item in cart_items %}     
+                <div class="row container shadow cart-item">
+                    <div class="product card-img-top col-sm-3" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+                    <h2 class="col-sm-3 text-center">{{ item.product.name }}</h2>
+                    <h2 class="col-sm-3 text-center">£{{ item.product.price }}</h2>
+                    <form class="form-inline col-sm-3" method="post" action="{% url 'adjust_cart' item.id %}">
+                        {% csrf_token %}
+                        <div class="input-group container">
+                            <input name="quantity" type="number" min="0" max="999" class="form-control" value="{{item.quantity}}">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Update</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-    <!---Total-->
-        <div class="col-md-4 order-md-2 mb-4">
-        <h2 class="text-center mb-3 py-3">Total</h2>
-        <p class="text-center total-amount">£{{ total }}</p>
-        
-        <div class="text-center">   
-                <a href="{% url 'checkout' %}" class="btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+        <!---Total-->
+            <div class="col-md-4 order-md-2 mb-4">
+            <h2 class="text-center mb-3 py-3">Total</h2>
+            <p class="text-center total-amount">£{{ total }}</p>
+            
+            <div class="text-center">   
+                    <a href="{% url 'checkout' %}" class="btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
-{% endif %}
-
-
+        </div>
+    {% endif %}
+</section>
 {% endblock %}

@@ -2,42 +2,44 @@
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
 {% block content %}
-<!----Header Content---->
-<div class="container-fluid header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-13.jpg' %}">
-    <div class="header-text text-center">
-    <h2>Contact Us</h2>
-    </div>
-</div>
+<section class="container-fluid">
 
-<!--------Form--------->
-<div class="container text-center">
-    <div class="py-3">
-    <h2>Have a question you need answered? Fill out a form below and we will answer it.</h2>
+    <!----Header Content---->
+    <div class="container-fluid header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-13.jpg' %}">
+        <div class="header-text text-center">
+        <h2>Contact Us</h2>
+        </div>
     </div>
-    <div class="py-3 container-fluid"> 
-        <form method="POST" action="{% url 'contact' %}">
-            {% csrf_token %}
-            <div class="row">
-                <div class="form-group col-sm-12 col-md-6">
-                    <h2>Name</h2>
-                    {{form.contact_name | as_bootstrap }}
+
+    <!--------Form--------->
+    <div class="container text-center">
+        <div class="py-3">
+        <h2>Have a question you need answered? Fill out a form below and we will answer it.</h2>
+        </div>
+        <div class="py-3 container-fluid"> 
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="form-group col-sm-12 col-md-6">
+                        <h2>Name</h2>
+                        {{form.contact_name | as_bootstrap }}
+                    </div>
+                    <div class="form-group col-sm-12 col-md-6">
+                        <h2>Email</h2>
+                        {{form.contact_email | as_bootstrap }}
+                    </div>
                 </div>
-                <div class="form-group col-sm-12 col-md-6">
-                    <h2>Email</h2>
-                    {{form.contact_email | as_bootstrap }}
+                <div class="form-group col-sm-12">
+                    <h2>Message</h2>
+                    {{form.contact_message | as_bootstrap }}
                 </div>
-            </div>
-            <div class="form-group col-sm-12">
-                <h2>Message</h2>
-                {{form.contact_message | as_bootstrap }}
-            </div>
-            <button class="btn-primary btn-lg" type="submit">Submit</button>
-        </form>
+                <button class="btn-primary btn-lg" type="submit">Submit</button>
+            </form>
+        </div>
     </div>
-</div>
 
-<!---Social Images--->
-{% include 'components/socialcontact.html' %}
-
+    <!---Social Images--->
+    {% include 'components/socialcontact.html' %}
+</section>
 {% endblock %}
