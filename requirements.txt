@@ -12,4 +12,3 @@ psycopg2==2.8.5
 pytz==2020.1
 s3transfer==0.3.3
 stripe==2.48.0
-sweetify==2.0.0
