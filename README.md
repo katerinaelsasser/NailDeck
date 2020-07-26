@@ -284,6 +284,7 @@ When it came to planning this website, it was very important to plan every detai
 #### Checkout
 #### Profile Dashboard
 #### User Authentication (Register/ Login / Logout)
+#### Review Page
 
 ### Bugs
 
@@ -335,5 +336,9 @@ Before starting, the following must be check:
 9. Use the command below to run the project locally.
 ` python3 manage.py runserver `
 
-### Deploying To Heroku]()
+### Deploying To Heroku
 ## Credits
+
+
+## Disclaimer
+The contents of this website are for educational purposes only.
