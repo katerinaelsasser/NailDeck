@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% block content %}
-<main class="container-fluid">
+<section class="container-fluid">
 <!----Header Display---->
 <div class="header-title">
     <img class="img-fluid header-img" src="{% static 'images/header/display-1.jpg' %}" alt="Responsive image"/>
@@ -15,7 +15,11 @@
 <!----image divider----->
 <img class="img-fluid" src="{% static 'images/header/display-10.jpg' %}">
 
+<!----about section----->
+{% include 'components/aboutsection.html' %}
+
 <!---Social Images--->
 {% include 'components/socialindex.html' %}
-</main>
+
+</section>
 {% endblock %}
