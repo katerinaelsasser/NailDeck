@@ -27,16 +27,18 @@ Content
 * [Features](https://github.com/katerinaelsasser/NailDeck#features)
     * [Existing Features](https://github.com/katerinaelsasser/NailDeck#existing-features)
     * [Future Features](https://github.com/katerinaelsasser/NailDeck#future-features)
-* [Information Architecture]()
-    * [Database choice]()
-    * [Data Models]()
+* [Information Architecture](https://github.com/katerinaelsasser/NailDeck#information-architecture)
+    * [Database choice](https://github.com/katerinaelsasser/NailDeck#database-choice)
+    * [Data Models](https://github.com/katerinaelsasser/NailDeck#data-modals)
 * [Technologies Used](https://github.com/katerinaelsasser/NailDeck#technologies-used)
     * [Languages](https://github.com/katerinaelsasser/NailDeck#languages)
     * [Databases](https://github.com/katerinaelsasser/NailDeck#databases)
     * [Liabries](https://github.com/katerinaelsasser/NailDeck#libaries)
 * [Testing]()
-* [Deployment]()
-    * [Running Locally]()
+    * Planning
+    * Testing Features
+* [Deployment](https://github.com/katerinaelsasser/NailDeck#deployment)
+    * [Running Locally](https://github.com/katerinaelsasser/NailDeck#running-locally)
     * [Deploying To Heroku]()
 * [Credits]()
 
@@ -272,6 +274,19 @@ The user model is the standard one supplied by `django.contrib.auth.models`.
 * Stripe
 * Django
 ## Testing
+### Planning:
+When it came to planning this website, it was very important to plan every detail which includes the APIs, technology, frameworks and other tools. The wireframes that I created were the base for the webiste, as well as this I have tried to utilise component files and I tried to reuse these across the website on multiple pages which was linked by the languages, Django. 
+
+### Testing Features
+#### Contact Form Page
+#### Product List Pages (All Products/ Nail Varnishes / Nail Care)
+#### Shopping Cart
+#### Checkout
+#### Profile Dashboard
+#### User Authentication (Register/ Login / Logout)
+
+### Bugs
+
 ### Vailidation Services
 Vailidation services were used to check HTML, CSS and Javascipt that was used throughout the website.
 The following code 
