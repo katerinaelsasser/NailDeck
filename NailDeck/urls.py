@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'', include('pages.urls')),
     url(r'', include('accounts.urls')),
     url(r'', include('pages.urls')),
-    url(r'', include('review.urls')),
+    url(r'', include('reviews.urls')),
     url(r'products/', include('products.urls')),
     url(r'cart/', include('cart.urls')),
     url(r'', include('checkout.urls')),
