@@ -1,10 +1,12 @@
 from django.db import models
 
-#Contact
+# Create your models here.
 class Contact(models.Model):
-    contact_name = models.CharField(max_length=255)
-    contact_email = models.EmailField()
-    contact_message = models.TextField(max_length=255) 
+
+    name = models.CharField(max_length=30)
+    email = models.EmailField()
+    message = models.TextField()
+
 
     def __str__(self):
-        return self.contact_name
+        return self.name

@@ -1,22 +1,23 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from .forms import contact_form
-from .models import Contact
 from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect
+from .forms import ContactForm
 
-# Contact Form
 def contact(request):
     if request.method == 'GET':
-        form_contact = contact_form()
+        form = ContactForm()
     else:
-        form_contact = contact_form(request.POST)
-        if form_contact.is_valid():
-            contact_name = form.cleaned_data['contact_name']
-            contact_email = form.cleaned_data['contact_email']
-            contact_message = form.cleaned_data['contact_message']
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
             try:
-                send_mail(contact_name, contact_message, contact_email, ['k.elsasser@aol.co.uk'])
-                return render(request, "contactsent.html")
+                send_mail(subject, message, from_email, ['k.elsasser@aol.co.uk'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-    return render(request, "contact.html", {'form_contact': form_contact})
+            return redirect('confirmation')
+    return render(request, "contact.html", {'form': form})
+
+def successView(request):
+    return HttpResponse('Success! Thank you for your message.')
