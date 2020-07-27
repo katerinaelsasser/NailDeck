@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import contact_form
-from .models import Product
+from .models import Contact
 from django.core.mail import send_mail, BadHeaderError
 
 # Contact Form
