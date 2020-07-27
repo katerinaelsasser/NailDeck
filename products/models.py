@@ -1,5 +1,10 @@
 from django.db import models
 
+#Category
+class Category(models.Model):
+    name = models.CharField(max_length=30, unique=True)
+    slug = models.SlugField(max_length=30, unique=True)
+
 #Products
 class Product(models.Model):
 
@@ -10,7 +15,7 @@ class Product(models.Model):
         (CARE, 'Care')
     ]
     category = models.CharField(
-        max_length=20,
+        max_length=15,
         choices=CHOICES,
         default=POLISHES,
     )

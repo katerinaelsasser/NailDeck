@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['naildeck.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['naildeck.herokuapp.com', 'https://ff124847-a4cd-4439-a611-17896261295d.ws-eu01.gitpod.io', 'localhost']
 
 
 # Application definition
