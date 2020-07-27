@@ -4,6 +4,8 @@ from accounts import urls as urls_accounts
 from products import urls as urls_products
 from pages import urls as urls_pages
 from cart import urls as urls_cart
+from reviews import urls as urls_reviews
+from contact import urls as urls_contact
 from checkout import urls as urls_checkout
 from pages.views import homepage
 from django.views import static
@@ -16,6 +18,7 @@ urlpatterns = [
     url(r'', include('accounts.urls')),
     url(r'', include('pages.urls')),
     url(r'', include('reviews.urls')),
+    url(r'', include('contact.urls')),
     url(r'products/', include('products.urls')),
     url(r'cart/', include('cart.urls')),
     url(r'', include('checkout.urls')),
