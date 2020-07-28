@@ -377,6 +377,32 @@ Before starting, the following must be check:
 ` python3 manage.py runserver `
 
 ### Deploying To Heroku
+The website was deployed and hosted through Heroku. I have connected this through my terminal. I have used code that has been supplied by heroku on their 'Deploy' tab.
+
+These were the steps that I took:
+
+* A `requirement.txt` file was created using the command on my terminal `pip freeze > requirement.txt`
+* I then created a `Procfile` which as was also created on my terminal using `echo web: python app.py > Procfile`
+* Putting `git add` followed by `git commit` and then `git push` to put my new files on GitHub
+* On my Heroku account, press the **New** located on the dashboard. Give it a name and select the region to be **Europe**
+* When this is created, go to the **Delpoy** tab. Under the section **Deployment method**, select out of the three options **GitHub**. 
+* Choose the link to your GitHub repository. In this case, it would be this [link](https://github.com/katerinaelsasser/film_review_database).
+* After this is connected, head over to the **Settings** tab.
+* Go to the section called **Reveal Config Vars**.
+* Fill in the following into the correct fields.
+
+| Key	    | Value | 
+|-----------|:---------:|
+|DATABASE_URL|#`INSERT DATABASE URL`#  |
+|SECRET_KEY|#`INSERT SECRET KEY`#|
+|STRIPE_PUBLISHABLE|#`INSERT STRIPE PUBLISHMENT KEY`#|
+|STRIPE_SECRET|#`INSERT STRIPE SECRET KEY`#|
+
+* In the heroku dashboard, click **Deploy**. Under the **Manual Deployment** section, select the branch that you want to connect to.
+* Once selected click on the button **Deploy Branch**
+
+When these steps have been followed, the website will be successfully deployed.
+
 ## Credits
 
 
