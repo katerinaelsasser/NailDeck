@@ -36,7 +36,6 @@
                 <tr>
                     <th scope="col"><h2>Order ID</h2></th>
                     <th scope="col"><h2>Products</h2></th>
-                    <th scope="col"><h2>Total</h2></th>
                 </tr>
             </thead>
             <tbody>
@@ -51,9 +50,6 @@
                             <h5>{{ order_item.product.name }} (QTY: {{ order_item.quantity }}) -  Price: {{ order_item.product.price }}</h5>
                         {% endfor %}
                     </th>
-                    <td>
-                        £{{order.total}}
-                    </td>
                 </tr>
                 {% endfor %}
             {% else %}
@@ -103,7 +99,7 @@
     </div>
     <div class="text-center container py-4">
         <h2 class="py-3">Want to change your password?</h2>
-        <a class="btn btn-primary" href="{% url 'password_reset' %}" role="button">Change</a>
+        <a class="btn btn-primary btn-lg" href="{% url 'password_reset' %}">Change</a>
     </div>
 
 </section>

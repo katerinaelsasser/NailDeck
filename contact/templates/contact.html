@@ -22,19 +22,10 @@
                 {% csrf_token %}
                 <div class="row">
                     <div class="form-group col-sm-12 col-md-6">
-                        <h2>Name</h2>
-                        {{contact_form.contact_name | as_bootstrap }}
-                    </div>
-                    <div class="form-group col-sm-12 col-md-6">
-                        <h2>Email</h2>
-                        {{contact_form.contact_email | as_bootstrap }}
-                    </div>
-                </div>
-                <div class="form-group col-sm-12">
-                    <h2>Message</h2>
-                    {{contact_form.contact_message | as_bootstrap }}
-                </div>
+                        {{ form | as_bootstrap }}
+                    
                 <button class="btn-primary btn-lg" type="submit">Submit</button>
+                </div>
             </form>
         </div>
     </div>
