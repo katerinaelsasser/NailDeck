@@ -78,7 +78,7 @@
     <img class="img-fluid" src="{% static 'images/header/display-6.jpg' %}">
     <div class="container" id="#Details">
         <h2 class="py-3 text-center">My details</h2>
-        <form action="" method="POST">
+        <form action="{% url 'profile' %}" method="POST" >
             {% csrf_token %}
             <div class="form-group row py-2">
                 <h2 class="col-md-6">Username</h2>
