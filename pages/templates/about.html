@@ -3,30 +3,33 @@
 {% block content %}
 <section class="container-fluid">
 
-<!----Header---->
-<div class="header-title">
-    <img class="img-fluid header-img" src="{% static 'images/header/display-4.jpg' %}">
-</div>
-
-<!----Content---->
-<div class="container-fluid">
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h2>About Us</h2>
-        <h4 class="lead">Inspired by the famous pirates of the sea, we bring the buried treasure to your home. With a variety of colours, it is perfect for any captain. Created in 2018, Nail Deck provides top quality, vegan nail varnishes. Each varnish is created by hand by our team based in England.</h4>
+    <!----Header---->
+    <div class="header-title">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-4.jpg' %}">
     </div>
-    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h2>Our Nail Polishes</h2>
-        <h4 class="lead">All of our products are Vegan and cruelty free ingedients.</h4>
-        <div class="row">
-            <i class="col-6 fa fa-seedling header-fa"></i>
-            <i class="col-6 fa fa-paw header-fa"></i>
+
+    <!----Content---->
+    <div class="container-fluid">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h2>About Us</h2>
+            <h4 class="lead">Inspired by the famous pirates of the sea, we bring the buried treasure to your home. With a variety of colours, it is perfect for any captain. Created in 2018, Nail Deck provides top quality, vegan nail varnishes. Each varnish is created by hand by our team based in England.</h4>
         </div>
+        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h2>Our Nail Polishes</h2>
+            <h4 class="lead">All of our products are Vegan and cruelty free ingedients.</h4>
+            <div class="row">
+                <i class="col-6 fa fa-seedling header-fa"></i>
+                <i class="col-6 fa fa-paw header-fa"></i>
+            </div>
+        </div>
+        <img class="img-fluid" src="{% static 'images/header/display-9.jpg' %}">
     </div>
-    <img class="img-fluid" src="{% static 'images/header/display-9.jpg' %}">
-</div>
 
-<!---Social Images--->
-{% include 'components/socialabout.html' %}
+    <!----contact section----->
+    {% include 'components/contactsection.html' %}
+
+    <!---Social Images--->
+    {% include 'components/socialabout.html' %}
 
 </section>
 {% endblock %}
