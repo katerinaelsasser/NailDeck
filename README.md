@@ -286,8 +286,8 @@ When it came to planning this website, it was very important to plan every detai
 * Verdict: As this feature works, for future updates on this website, the email could be added t
 #### Product List Pages (All Products/ Nail Varnishes / Nail Care)
 * Planning: A ecommerce website needs a list of products on a page. When a user is viewing this page, they should be able to add a product to the shopping cart. As well as this, the products should be displayed professionally. As there were going to be different types of products on the listing, I have decided to also plan for categories that would hold particular products. For example: products that are nail care, will be in a category dedicated to that type.
-Implementation: 
-Test:
+Implementation: To display the products, I had to use a model that would hold the data of the products and link to the database that connects to the correct product to the correct page. 
+Test: When clicking on the link to the page, the products would display automatically without there being a timer. If the products were displaying, it meant that there was an error with the django code that was used. It is very important when linking products that there are no typos in the code as this became an issue for displaying them.
 Results: When the going on to the pages, the products displayed in a neat display all the way down the page and also products displayed in the correct categories.
 Verdict
 #### Shopping Cart
@@ -316,17 +316,17 @@ Results
 Verdict
 #### Review Page
 * Planning: When a user would like to review a page, there must be a clear form that they can fill in and submit for other users of the site to see. When planning this, there was only one simple way of the form being presented and that is with the forms for the star rating and leaving a message.
-Implementation:
-Test
-Results
-Verdict
+* Implementation:
+* Test
+* Results
+* Verdict
 
 ### Bugs
 The bug that happened during this project were with Stripe.
 
-Bug/Issue: When I was putting through a test order, an error came up with the order not going through. A message at the top of the page appeared saying that the card was incorrect.
-Solution: When looking at where the error was coming from, I looked at the Stripe Javascipt file. When looking at this file, I noticed a very simple mistake. This was that the card id on the HTML page was not matching the Javascript file. 
-Verdict: When this was changed to match, the issue was fixed.
+* Bug/Issue: When I was putting through a test order, an error came up with the order not going through. A message at the top of the page appeared saying that the card was incorrect.
+* Solution: When looking at where the error was coming from, I looked at the Stripe Javascipt file. When looking at this file, I noticed a very simple mistake. This was that the card id on the HTML page was not matching the Javascript file. 
+* Verdict: When this was changed to match, the issue was fixed.
 ### Vailidation Services
 Vailidation services were used to check HTML, CSS and Javascipt that was used throughout the website.
 The following code:
