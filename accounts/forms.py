@@ -38,3 +38,13 @@ class UserRegistrationForm(UserCreationForm):
             raise ValidationError("Passwords do not match")
 
         return password2
+
+class UpdateUserDetailsForm(forms.ModelForm):
+    """
+    Form to allow user to update details
+    """
+    email = forms.EmailField()
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name']
