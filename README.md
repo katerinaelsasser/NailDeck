@@ -257,9 +257,9 @@ The products have the following model:
 #### Contact Modal
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
-| Name      | name |  | |
-| Email     | email | e | |
-| Message     | message |  | |
+| Name      | name | max_length=50, blank=False |CharField |
+| Email     | email | max_length=200, blank=False |EmailField |
+| Message     | message | max_length=1024 |TextField |
 #### Review Modal
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
