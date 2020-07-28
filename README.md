@@ -254,6 +254,18 @@ The products have the following model:
 | Product     | product | Product, null=False | ForeignKey|
 | Quantity     | quantity | blank=False |IntegerField |
 
+#### Contact Modal
+| Name        | Key in DB           | Validation  | Field Type |
+| ------------- |:-------------:| -----:| -----:|
+| Name      | name |  | |
+| Email     | email | e | |
+| Message     | message |  | |
+#### Review Modal
+| Name        | Key in DB           | Validation  | Field Type |
+| ------------- |:-------------:| -----:| -----:|
+| Star      | order | max_length=11, choices=STAR_CHOICES, default='5' |CharField |
+| Message     | product | max_length=1024 |CharField|
+
 #### User Modals
 The user model is the standard one supplied by `django.contrib.auth.models`.
 ## Technologies Used
@@ -298,13 +310,13 @@ Results
 Verdict
 #### Checkout
 * Planning: When customers are putting products they want, they will need to purchase these products. As this would require the customer to fill in personal information such as card details and delivery information. This meant that the form had to be clear and easy to use when fill it out.
-Implementation:
+Implementation: The checkout needed to link with a API called Stripe. Stripe is used to hold the personal infomation that would be put into the form. Connecting this to the form would be import to make sure the data would be safe.
 Test:
 Results
 Verdict
 #### Profile Dashboard
 * Planning: When a user is logged into the website, I wanted the user to able able to access and change their details. As well as this, I wanted them to be able to see their purchase history.
-Implementation:
+Implementation: 
 Test
 Results
 Verdict
