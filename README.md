@@ -329,10 +329,11 @@ Solution: When looking at where the error was coming from, I looked at the Strip
 Verdict: When this was changed to match, the issue was fixed.
 ### Vailidation Services
 Vailidation services were used to check HTML, CSS and Javascipt that was used throughout the website.
-The following code 
-HTML - W3C Markup Validation.
-CSS - W3C CSS validation.
-JavaScript - JSHint.
+The following code:
+* HTML - W3C Markup Validation.
+* CSS - W3C CSS validation.
+* JavaScript - JSHint.
+* Python - 
 
 
 ## Deployment
