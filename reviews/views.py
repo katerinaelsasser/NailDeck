@@ -5,7 +5,6 @@ from django.core.mail import send_mail, BadHeaderError
 
 # Review Form
 def review(request):
-    reviews = reviews.objects.all()
     if request.method == 'GET':
         form_review = review_form()
     else:
@@ -17,4 +16,4 @@ def review(request):
                 return render(request, "review.html")
             except BadHeaderError:
                 return HttpResponse('Invalid.')
-    return render(request, "reviews.html", {'form_review': form_review, 'reviews': reviews})
+    return render(request, "reviews.html", {'form_review': form_review})
