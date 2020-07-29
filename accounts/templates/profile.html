@@ -5,7 +5,7 @@
 <section class="container-fluid">
     <!----Header Display---->
     <div class="container-fluid header-title">
-        <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}">
+        <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}" alt="divider-img">
         <div class="header-text text-center">
             <h2>Ahoy, {{ user.username }}</h2>
         </div>
@@ -28,7 +28,7 @@
 </section>
 <!---Order History---->
 <section class="container-fluid">
-    <img class="img-fluid" src="{% static 'images/header/display-3.jpg' %}">
+    <img class="img-fluid" src="{% static 'images/header/display-3.jpg' %}" alt="divider-img">
     <div class="text-center py-3" id="Orders">
         <h2 class="py-3 text-center">Order History</h2>
         <table class="table container">
@@ -71,7 +71,7 @@
 </section>
     <!------Update Details---------->
 <section class="container-fluid">
-    <img class="img-fluid" src="{% static 'images/header/display-6.jpg' %}">
+    <img class="img-fluid" src="{% static 'images/header/display-6.jpg' %}" alt="divider-img">
     <div class="container" id="#Details">
         <h2 class="py-3 text-center">My details</h2>
         <form action="{% url 'profile' %}" method="POST" >
