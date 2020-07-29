@@ -19,5 +19,5 @@ def contact(request):
             return redirect('confirmation')
     return render(request, "contact.html", {'form': form})
 
-def successView(request):
-    return HttpResponse('Success! Thank you for your message.')
+def contact_sent(request):
+    return render(request, "contantsent.html")
