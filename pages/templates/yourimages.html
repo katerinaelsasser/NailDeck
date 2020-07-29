@@ -6,15 +6,12 @@
     <!----Header---->
     <div class="container-fluid header-title">
         <img class="img-fluid header-img" src="{% static 'images/header/display-10.jpg' %}">
-        <div class="text-center header-text">
-        <h2>#NAILDECK</h2>
-        </div>
     </div>
 
-    <!-----image display------->
+    <!-----social display------->
 
-    <div class="container-fluid">
-        <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <div class="text-center">
+        <h2 class="py-3">#NAILDECK</h2>
             <p class="py-3">We love see your images of our products. Tag #NAILDECK or @NailDeck and you may even be features on our website.</p>
             <p>Follow us on <a href="https://www.instagram.com/">Instagram</a> and <a href="https://en-gb.facebook.com/">Facebook</a>.</p>
         </div>
@@ -246,8 +243,14 @@
         </div>
     </div>
 
+    <!----image divider----->
+    <img class="img-fluid" src="{% static 'images/header/display-13.jpg' %}">
+
     <!---Product link--->
     {% include 'components/productsection.html' %}
+
+    <!----image divider----->
+    <img class="img-fluid" src="{% static 'images/header/display-1.jpg' %}">
 
     <!----contact section----->
     {% include 'components/contactsection.html' %}
