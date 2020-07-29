@@ -34,9 +34,9 @@
                     <i class="fa fa-gem header-fa"></i>
                     <h2 class="col-12">View Our Treasures</h2>
                     {% if user.is_authenticated %}
-                    <a href="{% url 'products' %}" class="btn btn-primary btn-lg">View All</a>
+                        <a href="{% url 'products' %}" class="btn btn-primary btn-lg">View All</a>
                     {% else %}
-                    <a href="{% url 'login' %}" class="btn btn-primary btn-lg">View All</a>
+                        <a href="{% url 'login' %}" class="btn btn-primary btn-lg">View All</a>
                     {% endif %}
                 </div>
                 <div class="col-sm-12 col-md-3 py-2">
