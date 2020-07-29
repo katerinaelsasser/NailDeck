@@ -342,7 +342,7 @@ The bug that happened during this project were with Stripe.
 ### Vailidation Services
 Vailidation services were used to check HTML, CSS and Javascipt that was used throughout the website.
 The following code:
-* HTML - W3C Markup Validation.
+* HTML - [W3C Markup Validation](https://validator.w3.org/).
 * CSS - W3C CSS validation.
 * JavaScript - JSHint.
 * Python - 
