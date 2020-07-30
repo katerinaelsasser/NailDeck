@@ -56,13 +56,16 @@ The target audience for the brand Nail Deck are:
 * Browse through a list of nail products.
 * Find a nail polish they would like to purchase.
 * Able to navigate through the website easily.
+* Able to add a review about the company.
+* Can contact the company.
+* Learn about the company.
 
 ### Online Shop Goals
 * A clear and easy to use website that anyone can use it.
 * Linking elements should link to the correct locations.
 * The website should work on all size devices (sm, md, lg). This includes the navigation and the features,
 * There must be a clear navigation linking all pages together.
-* Admin must be able to access both the main website and the admin page.
+* Admin must be able to access both the main website.
 
 ## Strategy
 The main request from the company is that they want customers to purchase products from the website as well as this, the site owner wants the customer to have an account to purchase the items. Taking this into account, I have done the following:
