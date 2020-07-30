@@ -199,7 +199,7 @@ The font I have decided to use two font styles. These fonts are for the headers,
 
 I wanted to style the website with icons. The icons I wanted to feature must include some pirate themed icons, such as skull and cross bones.
 
-- The for the log in icon on the navbar has two icons. One for then the user is not logged in (which is the skull) and the other for when they are logged in (which is the skull and cross bones).
+- The for the log in icon on the navbar has two icons. One for then the user is not logged in (the icon is `user`) and when the user is logged in (the icon is a skull and cross bone called `skull-crossbones`).
 
 ### Colours
 
