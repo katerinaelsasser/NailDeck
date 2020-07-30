@@ -371,11 +371,11 @@ When it came to planning this website, it was very important to plan every detai
 
 #### Contact Form Page
 
-- **Planning:** When planning how I wanted to make the contact form, I thought about how the admin of the website would get in contact with the customer. I wanted to store the contact and message that the customer submitted in for so the admin gets in contact.
-- **Implementation:** The dashboard was going to be where the contact form would be submitted to. This allows the admin to see what is submitted clearly and can reply when they can.
-- **Test:** When testing this feature, I linked the email 'k.elsasser@aol.co.uk'.
-- **Results:** When the test form is submitted, the content is successfully sent to the admin dashboard.
-- **Verdict:** As this feature works, for future updates on this website, the email could be added t
+- **Planning:** When planning how I wanted to make the contact form, I thought about how the admin of the website would get in contact with the customer. I wanted to store the contact in the admin panel.
+- **Implementation:** The dashboard was going to be where the contact form would be submitted to. This allows the admin to see what is submitted clearly and can reply when they can. I added code to the ` view.py ` file which said to save the form if the form was valid and submitted by the user. 
+- **Test:** When testing, I filled in the form that was created as if I was the customer.
+- **Results:** When I pressed submit, the page refreshed and the input was all gone. I checked the Admin panel to see if the data had been saved and everything that I put in the form was collected and stored.
+- **Verdict:** This form has met the criteria.
 
 #### Product List Pages (All Products/ Nail Varnishes / Nail Care)
 
@@ -383,7 +383,7 @@ When it came to planning this website, it was very important to plan every detai
 - **Implementation:** To display the products, I had to use a model that would hold the data of the products and link to the database that connects to the correct product to the correct page.
 - **Test:** When clicking on the link to the page, the products would display automatically without there being a timer. If the products were displaying, it meant that there was an error with the django code that was used. It is very important when linking products that there are no typos in the code as this became an issue for displaying them.
 - **Results:** When the going on to the pages, the products displayed in a neat display all the way down the page and also products displayed in the correct categories.
-- **Verdict:**
+- **Verdict:** This form has met the criteria. 
 
 #### Shopping Cart
 
@@ -391,7 +391,7 @@ When it came to planning this website, it was very important to plan every detai
 - **Implementation:** I created a file called ` context.py ` which is in the cart app. This was included in the context processors section inside the template in the file, ` settings.py `. By haing this, it will tell the app how the cart should be presented in default as well as what information should be available to it. This is a requirement as the cart is not stored in the database, instead in the session. When this was added, I wrote the view function for adding products to the cart, editing the quantity of products and how the content was displayed.
 - **Test:**
 - **Results:** 
-- **Verdict:**
+- **Verdict:** This form has met the criteria.
 
 #### Checkout
 
@@ -399,7 +399,7 @@ When it came to planning this website, it was very important to plan every detai
 - **Implementation:** The checkout needed to link with a API called Stripe. Stripe is used to hold the personal infomation that would be put into the form. Connecting this to the form would be import to make sure the data would be safe.
 - **Test:** When filling in the form, I used a testing cart `4242 4242 4242 4242`. There was an error with the card details, see [Bugs](https://github.com/katerinaelsasser/NailDeck#bugs) for more detail on this issue. When this was fixed, the card and delivery details went through and were submitted.
 - **Results:** The details that the customer put in the form is processed and the order is taken.
-- **Verdict:**
+- **Verdict:** This form has met the criteria.
 
 #### Profile Dashboard
 
@@ -407,7 +407,7 @@ When it came to planning this website, it was very important to plan every detai
 - **Implementation:**  
 - **Test:**
 - **Results:**
-- **Verdict:**
+- **Verdict:** This form has met the criteria.
 
 #### User Authentication (Register/ Login / Logout)
 
@@ -415,15 +415,15 @@ When it came to planning this website, it was very important to plan every detai
 - **Implementation:**
 - **Test:**
 - **Results:**
-- **Verdict:**
+- **Verdict:** This form has met the criteria.
 
 #### Review Page
 
-- **Planning:** When a user would like to review a page, there must be a clear form that they can fill in and submit for other users of the site to see. When planning this, there was only one simple way of the form being presented and that is with the forms for the star rating and leaving a message.
-- **Implementation:**
-- **Test:**
-- **Results:**
-- **Verdict:**
+- **Planning:** When a user would like to review a page, there must be a clear form that they can fill in and submit for other users of the site to see. When the review is submitted, the review must be displayed on the page for other customers to see it.
+- **Implementation:** The dashboard was going to be where the review form would be submitted to. This allows the admin to see what is submitted clearly and can reply when they can. I added code to the ` view.py ` file which said to save the form if the form was valid and submitted by the user.
+- **Test:** When testing, I filled in the form to create a dummy review.
+- **Results:** When I pressed submit, the page refreshed and the input was all gone. AS well as this, the review that I created was displaying on the page  I checked the Admin panel to see if the data had been saved and everything that I put in the form was collected and stored.
+- **Verdict:** This form has met the criteria.
 
 ### Bugs
 
