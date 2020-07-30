@@ -2,7 +2,7 @@
 
 Nail Deck is an online website for selling hand made nail polishes to customers. Their polishes are inspired by pirates which includes the names of the products.
 
-Content
+## Content
 * [UX](https://github.com/katerinaelsasser/NailDeck#ux)
     * [Aim](https://github.com/katerinaelsasser/NailDeck#aim)
         * [Target Audience](https://github.com/katerinaelsasser/NailDeck#target-audience)
@@ -279,7 +279,10 @@ The products have the following model:
 | Message     | product | max_length=1024 |CharField|
 
 #### User Models
-The user model is the standard one supplied by `django.contrib.auth.models`.
+The user model is the standard one supplied by 
+```
+django.contrib.auth.models
+```
 ## Technologies Used
 ### Languages
 * HTML
@@ -302,47 +305,47 @@ When it came to planning this website, it was very important to plan every detai
 
 ### Testing Features
 #### Contact Form Page
-* Planning: When planning how I wanted to make the contact form, I thought about how the admin of the website would get in contact with the customer. I wanted to store the contact and message that the customer submitted in for so the admin gets in contact. 
-* Implementation: The dashboard was going to be where the contact form would be submitted to. This allows the admin to see what is submitted clearly and can reply when they can.
-* Test: When testing this feature, I linked the email 'k.elsasser@aol.co.uk'.
-* Results: When the test form is submitted, the content is successfully sent to the admin dashboard.
-* Verdict: As this feature works, for future updates on this website, the email could be added t
+* **Planning:** When planning how I wanted to make the contact form, I thought about how the admin of the website would get in contact with the customer. I wanted to store the contact and message that the customer submitted in for so the admin gets in contact. 
+* **Implementation:** The dashboard was going to be where the contact form would be submitted to. This allows the admin to see what is submitted clearly and can reply when they can.
+* **Test:** When testing this feature, I linked the email 'k.elsasser@aol.co.uk'.
+* **Results:** When the test form is submitted, the content is successfully sent to the admin dashboard.
+* **Verdict:** As this feature works, for future updates on this website, the email could be added t
 #### Product List Pages (All Products/ Nail Varnishes / Nail Care)
-* Planning: A ecommerce website needs a list of products on a page. When a user is viewing this page, they should be able to add a product to the shopping cart. As well as this, the products should be displayed professionally. As there were going to be different types of products on the listing, I have decided to also plan for categories that would hold particular products. For example: products that are nail care, will be in a category dedicated to that type.
-* Implementation: To display the products, I had to use a model that would hold the data of the products and link to the database that connects to the correct product to the correct page. 
-* Test: When clicking on the link to the page, the products would display automatically without there being a timer. If the products were displaying, it meant that there was an error with the django code that was used. It is very important when linking products that there are no typos in the code as this became an issue for displaying them.
-* Results: When the going on to the pages, the products displayed in a neat display all the way down the page and also products displayed in the correct categories.
-* Verdict
+* **Planning:** A ecommerce website needs a list of products on a page. When a user is viewing this page, they should be able to add a product to the shopping cart. As well as this, the products should be displayed professionally. As there were going to be different types of products on the listing, I have decided to also plan for categories that would hold particular products. For example: products that are nail care, will be in a category dedicated to that type.
+* **Implementation:** To display the products, I had to use a model that would hold the data of the products and link to the database that connects to the correct product to the correct page. 
+* **Test:** When clicking on the link to the page, the products would display automatically without there being a timer. If the products were displaying, it meant that there was an error with the django code that was used. It is very important when linking products that there are no typos in the code as this became an issue for displaying them.
+* **Results:** When the going on to the pages, the products displayed in a neat display all the way down the page and also products displayed in the correct categories.
+* **Verdict:**
 #### Shopping Cart
-* Planning: A huge part of this website is so that a customer can purchase products from the company. With the admin of this website wanted customers to log into the site to use it, I wanted it so customers had to be logged in to add products to the cart. When users are thinking about purchasing their items, they must be able to edit and delete products in their cart.
-* Implementation:
-* Test: When filling in the form, I used a testing cart `4242 4242 4242 4242`. When testing this, there was an error with the card details, see [Bugs](https://github.com/katerinaelsasser/NailDeck#bugs) for more detail on this issue. When this was fixed, the card and delivery details went through and were submitted.
-* Results
-* Verdict
+* **Planning:** A huge part of this website is so that a customer can purchase products from the company. With the admin of this website wanted customers to log into the site to use it, I wanted it so customers had to be logged in to add products to the cart. When users are thinking about purchasing their items, they must be able to edit and delete products in their cart.
+* **Implementation:**
+* **Test:** When filling in the form, I used a testing cart `4242 4242 4242 4242`. When testing this, there was an error with the card details, see [Bugs](https://github.com/katerinaelsasser/NailDeck#bugs) for more detail on this issue. When this was fixed, the card and delivery details went through and were submitted.
+* **Results:**
+* **Verdict:**
 #### Checkout
-* Planning: When customers are putting products they want, they will need to purchase these products. As this would require the customer to fill in personal information such as card details and delivery information. This meant that the form had to be clear and easy to use when fill it out.
-* Implementation: The checkout needed to link with a API called Stripe. Stripe is used to hold the personal infomation that would be put into the form. Connecting this to the form would be import to make sure the data would be safe.
-* Test:
-* Results
-* Verdict
+* **Planning:** When customers are putting products they want, they will need to purchase these products. As this would require the customer to fill in personal information such as card details and delivery information. This meant that the form had to be clear and easy to use when fill it out.
+* **Implementation:** The checkout needed to link with a API called Stripe. Stripe is used to hold the personal infomation that would be put into the form. Connecting this to the form would be import to make sure the data would be safe.
+* **Test:**
+* **Results:**
+* **Verdict:**
 #### Profile Dashboard
-* Planning: When a user is logged into the website, I wanted the user to able able to access and change their details. As well as this, I wanted them to be able to see their purchase history.
-Implementation: 
-Test
-Results
-Verdict
+* **Planning:** When a user is logged into the website, I wanted the user to able able to access and change their details. As well as this, I wanted them to be able to see their purchase history.
+* **Implementation:**
+* **Test:**
+* **Results:**
+* **Verdict:**
 #### User Authentication (Register/ Login / Logout)
-* Planning: As owner of the site would like users to have logins, it makes it very important that the user can create, login and logout of their accounts. This would require using django.auth setting as a feature which would be featured.
-Implementation:
-Test
-Results
-Verdict
+* **Planning:** As owner of the site would like users to have logins, it makes it very important that the user can create, login and logout of their accounts. This would require using django.auth setting as a feature which would be featured.
+* **Implementation:**
+* **Test:**
+* **Results:**
+* **Verdict:**
 #### Review Page
-* Planning: When a user would like to review a page, there must be a clear form that they can fill in and submit for other users of the site to see. When planning this, there was only one simple way of the form being presented and that is with the forms for the star rating and leaving a message.
-* Implementation:
-* Test
-* Results
-* Verdict
+* **Planning:** When a user would like to review a page, there must be a clear form that they can fill in and submit for other users of the site to see. When planning this, there was only one simple way of the form being presented and that is with the forms for the star rating and leaving a message.
+* **Implementation:**
+* **Test:**
+* **Results:**
+* **Verdict:**
 
 ### Bugs
 The bug that happened during this project were with Stripe.
@@ -370,45 +373,69 @@ Before starting, the following must be check:
     * Python3
     * Git
 * An account has been created for the following services:
-    * Sendgrid
     * Stripe
 
 #### Instructions:
 1. Clone the repository by typing in the command below into your terminal or downloading from here.
-` git clone https://github.com/geomint/thecoffeeshop `
+``` bash
+ git clone https://github.com/geomint/thecoffeeshop 
+ ```
 2. Navigate to the correct location in your terminal.
 3. Enter the command below into your terminal.
-` python3 -m .venv venv `
+``` bash
+ python3 -m .venv venv 
+ ```
 4. Use the commoand below to initialize the environment.
-` .venv\bin\activate `
+``` bash
+ .venv\bin\activate 
+ ```
 * (Optional) Depending on the operating system, Upgrade pip locally with
-` pip install --upgrade pip `
+``` bash
+ pip install --upgrade pip 
+```
 5. Install the requirmenets using the below
-` pip3 -r requirements.txt `
+``` bash
+ pip3 -r requirements.txt 
+```
 6. In the IDE, create a file where you can store your secret information for the app. I placed these in the a file called `env.py` file.
-` os.environ.setdefault("STRIPE_PUBLISHABLE", "") `
-` os.environ.setdefault("STRIPE_SECRET", "") `
-` os.environ.setdefault("DATABASE_URL", "") `
-` os.environ.setdefault("SECRET_KEY", "") `
-` os.environ.setdefault("AWS_ACCESS_KEY_ID", "") `
-` os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "") `
+``` bash 
+os.environ.setdefault("STRIPE_PUBLISHABLE", "") 
+os.environ.setdefault("STRIPE_SECRET", "")
+os.environ.setdefault("DATABASE_URL", "")
+os.environ.setdefault("SECRET_KEY", "")
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "")
+```
+
 7. Put the following command into the terminal to migrate models into database.
-` python3 manage.py migrate `
+``` bash 
+ python3 manage.py migrate 
+```
 8. Add the following command to the terminal to create a 'superuser' for the project. 
-` python3 manage.py createsuperuser `
+``` bash
+ python3 manage.py createsuperuser
+```
 9. Use the command below to run the project locally.
-` python3 manage.py runserver `
+``` bash
+ python3 manage.py runserver 
+```
 
 ### Deploying To Heroku
 The website was deployed and hosted through Heroku. I have connected this through my terminal. I have used code that has been supplied by heroku on their 'Deploy' tab.
 
 These were the steps that I took:
 
-* A `requirement.txt` file was created using the command on my terminal `pip freeze > requirement.txt`
-* I then created a `Procfile` which as was also created on my terminal using `echo web: python app.py > Procfile`
-* Putting `git add` followed by `git commit` and then `git push` to put my new files on GitHub
+1.   A `requirement.txt` file was created using the command on my terminal 
+``` bash
+pip freeze > requirement.txt
+```
+2. I then created a `Procfile` which as was also created on my terminal using
+``` bash
+echo web: python app.py > Procfile
+```
+3. Putting `git add` followed by `git commit` and then `git push` to put my new files on GitHub
 * On my Heroku account, press the **New** located on the dashboard. Give it a name and select the region to be **Europe**
-* When this is created, go to the **Delpoy** tab. Under the section **Deployment method**, select out of the three options **GitHub**. 
+* When this is created, go to the **Deploy** tab. Under the section **Deployment method**, select out of the three options **GitHub**. 
 * Choose the link to your GitHub repository. In this case, it would be this [link](https://github.com/katerinaelsasser/film_review_database).
 * After this is connected, head over to the **Settings** tab.
 * Go to the section called **Reveal Config Vars**.
