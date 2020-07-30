@@ -25,29 +25,13 @@
     </header>
     <!---Content---> 
     {% if messages %}
-  <div class="toast" style="position: absolute; top: 0; right: 0;">
-    <div class="toast-header">
-      <img src="..." class="rounded mr-2" alt="...">
-      <strong class="mr-auto">NailDeck</strong>
-      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="toast-body">
-       {% for message in messages %}
-                    {{ message }}
-                {% endfor %}
-    </div>
-  </div>
-    <div class="py-5">       
-        <div class="alert alert-success">
+<div class="alert alert-success">
             <div class="messages">
                 {% for message in messages %}
                     {{ message }}
                 {% endfor %}
             </div>
         </div>
-    </div>
      {% endif %} 
     {% block content %} {% endblock %}
 
