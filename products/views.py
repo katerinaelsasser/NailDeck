@@ -18,7 +18,7 @@ def polish_category(request, *args, **kwargs):
     Displays all products that are in the polish category
     """
     # context = get_context('Polishes')
-    products = Product.objects.all()
+    products = Product.objects.filter(category='Polishes')
     return render(request, "polish.html", {"products": products})
 
 # Nail Care
@@ -28,5 +28,5 @@ def care_category(request, *args, **kwargs):
     Displays all products that are in the care category
     """
     # context = get_context('Care')
-    products = Product.objects.all()
+    products = Product.objects.filter(category='Care')
     return render(request, "care.html", {"products": products})
