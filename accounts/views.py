@@ -39,21 +39,24 @@ def login(request):
     args = {'user_form': user_form, 'next': request.GET.get('next', '')}
     return render(request, 'login.html', args)
 
-
+# Profile Page
 @login_required
 def profile(request):
+ """  A view that displays order history and lets user update their detail """
+    user = User.objects.get(email=request.user.email)
     if request.method == 'POST':
-        form = UpdateUserDetailsForm(request.POST)
-        form.actual_user = request.user
-        if form.is_valid():
-            form.save()
-            return redirect(reverse('profile'))
+        update_form = UpdateUserDetailsForm(
+            request.POST, instance=request.user)
+        if update_form.is_valid():
+            update_form.save()
+            messages.success(
+                request, 'You have successfully updated your account details.')
+            return redirect('profile')
     else:
-        form = UpdateUserDetailsForm()    
-
+        update_form = UpdateUserDetailsForm(instance=request.user)
 
     orders = Order.objects.filter(user=request.user)
-
+    
     all_orders = []
 
     for order in orders:

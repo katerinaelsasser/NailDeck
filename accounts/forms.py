@@ -43,8 +43,6 @@ class UpdateUserDetailsForm(forms.ModelForm):
     """
     Form to allow user to update details
     """
-    email = forms.EmailField()
-
     class Meta:
         model = User
         fields = ['email', 'first_name', 'last_name']
