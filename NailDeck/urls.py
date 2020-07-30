@@ -14,13 +14,12 @@ from .settings import MEDIA_ROOT
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', homepage, name="homepage"),
-    url(r'', include('pages.urls')),
-    url(r'', include('accounts.urls')),
-    url(r'', include('pages.urls')),
-    url(r'', include('reviews.urls')),
-    url(r'', include('contact.urls')),
-    url(r'products/', include('products.urls')),
-    url(r'cart/', include('cart.urls')),
-    url(r'', include('checkout.urls')),
+    url(r'pages/', include(urls_pages)),
+    url(r'accounts/', include(urls_accounts)),
+    url(r'reviews/', include(urls_reviews)),
+    url(r'contact/', include(urls_contact)),
+    url(r'products/', include(urls_products)),
+    url(r'cart/', include(urls_cart)),
+    url(r'checkout/', include(urls_checkout)),
     url(r'^media/(?P<url>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
