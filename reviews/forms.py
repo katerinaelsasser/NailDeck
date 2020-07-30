@@ -1,4 +1,6 @@
 from django import forms
+from django.forms import ModelForm
+from .models import Review
 
 class review_form(forms.Form):
     STAR_CHOICES = [(i, i) for i in range(1, 6)]
