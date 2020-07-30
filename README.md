@@ -132,7 +132,7 @@ I put together pros and cons to a select group of companies that sell the same p
 As a visitor on the Nail Deck website, I want/expect:
 * To view all products that is available to purchase.
 * To be able to put products I want to buy in a cart.
-* To be able to check out producst I want to buy.
+* To be able to purchase the products I want to buy.
 * To be able put in address/payment details with ease.
 * To create a login easily.
 * To be able to log in successfuly. 
@@ -140,7 +140,7 @@ As a visitor on the Nail Deck website, I want/expect:
 * To have a profile for my account.
 * The website must be clear to use.
 * The infomation of the company on the website that I can view.
-* To find infomation of how to contact the business if needed.
+* To be able to contact the company if needed to.
 
 ### Site Owner 
 As the owner of the website, I want/expect:
