@@ -138,16 +138,24 @@ As a visitor on the Nail Deck website, I want/expect:
 * To be able to log in successfuly. 
 * To reset password if I forget it.
 * To have a profile for my account.
+* Able to see what I have bought in the past.
 * The website must be clear to use.
 * The infomation of the company on the website that I can view.
 * To be able to contact the company if needed to.
+* Able to leave a review.
 
 ### Site Owner 
 As the owner of the website, I want/expect:
 * To sell products to customers on the website.
-* To be able to put new products on with ease.
 * Information of the business displayed so vistors can view it.
-* Contact details must be displayed so the vistors can find it if needed.
+* Advertise to the customer to purchase the items.
+* Products displayed clearly.
+* Customers can purchase products with ease.
+* To be able to have customers leave a contact.
+* To be able to have customers leave a review.
+* To be able to log in successfuly. 
+* To reset password if I forget it.
+* The checkout to collect customer delivery details for sending the order and payment details.
 
 ## Surface
 The surface of the website has to be fit in with the theme and with what would appeal to the target audience. I started to think about the layout, the colours, the typology and the imagery used throughout (see the [Design Choices](https://github.com/katerinaelsasser/NailDeck#design-choices) for full details of what things I decided to present for the surface). Mockups and a flowchart was created to help create all the pages, in all the mockups I noticed that the layouts were simple so customers can understand and have ease to find pages. The images that are used are images of the products the company sells and the products in use as this is advertising for the company and the customers can see what the products look like.
@@ -213,6 +221,7 @@ Throughout the page, there is a navigation bar on the header and the footer that
 * Customers can create a account, use the login, adjust account details on profile dashboard.
 * If users forget thier password, they can reset the password.
 * There is a contact form for users to contact the company.
+* Customers can leave a review of what they thought of the company. Reviews will be displayed when they are submitted.
 * List of products, including product categories display select products related to that list.
 * Products can be added, adjusted and removed from the shopping basket.
 * Customers can purchase products in their shopping basket. The checkout uses a Stripe API, this is where payment details will be process and a order will be placed.
