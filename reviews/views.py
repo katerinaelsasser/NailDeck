@@ -14,4 +14,7 @@ def review(request):
         else:
             messages.error(request, "Review was not sent")
             return redirect(reverse('review'))
-    return render(request, "reviews.html", {'form': form})
+    
+    reviews = Review.objects.all()
+
+    return render(request, "reviews.html", {'form': form, 'reviews': reviews})
