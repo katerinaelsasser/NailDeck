@@ -411,10 +411,10 @@ When it came to planning this website, it was very important to plan every detai
 
 #### User Authentication (Register/ Login / Logout)
 
-- **Planning:** As owner of the site would like users to have logins, it makes it very important that the user can create, login and logout of their accounts. This would require using django.auth setting as a feature which would be featured.
-- **Implementation:**
-- **Test:**
-- **Results:**
+- **Planning:** As owner of the site would like users to have logins, it makes it very important that the user can create, login and logout of their accounts. This would require using django.auth setting as a feature which would be featured. The user was going to be able to access more of the website such as product pages.
+- **Implementation:** The table for the user is in django. Taking this into account, all I had to do was create a form as well as the view file. I would have to create code that would create a account, a login and logout code for that account.
+- **Test:** WI started by creating a account called `Admin`, once I had filled in the form and submitted it, I checked that the database had the account. When I saw the data was there, I headed over to the login page and entered the username and password into the form which would log the account in. When I was logged in, I then logged the account out.
+- **Results:** When logged into the account, the detail and links on the page would adjust to the user view only. The alerts for when the account was logged in and logged out appeared with the correct text.
 - **Verdict:** This form has met the criteria.
 
 #### Review Page
