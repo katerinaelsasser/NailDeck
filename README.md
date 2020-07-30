@@ -429,9 +429,9 @@ When it came to planning this website, it was very important to plan every detai
 
 The bug that happened during this project were with Stripe.
 
-- Bug/Issue: When I was putting through a test order, an error came up with the order not going through. A message at the top of the page appeared saying that the card was incorrect.
-- Solution: When looking at where the error was coming from, I looked at the Stripe Javascipt file. When looking at this file, I noticed a very simple mistake. This was that the card id on the HTML page was not matching the Javascript file.
-- Verdict: When this was changed to match, the issue was fixed.
+- **Bug/Issue:** When I was putting through a test order, an error came up with the order not going through. A message at the top of the page appeared saying that the card was incorrect.
+- **Solution:** When looking at where the error was coming from, I looked at the Stripe Javascipt file. When looking at this file, I noticed a very simple mistake. This was that the card id on the HTML page was not matching the Javascript file.
+- **Verdict:** When this was changed to match, the issue was fixed.
 
 ### Vailidation Services
 
@@ -564,6 +564,16 @@ echo web: python app.py > Procfile
 When these steps have been followed, the website will be successfully deployed.
 
 ## Credits
+
+### Content
+All content that is on this website has been written by myself. 
+
+### Media
+All images were taken from [Pixabay](https://pixabay.com/) and [Unsplash](https://unsplash.com/).
+
+### Acknowledgements
+Inspiration by a film called Pirates of the Carribean. I got inspired by the names as well as the storyline to create beauty products inspired by it.My mentor, Simen Daehlin, inspired my header layout as well as the social content.
+
 
 ## Disclaimer
 
