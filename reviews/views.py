@@ -10,7 +10,8 @@ def review(request):
     else:
         form = review_form(request.POST)
         if form.is_valid():
-            form.save() 
+            form.save()
+            messages.error(request, "Review Added!")
         else:
             messages.error(request, "Review was not sent")
             return redirect(reverse('review'))

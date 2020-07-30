@@ -10,6 +10,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save() 
+            messages.error(request, "Message Sent!")
         else:
              messages.error(request, "Message was not sent")
         return redirect(reverse('contact'))
