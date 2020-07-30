@@ -7,15 +7,13 @@
     <!----Header Content---->
     <div class="container-fluid header-title">
         <img class="img-fluid header-img" src="{% static 'images/header/display-13.jpg' %}">
-        <div class="header-text text-center">
-        <h2>Contact Us</h2>
-        </div>
     </div>
 
     <!--------Form--------->
     <div class="container text-center">
+    <h2 class="py-3">Contact Us</h2>
         <div class="py-3">
-        <h2>Have a question you need answered? Fill out a form below and we will answer it.</h2>
+        <p>Have a question you need answered? Fill out a form below and we will answer it.</p>
         </div>
         <div class="py-3 container-fluid"> 
             <form method="POST" action="{% url 'contact' %}">
@@ -28,6 +26,9 @@
             </form>
         </div>
     </div>
+
+<!----image divider----->
+    <img class="img-fluid" src="{% static 'images/header/display-2.jpg' %}" alt="divider-img">
 
     <!---Social Images--->
     {% include 'components/socialcontact.html' %}
