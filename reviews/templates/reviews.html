@@ -34,7 +34,7 @@
             <form method="POST" action="{% url 'review' %}">
                 {% csrf_token %}
                 <div class="form__group">
-                    {{form_review | as_bootstrap }}
+                    {{form | as_bootstrap }}
                 <button class="btn btn-primary" type="submit">Submit</button>
                 </div>
             </form>
