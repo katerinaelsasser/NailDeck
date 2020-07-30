@@ -6,12 +6,12 @@ from django.contrib import messages
 # Review Form
 def review(request):
     if request.method == 'GET':
-        form_review = review_form()
+        form = review_form()
     else:
-        form_review = review_form(request.POST)
-        if form_review.is_valid():
-            form_review.save() 
+        form = review_form(request.POST)
+        if form.is_valid():
+            form.save() 
         else:
             messages.error(request, "Review was not sent")
             return redirect(reverse('review'))
-    return render(request, "reviews.html", {'form_review': form_review})
+    return render(request, "reviews.html", {'form': form})
