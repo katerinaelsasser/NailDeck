@@ -42,18 +42,15 @@ def login(request):
 
 @login_required
 def profile(request):
-
-    user = User.objects.get(email=request.user.email)
     if request.method == 'POST':
-        update_form = UpdateUserDetailsForm(
-            request.POST, instance=request.user)
-        if update_form.is_valid():
-            update_form.save()
-            messages.success(
-                request, 'You have successfully updated your account details.')
-            return redirect('profile')
+        form = UpdateUserDetailsForm(request.POST)
+        form.actual_user = request.user
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('profile'))
     else:
-        update_form = UpdateUserDetailsForm(instance=request.user)
+        form = UpdateUserDetailsForm()    
+
 
     orders = Order.objects.filter(user=request.user)
 
@@ -69,7 +66,7 @@ def profile(request):
         all_orders.append({'order': order, 'order_items': order_items, "total": order_total})
     
     print(all_orders)
-    return render(request, 'profile.html', {"profile": user, "all_orders": all_orders})
+    return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
 
 def register(request):
     """A view that manages the registration form"""
