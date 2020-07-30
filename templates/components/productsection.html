@@ -1,12 +1,12 @@
 {% load staticfiles %}
     <div class="py-3 text-center">
-    <h1>
+    <h2>
     {% if user.is_authenticated %}
         <a href="{% url 'products' %}"><i class="fa fa-gem"></i></a>
     {% else %}
         <a href="{% url 'login' %}"><i class="fa fa-gem"></i></a>
     {% endif %}
-    </h1>
+    </h2>
     <h2>View Our Treatures</h2>
     <p>We have traveled far and wide to get the treasures of nail polishes and nail care available to buy.</p>
     {% if user.is_authenticated %}
