@@ -249,7 +249,7 @@ The products have the following model:
 #### Checkout Model
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
-| User      | user | User, on_delete=models.PROTECT, default=None | ForeignKey|
+| User      | user | User, null=True, blank=True | ForeignKey|
 | Full Name     | full_name | max_length=50, blank=False | CharField|
 | Phone Number     | phone_number | max_length=20, blank=False |CharField |
 | Country     | country | max_length=40, blank=False |CharField |
@@ -269,9 +269,9 @@ The products have the following model:
 #### Contact Model
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
-| Name      | name | max_length=50, blank=False |CharField |
-| Email     | email | max_length=200, blank=False |EmailField |
-| Message     | message | max_length=1024 |TextField |
+| Name      | name | max_length=50, defult='', blank=False |CharField |
+| Email     | email | max_length=200, defult='', blank=False |EmailField |
+| Message     | message | max_length=1024, defult='' |TextField |
 #### Review Modal
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
