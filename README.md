@@ -157,7 +157,6 @@ As a visitor on the Nail Deck website, I want/expect:
 - To be able put in address/payment details with ease.
 - To create a login easily.
 - To be able to log in successfuly.
-- To reset password if I forget it.
 - To have a profile for my account.
 - Able to see what I have bought in the past.
 - The website must be clear to use.
@@ -177,7 +176,6 @@ As the owner of the website, I want/expect:
 - To be able to have customers leave a contact.
 - To be able to have customers leave a review.
 - To be able to log in successfuly.
-- To reset password if I forget it.
 - The checkout to collect customer delivery details for sending the order and payment details.
 
 ## Surface
@@ -263,7 +261,6 @@ Throughout the page, there is a navigation bar on the header and the footer that
 ### Existing Features
 
 - Customers can create a account, use the login, adjust account details on profile dashboard.
-- If users forget thier password, they can reset the password.
 - There is a contact form for users to contact the company.
 - Customers can leave a review of what they thought of the company. Reviews will be displayed when they are submitted.
 - List of products, including product categories display select products related to that list.
