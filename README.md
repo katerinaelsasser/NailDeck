@@ -294,7 +294,6 @@ The user model is the standard one supplied by `django.contrib.auth.models`.
 * Git
 * Bootstrap
 * Font-Awesome
-* Sweetalert2
 * Stripe
 * Django
 ## Testing
@@ -310,22 +309,22 @@ When it came to planning this website, it was very important to plan every detai
 * Verdict: As this feature works, for future updates on this website, the email could be added t
 #### Product List Pages (All Products/ Nail Varnishes / Nail Care)
 * Planning: A ecommerce website needs a list of products on a page. When a user is viewing this page, they should be able to add a product to the shopping cart. As well as this, the products should be displayed professionally. As there were going to be different types of products on the listing, I have decided to also plan for categories that would hold particular products. For example: products that are nail care, will be in a category dedicated to that type.
-Implementation: To display the products, I had to use a model that would hold the data of the products and link to the database that connects to the correct product to the correct page. 
-Test: When clicking on the link to the page, the products would display automatically without there being a timer. If the products were displaying, it meant that there was an error with the django code that was used. It is very important when linking products that there are no typos in the code as this became an issue for displaying them.
-Results: When the going on to the pages, the products displayed in a neat display all the way down the page and also products displayed in the correct categories.
-Verdict
+* Implementation: To display the products, I had to use a model that would hold the data of the products and link to the database that connects to the correct product to the correct page. 
+* Test: When clicking on the link to the page, the products would display automatically without there being a timer. If the products were displaying, it meant that there was an error with the django code that was used. It is very important when linking products that there are no typos in the code as this became an issue for displaying them.
+* Results: When the going on to the pages, the products displayed in a neat display all the way down the page and also products displayed in the correct categories.
+* Verdict
 #### Shopping Cart
 * Planning: A huge part of this website is so that a customer can purchase products from the company. With the admin of this website wanted customers to log into the site to use it, I wanted it so customers had to be logged in to add products to the cart. When users are thinking about purchasing their items, they must be able to edit and delete products in their cart.
-Implementation:
-Test: When filling in the form, I used a testing cart `4242 4242 4242 4242`. When testing this, there was an error with the card details, see (Bugs)[https://github.com/katerinaelsasser/NailDeck#bugs] for more detail on this issue. When this was fixed, the card and delivery details went through and were submitted.
-Results
-Verdict
+* Implementation:
+* Test: When filling in the form, I used a testing cart `4242 4242 4242 4242`. When testing this, there was an error with the card details, see [Bugs](https://github.com/katerinaelsasser/NailDeck#bugs) for more detail on this issue. When this was fixed, the card and delivery details went through and were submitted.
+* Results
+* Verdict
 #### Checkout
 * Planning: When customers are putting products they want, they will need to purchase these products. As this would require the customer to fill in personal information such as card details and delivery information. This meant that the form had to be clear and easy to use when fill it out.
-Implementation: The checkout needed to link with a API called Stripe. Stripe is used to hold the personal infomation that would be put into the form. Connecting this to the form would be import to make sure the data would be safe.
-Test:
-Results
-Verdict
+* Implementation: The checkout needed to link with a API called Stripe. Stripe is used to hold the personal infomation that would be put into the form. Connecting this to the form would be import to make sure the data would be safe.
+* Test:
+* Results
+* Verdict
 #### Profile Dashboard
 * Planning: When a user is logged into the website, I wanted the user to able able to access and change their details. As well as this, I wanted them to be able to see their purchase history.
 Implementation: 
