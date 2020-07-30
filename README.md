@@ -234,8 +234,8 @@ Throughout the page, there is a navigation bar on the header and the footer that
 ### Database Choice
 For this project, the database used is SQL. For my local machine, sqlite3 datbase was installed with Django. When deployed, Heroku provided the SQL database which is a PostgreSQL database.
 
-### Data Modals
-#### Product Modal
+### Data Models
+#### Product Model
 The products have the following model:
 
 | Name          | Key in DB     | Validation  | Field Type |
@@ -246,7 +246,7 @@ The products have the following model:
 | Image     | image | upload_to='images' | ImageField|
 | Category     | category | max_length=11, choices=CHOICES, default='polishes' |CharField |
 
-#### Checkout Modal
+#### Checkout Model
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
 | User      | user | User, on_delete=models.PROTECT, default=None | ForeignKey|
@@ -259,14 +259,14 @@ The products have the following model:
 | Country     | county | max_length=40, blank=False | CharField|
 | Date     | date |  |DateField |
 
-#### Order Modal
+#### Order Model
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
 | Order      | order | Order, null=False |ForeignKey |
 | Product     | product | Product, null=False | ForeignKey|
 | Quantity     | quantity | blank=False |IntegerField |
 
-#### Contact Modal
+#### Contact Model
 | Name        | Key in DB           | Validation  | Field Type |
 | ------------- |:-------------:| -----:| -----:|
 | Name      | name | max_length=50, blank=False |CharField |
@@ -278,7 +278,7 @@ The products have the following model:
 | Star      | order | max_length=11, choices=STAR_CHOICES, default='5' |CharField |
 | Message     | product | max_length=1024 |CharField|
 
-#### User Modals
+#### User Models
 The user model is the standard one supplied by `django.contrib.auth.models`.
 ## Technologies Used
 ### Languages
