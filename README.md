@@ -85,44 +85,44 @@ Research was the biggest thing for this website as this is going to be in compet
 I put together pros and cons to a select group of companies that sell the same products. These companies are Barry M, Boots, ASOS and Etsy.
 
 #### [Barry M](https://barrym.com/)
-* Pros 
+* **Pros** 
     * A lot of details of the products on display
     * Add to cart button on the product image
     * Responsive website
     * The home page sums up all of the pages.
     * Works well in different views (desktop, mobile, medium, etc.).
 
-* Cons 
+* **Cons** 
     * A lot of features, possibly too many.
     * Navigration bar dropdown is messy.
     * Blank space on the dropdown.
     
 #### [Boots](https://www.boots.com/)
-* Pros
+* **Pros**
     * Elements that to connect to different pages on homepage.
     * Easy to find products.
     * Shopping cart is clear to understand.
-* Cons
+* **Cons**
     * Too many features.
     * Elements on slideshow not responsive.
     * Too many categories.
 
 #### [ASOS](https://www.asos.com/women/)
-* Pros 
+* **Pros** 
     * Dropdown is clear to understand.
     * Pages are responsive to the different devices.
     * Products presented clearly.
-* Cons
+* **Cons**
     * Nav Links don't take to pages when clicked on, only show the dropdown.
     * Can't buy products without having to go on to the individual display.
     * Can't select a quanity of products.
 
 #### [Etsy](https://www.etsy.com/uk/)
-* Pros
+* **Pros**
     * Homepage is clear for navigating as well as advertising products.
     * Easy to navigate through the website.
     * Lots of detail on individual product display.
-* Cons
+* **Cons**
     * When clicking on a product, it opens another tab to that link.
     * Have to go on to individual product display to purchase.
     * Difficult to find a contact page.
