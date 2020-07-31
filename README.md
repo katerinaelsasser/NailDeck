@@ -40,8 +40,8 @@ Nail Deck is an online website for selling hand made nail polishes to customers.
   - [Testing Features](https://github.com/katerinaelsasser/NailDeck#testing-features)
 - [Deployment](https://github.com/katerinaelsasser/NailDeck#deployment)
   - [Running Locally](https://github.com/katerinaelsasser/NailDeck#running-locally)
-  - [Deploying To Heroku]()
-- [Credits]()
+  - [Deploying To Heroku](https://github.com/katerinaelsasser/NailDeck#deploying-to-heroku)
+- [Credits](https://github.com/katerinaelsasser/NailDeck#credits)
 
 # UX
 
