@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 @login_required
@@ -14,9 +15,12 @@ def add_to_cart(request, id):
 
     cart = request.session.get('cart', {})
     if id in cart:
-        cart[id] = int(cart[id]) + quantity     
+        cart[id] = int(cart[id]) + quantity
+        messages.error(request, 'Treasure added!')
+     
     else:
         cart[id] = cart.get(id, quantity) 
+        messages.error(request, 'Treasure added!')
 
 
     request.session['cart'] = cart
