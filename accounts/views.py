@@ -44,7 +44,7 @@ def login(request):
 def profile(request):
  """  A view that displays order history and lets user update their detail """
 
-
+"""
     user = User.objects.get(email=request.user.email)
     if request.method == 'POST':
         update_form = UpdateUserDetailsForm(
@@ -54,7 +54,7 @@ def profile(request):
             messages.success(
                 request, 'You have successfully updated your account details.')
             return redirect('profile')
-    #else:
+    else:
         update_form = UpdateUserDetailsForm(instance=request.user)
 
     orders = Order.objects.filter(user=request.user)
@@ -70,8 +70,8 @@ def profile(request):
             order_total += int(order_item.product.price * order_item.quantity)
         all_orders.append({'order': order, 'order_items': order_items, "total": order_total})
     
-    print(all_orders)
-    return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
+    print(all_orders)"""
+  #  return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
 
 def register(request):
     """A view that manages the registration form"""

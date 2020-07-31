@@ -35,13 +35,13 @@
         {% for care in cares %}
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="card border-0 shadow">
-                        <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                        <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ care.image }}')"></div>
                         <div class="card-body text-center">
-                            <h2 class="card-title">{{ care.product.name }}</h2>
-                            <p class="card-text"><strong>Description:</strong> {{ care.product.description }}</p>
-                            <p class="card-text pricing"><strong>£{{ care.product.price }}</strong></p>
+                            <h2 class="card-title">{{ care.name }}</h2>
+                            <p class="card-text"><strong>Description:</strong> {{ care.description }}</p>
+                            <p class="card-text pricing"><strong>£{{ care.price }}</strong></p>
                             <div class="btn-group">
-                                <form method="post" action="{% url 'add_to_cart' product.id %}">
+                                <form method="post" action="{% url 'add_to_cart' care.id %}">
                                     {% csrf_token %}
                                     <div class="container">
                                         <p><strong>Add Amount:</strong></p>

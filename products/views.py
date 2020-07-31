@@ -17,8 +17,8 @@ def polish_category(request):
     """
     Displays all products that are in the polish category
     """
-    polishs = Product.objects.all().filter(category='Polishes')
-    return render(request, "polish.html", {"polishs": polishs})
+    polishes = Product.objects.all().filter(category='Polishes')
+    return render(request, "polish.html", {"polishes": polishes})
 
 # Nail Care
 @login_required

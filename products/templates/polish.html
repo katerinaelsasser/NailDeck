@@ -33,16 +33,16 @@
     <!-----Product Display------>
     <div class="container-fluid">
         <div class="row mb-2 px-3 py-5">
-        {% for polish in polishs %}
+        {% for polish in polishes %}
                 <div class="col-xl-4 col-md-6 mb-4">
                     <div class="card border-0 shadow">
-                        <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+                        <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ polish.image }}')"></div>
                         <div class="card-body text-center">
-                            <h2 class="card-title">{{ polish.product.name }}</h2>
-                            <p class="card-text"><strong>Description:</strong> {{ polish.product.description }}</p>
-                            <p class="card-text pricing"><strong>£{{ polish.product.price }}</strong></p>
+                            <h2 class="card-title">{{ polish.name }}</h2>
+                            <p class="card-text"><strong>Description:</strong> {{ polish.description }}</p>
+                            <p class="card-text pricing"><strong>£{{ polish.price }}</strong></p>
                             <div class="btn-group">
-                                <form method="post" action="{% url 'add_to_cart' product.id %}">
+                                <form method="post" action="{% url 'add_to_cart' polish.id %}">
                                     {% csrf_token %}
                                     <div class="container">
                                         <p><strong>Add Amount:</strong></p>
