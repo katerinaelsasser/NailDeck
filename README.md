@@ -350,14 +350,17 @@ django.contrib.auth.models
 - PostgreSQL
 - SQlite3
 
-### Libaries
+### Libaries/Tools
 
 - jQuery
 - Git
-- Bootstrap
+- [Bootstrap](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+- [Bootswatch](https://bootswatch.com/simplex/)
 - Font-Awesome
 - Stripe
 - Django
+- [AWS S3 Bucket](https://aws.amazon.com/)
+- [Travis](https://travis-ci.org/katerinaelsasser/NailDeck.svg?branch=master)](https://travis-ci.org/katerinaelsasser/NailDeck)
 
 ## Testing
 
