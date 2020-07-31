@@ -389,8 +389,8 @@ When it came to planning this website, it was very important to plan every detai
 
 - **Planning:** A huge part of this website is so that a customer can purchase products from the company. With the admin of this website wanted customers to log into the site to use it, I wanted it so customers had to be logged in to add products to the cart. When users are thinking about purchasing their items, they must be able to edit and delete products in their cart.
 - **Implementation:** I created a file called ` context.py ` which is in the cart app. This was included in the context processors section inside the template in the file, ` settings.py `. By haing this, it will tell the app how the cart should be presented in default as well as what information should be available to it. This is a requirement as the cart is not stored in the database, instead in the session. When this was added, I wrote the view function for adding products to the cart, editing the quantity of products and how the content was displayed.
-- **Test:**
-- **Results:** 
+- **Test:** When testing, I went over to the product pages and adding random products to the cart. Once I was happy with what I had added and made a note of what products and the quantity, I headed to the cart page and checked what was in the cart with what I had noted down.
+- **Results:** All the products that I had added were in the cart displayed correctly, I tested the edit quantity/removal of the products from the cart and everything worked correctly.
 - **Verdict:** This form has met the criteria.
 
 #### Checkout
