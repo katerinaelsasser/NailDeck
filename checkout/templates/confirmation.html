@@ -5,28 +5,30 @@
 <section class="container-fluid">
 
     <!----Header Display---->
-    <div class="container-fluid header-title">
+    <div class="header-title">
         <img class="img-fluid header-img" src="{% static 'images/header/display-9.jpg' %}" alt="divider-img">
         <div class="header-text text-center">
             <h2>Confirmation</h2>    
         </div>
     </div>
-    <div class="container-fluid text-center">
+    <div class="text-center">
         <!------Intro------->
         <div class="container py-3">
             <h2 class="col-12">Thank you for the order!</h2>
             <p class="py-2">Hi {{ user.username }}, your order has been recieved.</p>
         </div>
         <div class="row">
+    <!----image divider----->
+    <img class="img-fluid" src="{% static 'images/header/display-5.jpg' %}" alt="divider-img">
         <!------Review------->
-            <div class="col-sm-12 col-md-6 py-2">
+            <div class="col-sm-12 col-md-6 py-3">
                 <i class="fa fa-question header-fa"></i>
                 <h2 class="col-12">Any queries?</h2>
                 <p class="py-2">Send us a message</p>
                 <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us</a>
             </div>
         <!------Queries------->
-            <div class="col-sm-12 col-md-6 py-2">
+            <div class="col-sm-12 col-md-6 py-3">
                 <i class="fa fa-comment header-fa"></i>
                 <h2 class="col-12">Leave us a review</h2>
                 <p class="py-2">Love to hear your thoughts!</p>
