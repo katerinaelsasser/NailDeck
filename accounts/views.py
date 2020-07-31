@@ -42,34 +42,36 @@ def login(request):
 # Profile Page
 @login_required
 def profile(request):
- """  A view that displays order history and lets user update their detail """
+    """
+    displaying a user details for edtiting and viewing order history
+    """
 
-if request.method == 'POST':
-    form = UpdateUserDetailsForm(data=request.POST, instance=request.email)
-    if form.is_valid():
-        form.save()
-        messages.error(request, "Your details are updated!")
-        return redirect('profile')
+    user = User.objects.get(email=request.user.email)
+    if request.method == 'POST':
+        form = UpdateUserDetailsForm(
+            request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'You have successfully updated your account details.')
+            return redirect('profile')
     else:
-        form = UpdateUserDetailsForm(instance=request.email)
-        messages.error(request, "Your details were not updated")
-
+        form = UpdateUserDetailsForm(instance=request.user)
 
     orders = Order.objects.filter(user=request.user)
 
     all_orders = []
 
     for order in orders:
-        order_fetch = OrderLineItem.objects.filter(order=order)
+        order_fetch = OrderItem.objects.filter(order=order)
         order_items = []
         order_total = 0
         for order_item in order_fetch:
             order_items.append(order_item)
             order_total += int(order_item.product.price * order_item.quantity)
         all_orders.append({'order': order, 'order_items': order_items, "total": order_total})
-    
-    print(all_orders)
-return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
+
+    return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
 
 def register(request):
     """A view that manages the registration form"""
