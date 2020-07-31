@@ -32,7 +32,6 @@
                         <div class="product card-img-top" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
                         <div class="card-body text-center">
                             <h2 class="card-title">{{ item.product.name }}</h2>
-                            <p class="card-text"><strong>Description:</strong> {{ item.product.description }}</p>
                             <p class="card-text pricing"><strong>£{{ item.product.price }}</strong></p>
                             <div class="btn-group">
                                 <form method="post" action="{% url 'adjust_cart' item.id %}">
