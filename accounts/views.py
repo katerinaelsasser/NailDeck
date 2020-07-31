@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.shortcuts import render, redirect, HttpResponseRedirect, reverse
 from django.contrib import messages, auth
 from django.core.urlresolvers import reverse
 from .forms import UserLoginForm, UserRegistrationForm, UpdateUserDetailsForm
@@ -44,21 +44,19 @@ def login(request):
 def profile(request):
  """  A view that displays order history and lets user update their detail """
 
-"""
-    user = User.objects.get(email=request.user.email)
-    if request.method == 'POST':
-        update_form = UpdateUserDetailsForm(
-            request.POST, instance=request.user)
-        if update_form.is_valid():
-            update_form.save()
-            messages.success(
-                request, 'You have successfully updated your account details.')
-            return redirect('profile')
+if request.method == 'POST':
+    form = UpdateUserDetailsForm(data=request.POST, instance=request.email)
+    if form.is_valid():
+        form.save()
+        messages.error(request, "Your details are updated!")
+        return redirect('profile')
     else:
-        update_form = UpdateUserDetailsForm(instance=request.user)
+        form = UpdateUserDetailsForm(instance=request.email)
+        messages.error(request, "Your details were not updated")
+
 
     orders = Order.objects.filter(user=request.user)
-    
+
     all_orders = []
 
     for order in orders:
@@ -70,8 +68,8 @@ def profile(request):
             order_total += int(order_item.product.price * order_item.quantity)
         all_orders.append({'order': order, 'order_items': order_items, "total": order_total})
     
-    print(all_orders)"""
-  #  return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
+    print(all_orders)
+return render(request, 'profile.html', {"form": form, "all_orders": all_orders})
 
 def register(request):
     """A view that manages the registration form"""
