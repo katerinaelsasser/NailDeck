@@ -63,7 +63,7 @@ def profile(request):
     all_orders = []
 
     for order in orders:
-        order_fetch = OrderItem.objects.filter(order=order)
+        order_fetch = OrderLineItem.objects.filter(order=order)
         order_items = []
         order_total = 0
         for order_item in order_fetch:
