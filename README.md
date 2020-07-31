@@ -283,15 +283,13 @@ For this project, the database used is SQL. For my local machine, sqlite3 datbas
 
 #### Product Model
 
-The products have the following model:
-
 | Name        |  Key in DB  |                                         Validation |   Field Type |
 | ----------- | :---------: | -------------------------------------------------: | -----------: |
-| Name        |    name     |                         max_length=254, default='' |    CharField |
-| Description | description |                                                    |    TextField |
-| Price       |    price    |                     max_digits=6, decimal_places=2 | DecimalField |
+| Name        |    name     |                     max_length=254, default='Name' |    CharField |
+| Description | description |                            max_length=254          |    TextField |
+| Price       |    price    |max_digits=6, decimal_places=2, default=Decimal(0.00) | DecimalField |
 | Image       |    image    |                                 upload_to='images' |   ImageField |
-| Category    |  category   | max_length=11, choices=CHOICES, default='polishes' |    CharField |
+| Category    |  category   | max_length=20, choices=CHOICES, default=POLISHES, |    CharField |
 
 #### Checkout Model
 
@@ -319,9 +317,9 @@ The products have the following model:
 
 | Name    | Key in DB |                             Validation | Field Type |
 | ------- | :-------: | -------------------------------------: | ---------: |
-| Name    |   name    |  max_length=50, defult='', blank=False |  CharField |
-| Email   |   email   | max_length=200, defult='', blank=False | EmailField |
-| Message |  message  |             max_length=1024, defult='' |  TextField |
+| Name    |   name    |  max_length=50, default='', blank=False |  CharField |
+| Email   |   email   | max_length=200, default='', blank=False | EmailField |
+| Message |  message  |             max_length=1024, default='' |  TextField |
 
 #### Review Modal
 
