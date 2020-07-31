@@ -405,10 +405,10 @@ When it came to planning this website, it was very important to plan every detai
 #### Profile Dashboard
 
 - **Planning:** When a user is logged into the website, I wanted the user to able able to access and change their details. As well as this, I wanted them to be able to see their purchase history.
-- **Implementation:**  
-- **Test:**
-- **Results:**
-- **Verdict:** This form has met the criteria.
+- **Implementation:** To do this I will be linking to the `OrderLineItem` model in the checkout app and I will be linking to the to the login/register form. The `OrderLineItem` would collect the data for the orders and the login would help create the update form for the details. As this would be for a specific account, I would need to match the user with both the order and the details instead of collecting every single data in the database.
+- **Test:** As I had tested out the checkout already, all I had to do was make sure the details matched what I had asked to be collected from it. When checking the details update, I added `test` to the empty input and pressed save, I then went into the Admin panel and looked at the specific account and looked for the `test`.
+- **Results:** Both the order history and the update details displayed connected to the database and collected the right data required. I added more orders to the account and checked the page to see the order was added to the list. With the details form, I tested multiple times, checking each tine that every little detail I changed was updated on the database. 
+- **Verdict:** These forms has met the criteria.
 
 #### User Authentication (Register/ Login / Logout)
 
